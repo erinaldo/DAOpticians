@@ -1,0 +1,165 @@
+Imports DA.Prescription.DAPriceList
+
+Public Class frmPriceList
+
+#Region "Variables"
+
+    Dim _DAPriceList As DA.Prescription.DAPriceList
+
+#End Region
+
+#Region "Constructor"
+
+    Public ReadOnly Property DAPriceList() As DA.Prescription.DAPriceList
+        Get
+
+            If _DAPriceList Is Nothing Then
+                _DAPriceList = New DA.Prescription.DAPriceList()
+            End If
+
+            Return _DAPriceList
+        End Get
+    End Property
+#End Region
+
+#Region "Form Events"
+
+    Private Sub frmPriceList_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        SetDAStartUpBarButton(bbSave, bbNew, bbDelete, bbClose, bbDisplaySelected, bbRefresh, bbPrint)
+        Me.PopulatePricePreset()
+    
+    End Sub
+
+#End Region
+
+#Region "Populate Price Preset"
+
+    Private Sub PopulatePricePreset()
+        Try
+            Try
+
+                gcPricePreset.DataSource = DAPriceList.GetAllPricePreset.Tables(0)
+
+            Catch ex As Exception
+                MessageError(ex.ToString)
+            End Try
+        Catch ex As Exception
+            MessageError(ex.ToString)
+        End Try
+    End Sub
+
+#End Region
+
+    Private Sub bbSave_ItemClick(ByVal sender As System.Object, ByVal e As DevExpress.XtraBars.ItemClickEventArgs) Handles bbSave.ItemClick
+        Try
+
+        Catch ex As Exception
+            MessageError(ex.ToString)
+        End Try
+    End Sub
+
+    Private Sub bbNew_ItemClick(ByVal sender As System.Object, ByVal e As DevExpress.XtraBars.ItemClickEventArgs) Handles bbNew.ItemClick
+        Try
+            Me.ClearFormData()
+        Catch ex As Exception
+            MessageError(ex.ToString)
+        End Try
+    End Sub
+
+    Private Sub bbDisplaySelected_ItemClick(ByVal sender As System.Object, ByVal e As DevExpress.XtraBars.ItemClickEventArgs) Handles bbDisplaySelected.ItemClick
+        Try
+            Me.DisplayRecord()
+        Catch ex As Exception
+            MessageError(ex.ToString)
+        End Try
+    End Sub
+
+    Private Sub bbDelete_ItemClick(ByVal sender As System.Object, ByVal e As DevExpress.XtraBars.ItemClickEventArgs) Handles bbDelete.ItemClick
+        Try
+
+        Catch ex As Exception
+            MessageError(ex.ToString)
+        End Try
+    End Sub
+
+    Private Sub bbPrint_ItemClick(ByVal sender As System.Object, ByVal e As DevExpress.XtraBars.ItemClickEventArgs) Handles bbPrint.ItemClick
+        Try
+            If gvPriceList.RowCount > 0 Then
+                PrintPreview(gcPriceList, "Price List Report")
+            End If
+        Catch ex As Exception
+            MessageError(ex.ToString)
+        End Try
+    End Sub
+
+    Private Sub bbRefresh_ItemClick(ByVal sender As System.Object, ByVal e As DevExpress.XtraBars.ItemClickEventArgs) Handles bbRefresh.ItemClick
+        Try
+            With gvPriceList
+                .ClearColumnsFilter()
+                .ClearGrouping()
+                .ClearSelection()
+                .ClearSorting()
+            End With
+        Catch ex As Exception
+            MessageError(ex.ToString)
+        End Try
+    End Sub
+
+    Private Sub bbClose_ItemClick(ByVal sender As System.Object, ByVal e As DevExpress.XtraBars.ItemClickEventArgs) Handles bbClose.ItemClick
+        Try
+            Me.Close()
+        Catch ex As Exception
+            MessageError(ex.ToString)
+        End Try
+    End Sub
+
+#Region "Clear Form Data"
+
+    Public Sub ClearFormData()
+
+        Try
+            lblID.Text = String.Empty
+            teItemName.EditValue = Nothing
+            seFrom.EditValue = Nothing
+            seTo.EditValue = Nothing
+            sePrice.EditValue = Nothing
+            teItemName.Focus()
+
+        Catch ex As Exception
+            MessageError(ex.ToString)
+        End Try
+    End Sub
+
+#End Region
+
+#Region "Dispay Record"
+
+    Public Sub DisplayRecord()
+
+        Try
+            If gvPriceList.RowCount > 0 Then
+                xTab1.SelectedTabPageIndex = 1
+                With DAPriceList
+
+                    .PriceListID = Me.gvPriceList.GetFocusedRowCellValue(GridColumn9)
+                    .GetAllPriceList()
+                    lblID.Text = .PurchaseOrderID
+                    lupSupplier.EditValue = .SupplierID
+                    dePurchaseOrderDate.EditValue = .PurchaseOrderDate
+                    teReferenceNo.Text = .ReferenceNo
+                    meNote.Text = .Note
+                    Me.PopulateDescriptionGrid()
+
+                End With
+
+
+            End If
+        Catch ex As Exception
+            MessageError(ex.ToString)
+        End Try
+
+       
+    End Sub
+#End Region
+
+End Class
