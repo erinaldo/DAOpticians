@@ -45,10 +45,15 @@ Public Class DAPrescription
     Private _MobileNo As String
     Private _DelivaryDate As Date
     Private _LenseStockID As Int64
+    Private _LenseleftStockID As Int64
     Private _FrameStockID As Int64
     Private _LenseQty As Decimal
+    Private _LenseleftQty As Decimal
+
     Private _FrameQty As Integer
     Private _LensePrice As Decimal
+    Private _LenseleftPrice As Decimal
+
     Private _FramePrice As Decimal
 
 
@@ -970,12 +975,21 @@ Public Class DAPrescription
         End Set
     End Property
 
-    Public Property LenseStockID() As Int64
+    Public Property LenseRightStockID() As Int64
         Get
             Return _LenseStockID
         End Get
         Set(ByVal value As Int64)
             _LenseStockID = value
+        End Set
+    End Property
+
+    Public Property LenseLeftStockID() As Int64
+        Get
+            Return _LenseleftStockID
+        End Get
+        Set(ByVal value As Int64)
+            _LenseleftStockID = value
         End Set
     End Property
 
@@ -988,12 +1002,20 @@ Public Class DAPrescription
         End Set
     End Property
 
-    Public Property LenseQty() As Decimal
+    Public Property LenseRightQty() As Decimal
         Get
             Return _LenseQty
         End Get
         Set(ByVal value As Decimal)
             _LenseQty = value
+        End Set
+    End Property
+    Public Property LenseLeftQty() As Decimal
+        Get
+            Return _LenseleftQty
+        End Get
+        Set(ByVal value As Decimal)
+            _LenseleftQty = value
         End Set
     End Property
 
@@ -1006,12 +1028,21 @@ Public Class DAPrescription
         End Set
     End Property
 
-    Public Property LensePrice() As Decimal
+    Public Property LenseRightPrice() As Decimal
         Get
             Return _LensePrice
         End Get
         Set(ByVal value As Decimal)
             _LensePrice = value
+        End Set
+    End Property
+
+    Public Property LenseLeftPrice() As Decimal
+        Get
+            Return _LenseleftPrice
+        End Get
+        Set(ByVal value As Decimal)
+            _LenseleftPrice = value
         End Set
     End Property
 
@@ -1075,11 +1106,11 @@ Public Class DAPrescription
 
             End If
 
-            DB.AddInParameter(DBC, "@LenseStockID", DbType.Int64, Me.LenseStockID)
+            DB.AddInParameter(DBC, "@LenseStockID", DbType.Int64, Me.LenseRightStockID)
             DB.AddInParameter(DBC, "@FrameStockID", DbType.Int64, Me.FrameStockID)
-            DB.AddInParameter(DBC, "@LenseQty", DbType.Decimal, Me.LenseQty)
+            DB.AddInParameter(DBC, "@LenseQty", DbType.Decimal, Me.LenseRightQty)
             DB.AddInParameter(DBC, "@FrameQty", DbType.Decimal, Me.FrameQty)
-            DB.AddInParameter(DBC, "@LensePrice", DbType.Decimal, Me.LensePrice)
+            DB.AddInParameter(DBC, "@LensePrice", DbType.Decimal, Me.LenseRightPrice)
             DB.AddInParameter(DBC, "@FramePrice", DbType.Decimal, Me.FramePrice)
 
 
@@ -1272,11 +1303,11 @@ Public Class DAPrescription
                         Me.ReceiptID = Convert.ToInt64(IIf(Not IsDBNull(.Item("ReceiptID")), Trim(.Item("ReceiptID").ToString), 0))
                         Me.DelivaryDate = Convert.ToDateTime(IIf(Not IsDBNull(.Item("DelivaryDate")), .Item("DelivaryDate").ToString, Date.MinValue))
 
-                        Me.LenseStockID = Convert.ToInt64(IIf(Not IsDBNull(.Item("LenseStockID")), Trim(.Item("LenseStockID").ToString), 0))
+                        Me.LenseRightStockID = Convert.ToInt64(IIf(Not IsDBNull(.Item("LenseStockID")), Trim(.Item("LenseStockID").ToString), 0))
                         Me.FrameStockID = Convert.ToInt64(IIf(Not IsDBNull(.Item("FrameStockID")), Trim(.Item("FrameStockID").ToString), 0))
-                        Me.LenseQty = Convert.ToDecimal(IIf(Not IsDBNull(.Item("LenseQty")), Trim(.Item("LenseQty").ToString), 0))
+                        Me.LenseRightQty = Convert.ToDecimal(IIf(Not IsDBNull(.Item("LenseQty")), Trim(.Item("LenseQty").ToString), 0))
                         Me.FrameQty = Convert.ToInt32(IIf(Not IsDBNull(.Item("FrameQty")), Trim(.Item("FrameQty").ToString), 0))
-                        Me.LensePrice = Convert.ToDecimal(IIf(Not IsDBNull(.Item("LensePrice")), Trim(.Item("LensePrice").ToString), 0))
+                        Me.LenseRightPrice = Convert.ToDecimal(IIf(Not IsDBNull(.Item("LensePrice")), Trim(.Item("LensePrice").ToString), 0))
                         Me.FramePrice = Convert.ToDecimal(IIf(Not IsDBNull(.Item("FramePrice")), Trim(.Item("FramePrice").ToString), 0))
 
                         result = True

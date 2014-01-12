@@ -80,12 +80,15 @@ Partial Class frmPrescription
         Me.EmptySpaceItem10 = New DevExpress.XtraLayout.EmptySpaceItem
         Me.cbeName = New DevExpress.XtraEditors.ComboBoxEdit
         Me.LayoutControl1 = New DevExpress.XtraLayout.LayoutControl
+        Me.seLenseQtyLeft = New DevExpress.XtraEditors.SpinEdit
+        Me.seLensePriceLeft = New DevExpress.XtraEditors.SpinEdit
+        Me.lupLenseLeft = New DevExpress.XtraEditors.LookUpEdit
         Me.seFramePrice = New DevExpress.XtraEditors.SpinEdit
         Me.seFrameQty = New DevExpress.XtraEditors.SpinEdit
-        Me.seLensePrice = New DevExpress.XtraEditors.SpinEdit
-        Me.seLenseQty = New DevExpress.XtraEditors.SpinEdit
+        Me.seLensePriceRight = New DevExpress.XtraEditors.SpinEdit
+        Me.seLenseQtyRight = New DevExpress.XtraEditors.SpinEdit
         Me.LupFrame = New DevExpress.XtraEditors.LookUpEdit
-        Me.lupLense = New DevExpress.XtraEditors.LookUpEdit
+        Me.lupLenseRight = New DevExpress.XtraEditors.LookUpEdit
         Me.teSeachID = New DevExpress.XtraEditors.TextEdit
         Me.lbcSearchList = New DevExpress.XtraEditors.ListBoxControl
         Me.teMobileNo = New DevExpress.XtraEditors.TextEdit
@@ -345,7 +348,6 @@ Partial Class frmPrescription
         Me.LayoutControlItem125 = New DevExpress.XtraLayout.LayoutControlItem
         Me.LayoutControlItem126 = New DevExpress.XtraLayout.LayoutControlItem
         Me.EmptySpaceItem1 = New DevExpress.XtraLayout.EmptySpaceItem
-        Me.EmptySpaceItem13 = New DevExpress.XtraLayout.EmptySpaceItem
         Me.LayoutControlGroup8 = New DevExpress.XtraLayout.LayoutControlGroup
         Me.EmptySpaceItem7 = New DevExpress.XtraLayout.EmptySpaceItem
         Me.LayoutControlGroup9 = New DevExpress.XtraLayout.LayoutControlGroup
@@ -353,9 +355,12 @@ Partial Class frmPrescription
         Me.LayoutControlGroup10 = New DevExpress.XtraLayout.LayoutControlGroup
         Me.EmptySpaceItem6 = New DevExpress.XtraLayout.EmptySpaceItem
         Me.LayoutControlItem129 = New DevExpress.XtraLayout.LayoutControlItem
-        Me.LayoutControlItem130 = New DevExpress.XtraLayout.LayoutControlItem
         Me.LayoutControlItem131 = New DevExpress.XtraLayout.LayoutControlItem
         Me.LayoutControlItem132 = New DevExpress.XtraLayout.LayoutControlItem
+        Me.LayoutControlItem137 = New DevExpress.XtraLayout.LayoutControlItem
+        Me.LayoutControlItem135 = New DevExpress.XtraLayout.LayoutControlItem
+        Me.LayoutControlItem136 = New DevExpress.XtraLayout.LayoutControlItem
+        Me.LayoutControlItem130 = New DevExpress.XtraLayout.LayoutControlItem
         Me.LayoutControlItem133 = New DevExpress.XtraLayout.LayoutControlItem
         Me.LayoutControlItem134 = New DevExpress.XtraLayout.LayoutControlItem
         Me.LayoutControlItem75 = New DevExpress.XtraLayout.LayoutControlItem
@@ -391,12 +396,6 @@ Partial Class frmPrescription
         Me.dxvpPrescriptionHistory = New DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(Me.components)
         Me.dxvpPrescription = New DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(Me.components)
         Me.dxvpDeliveredDate = New DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(Me.components)
-        Me.LookUpEdit1 = New DevExpress.XtraEditors.LookUpEdit
-        Me.LayoutControlItem135 = New DevExpress.XtraLayout.LayoutControlItem
-        Me.SpinEdit1 = New DevExpress.XtraEditors.SpinEdit
-        Me.LayoutControlItem136 = New DevExpress.XtraLayout.LayoutControlItem
-        Me.SpinEdit2 = New DevExpress.XtraEditors.SpinEdit
-        Me.LayoutControlItem137 = New DevExpress.XtraLayout.LayoutControlItem
         CType(Me.deFromDate.Properties.VistaTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.deFromDate.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControl4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -421,12 +420,15 @@ Partial Class frmPrescription
         CType(Me.cbeName.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.LayoutControl1.SuspendLayout()
+        CType(Me.seLenseQtyLeft.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.seLensePriceLeft.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.lupLenseLeft.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.seFramePrice.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.seFrameQty.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.seLensePrice.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.seLenseQty.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.seLensePriceRight.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.seLenseQtyRight.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LupFrame.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.lupLense.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.lupLenseRight.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.teSeachID.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.lbcSearchList, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.teMobileNo.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -661,7 +663,6 @@ Partial Class frmPrescription
         CType(Me.LayoutControlItem125, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem126, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EmptySpaceItem1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.EmptySpaceItem13, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlGroup8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EmptySpaceItem7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlGroup9, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -669,9 +670,12 @@ Partial Class frmPrescription
         CType(Me.LayoutControlGroup10, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EmptySpaceItem6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem129, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem130, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem131, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem132, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem137, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem135, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem136, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem130, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem133, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem134, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem75, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -696,12 +700,6 @@ Partial Class frmPrescription
         CType(Me.dxvpPrescriptionHistory, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dxvpPrescription, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dxvpDeliveredDate, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LookUpEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem135, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.SpinEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem136, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.SpinEdit2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem137, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'deFromDate
@@ -734,7 +732,7 @@ Partial Class frmPrescription
         Me.LayoutControl4.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControl4.Name = "LayoutControl4"
         Me.LayoutControl4.Root = Me.LayoutControlGroup7
-        Me.LayoutControl4.Size = New System.Drawing.Size(886, 724)
+        Me.LayoutControl4.Size = New System.Drawing.Size(1113, 724)
         Me.LayoutControl4.TabIndex = 0
         Me.LayoutControl4.Text = "LayoutControl4"
         '
@@ -807,7 +805,7 @@ Partial Class frmPrescription
         Me.gcPrescriptionHistory.Location = New System.Drawing.Point(7, 40)
         Me.gcPrescriptionHistory.MainView = Me.gvPrescriptionHistory
         Me.gcPrescriptionHistory.Name = "gcPrescriptionHistory"
-        Me.gcPrescriptionHistory.Size = New System.Drawing.Size(873, 653)
+        Me.gcPrescriptionHistory.Size = New System.Drawing.Size(1100, 653)
         Me.gcPrescriptionHistory.TabIndex = 4
         Me.gcPrescriptionHistory.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.gvPrescriptionHistory})
         '
@@ -1116,7 +1114,7 @@ Partial Class frmPrescription
         Me.LayoutControlGroup7.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem76, Me.LayoutControlItem77, Me.LayoutControlItem78, Me.LayoutControlItem79, Me.EmptySpaceItem2, Me.LayoutControlItem93, Me.LayoutControlItem95, Me.LayoutControlItem94, Me.EmptySpaceItem10})
         Me.LayoutControlGroup7.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControlGroup7.Name = "LayoutControlGroup7"
-        Me.LayoutControlGroup7.Size = New System.Drawing.Size(886, 724)
+        Me.LayoutControlGroup7.Size = New System.Drawing.Size(1113, 724)
         Me.LayoutControlGroup7.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
         Me.LayoutControlGroup7.Text = "LayoutControlGroup7"
         Me.LayoutControlGroup7.TextVisible = False
@@ -1127,7 +1125,7 @@ Partial Class frmPrescription
         Me.LayoutControlItem76.CustomizationFormText = "LayoutControlItem76"
         Me.LayoutControlItem76.Location = New System.Drawing.Point(0, 33)
         Me.LayoutControlItem76.Name = "LayoutControlItem76"
-        Me.LayoutControlItem76.Size = New System.Drawing.Size(884, 664)
+        Me.LayoutControlItem76.Size = New System.Drawing.Size(1111, 664)
         Me.LayoutControlItem76.Text = "LayoutControlItem76"
         Me.LayoutControlItem76.TextLocation = DevExpress.Utils.Locations.Left
         Me.LayoutControlItem76.TextSize = New System.Drawing.Size(0, 0)
@@ -1185,7 +1183,7 @@ Partial Class frmPrescription
         Me.EmptySpaceItem2.Location = New System.Drawing.Point(540, 0)
         Me.EmptySpaceItem2.Name = "EmptySpaceItem2"
         Me.EmptySpaceItem2.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.EmptySpaceItem2.Size = New System.Drawing.Size(344, 33)
+        Me.EmptySpaceItem2.Size = New System.Drawing.Size(571, 33)
         Me.EmptySpaceItem2.Text = "EmptySpaceItem2"
         Me.EmptySpaceItem2.TextSize = New System.Drawing.Size(0, 0)
         '
@@ -1240,7 +1238,7 @@ Partial Class frmPrescription
         Me.EmptySpaceItem10.Location = New System.Drawing.Point(393, 697)
         Me.EmptySpaceItem10.Name = "EmptySpaceItem10"
         Me.EmptySpaceItem10.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.EmptySpaceItem10.Size = New System.Drawing.Size(491, 25)
+        Me.EmptySpaceItem10.Size = New System.Drawing.Size(718, 25)
         Me.EmptySpaceItem10.Text = "EmptySpaceItem10"
         Me.EmptySpaceItem10.TextSize = New System.Drawing.Size(0, 0)
         '
@@ -1258,7 +1256,7 @@ Partial Class frmPrescription
         Me.cbeName.Properties.ImmediatePopup = True
         Me.cbeName.Properties.Items.AddRange(New Object() {"MR.", "MRS.", "MISS.", "BABY.", "DR.", "HON.", "MASTER.", "MS.", "VEN.", "REV."})
         Me.cbeName.Properties.MaxLength = 10
-        Me.cbeName.Size = New System.Drawing.Size(73, 20)
+        Me.cbeName.Size = New System.Drawing.Size(75, 20)
         Me.cbeName.StyleController = Me.LayoutControl1
         Me.cbeName.TabIndex = 1
         ConditionValidationRule5.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
@@ -1267,15 +1265,15 @@ Partial Class frmPrescription
         '
         'LayoutControl1
         '
-        Me.LayoutControl1.Controls.Add(Me.SpinEdit2)
-        Me.LayoutControl1.Controls.Add(Me.SpinEdit1)
-        Me.LayoutControl1.Controls.Add(Me.LookUpEdit1)
+        Me.LayoutControl1.Controls.Add(Me.seLenseQtyLeft)
+        Me.LayoutControl1.Controls.Add(Me.seLensePriceLeft)
+        Me.LayoutControl1.Controls.Add(Me.lupLenseLeft)
         Me.LayoutControl1.Controls.Add(Me.seFramePrice)
         Me.LayoutControl1.Controls.Add(Me.seFrameQty)
-        Me.LayoutControl1.Controls.Add(Me.seLensePrice)
-        Me.LayoutControl1.Controls.Add(Me.seLenseQty)
+        Me.LayoutControl1.Controls.Add(Me.seLensePriceRight)
+        Me.LayoutControl1.Controls.Add(Me.seLenseQtyRight)
         Me.LayoutControl1.Controls.Add(Me.LupFrame)
-        Me.LayoutControl1.Controls.Add(Me.lupLense)
+        Me.LayoutControl1.Controls.Add(Me.lupLenseRight)
         Me.LayoutControl1.Controls.Add(Me.teSeachID)
         Me.LayoutControl1.Controls.Add(Me.lbcSearchList)
         Me.LayoutControl1.Controls.Add(Me.teMobileNo)
@@ -1391,18 +1389,49 @@ Partial Class frmPrescription
         Me.LayoutControl1.TabIndex = 0
         Me.LayoutControl1.Text = "LayoutControl1"
         '
+        'seLenseQtyLeft
+        '
+        Me.seLenseQtyLeft.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
+        Me.seLenseQtyLeft.Location = New System.Drawing.Point(803, 409)
+        Me.seLenseQtyLeft.Name = "seLenseQtyLeft"
+        Me.seLenseQtyLeft.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton})
+        Me.seLenseQtyLeft.Size = New System.Drawing.Size(104, 20)
+        Me.seLenseQtyLeft.StyleController = Me.LayoutControl1
+        Me.seLenseQtyLeft.TabIndex = 163
+        '
+        'seLensePriceLeft
+        '
+        Me.seLensePriceLeft.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
+        Me.seLensePriceLeft.Location = New System.Drawing.Point(1023, 409)
+        Me.seLensePriceLeft.Name = "seLensePriceLeft"
+        Me.seLensePriceLeft.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton})
+        Me.seLensePriceLeft.Size = New System.Drawing.Size(81, 20)
+        Me.seLensePriceLeft.StyleController = Me.LayoutControl1
+        Me.seLensePriceLeft.TabIndex = 162
+        '
+        'lupLenseLeft
+        '
+        Me.lupLenseLeft.Location = New System.Drawing.Point(803, 384)
+        Me.lupLenseLeft.Name = "lupLenseLeft"
+        Me.lupLenseLeft.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.lupLenseLeft.Properties.Columns.AddRange(New DevExpress.XtraEditors.Controls.LookUpColumnInfo() {New DevExpress.XtraEditors.Controls.LookUpColumnInfo("StockCode", "StockCode", 20, DevExpress.Utils.FormatType.None, "", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("Description", "Description", 20, DevExpress.Utils.FormatType.None, "", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("SalesPrice", "SalesPrice", 20, DevExpress.Utils.FormatType.Numeric, "F2", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("StockBalance", "StockBalance", 20, DevExpress.Utils.FormatType.Numeric, "F2", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None)})
+        Me.lupLenseLeft.Properties.NullText = ""
+        Me.lupLenseLeft.Size = New System.Drawing.Size(301, 20)
+        Me.lupLenseLeft.StyleController = Me.LayoutControl1
+        Me.lupLenseLeft.TabIndex = 161
+        '
         'seFramePrice
         '
         Me.seFramePrice.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
         Me.seFramePrice.EnterMoveNextControl = True
-        Me.seFramePrice.Location = New System.Drawing.Point(1015, 434)
+        Me.seFramePrice.Location = New System.Drawing.Point(579, 409)
         Me.seFramePrice.Name = "seFramePrice"
         Me.seFramePrice.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
         Me.seFramePrice.Properties.Appearance.Options.UseFont = True
         Me.seFramePrice.Properties.AppearanceFocused.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.seFramePrice.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.seFramePrice.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton})
-        Me.seFramePrice.Size = New System.Drawing.Size(80, 20)
+        Me.seFramePrice.Size = New System.Drawing.Size(108, 20)
         Me.seFramePrice.StyleController = Me.LayoutControl1
         Me.seFramePrice.TabIndex = 82
         '
@@ -1410,51 +1439,51 @@ Partial Class frmPrescription
         '
         Me.seFrameQty.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
         Me.seFrameQty.EnterMoveNextControl = True
-        Me.seFrameQty.Location = New System.Drawing.Point(794, 434)
+        Me.seFrameQty.Location = New System.Drawing.Point(579, 384)
         Me.seFrameQty.Name = "seFrameQty"
         Me.seFrameQty.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
         Me.seFrameQty.Properties.Appearance.Options.UseFont = True
         Me.seFrameQty.Properties.AppearanceFocused.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.seFrameQty.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.seFrameQty.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton})
-        Me.seFrameQty.Size = New System.Drawing.Size(105, 20)
+        Me.seFrameQty.Size = New System.Drawing.Size(108, 20)
         Me.seFrameQty.StyleController = Me.LayoutControl1
         Me.seFrameQty.TabIndex = 81
         '
-        'seLensePrice
+        'seLensePriceRight
         '
-        Me.seLensePrice.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.seLensePrice.EnterMoveNextControl = True
-        Me.seLensePrice.Location = New System.Drawing.Point(429, 409)
-        Me.seLensePrice.Name = "seLensePrice"
-        Me.seLensePrice.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.seLensePrice.Properties.Appearance.Options.UseFont = True
-        Me.seLensePrice.Properties.AppearanceFocused.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.seLensePrice.Properties.AppearanceFocused.Options.UseBackColor = True
-        Me.seLensePrice.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton})
-        Me.seLensePrice.Size = New System.Drawing.Size(93, 20)
-        Me.seLensePrice.StyleController = Me.LayoutControl1
-        Me.seLensePrice.TabIndex = 79
+        Me.seLensePriceRight.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
+        Me.seLensePriceRight.EnterMoveNextControl = True
+        Me.seLensePriceRight.Location = New System.Drawing.Point(428, 409)
+        Me.seLensePriceRight.Name = "seLensePriceRight"
+        Me.seLensePriceRight.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.seLensePriceRight.Properties.Appearance.Options.UseFont = True
+        Me.seLensePriceRight.Properties.AppearanceFocused.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.seLensePriceRight.Properties.AppearanceFocused.Options.UseBackColor = True
+        Me.seLensePriceRight.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton})
+        Me.seLensePriceRight.Size = New System.Drawing.Size(93, 20)
+        Me.seLensePriceRight.StyleController = Me.LayoutControl1
+        Me.seLensePriceRight.TabIndex = 79
         '
-        'seLenseQty
+        'seLenseQtyRight
         '
-        Me.seLenseQty.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.seLenseQty.EnterMoveNextControl = True
-        Me.seLenseQty.Location = New System.Drawing.Point(221, 409)
-        Me.seLenseQty.Name = "seLenseQty"
-        Me.seLenseQty.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.seLenseQty.Properties.Appearance.Options.UseFont = True
-        Me.seLenseQty.Properties.AppearanceFocused.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.seLenseQty.Properties.AppearanceFocused.Options.UseBackColor = True
-        Me.seLenseQty.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton})
-        Me.seLenseQty.Size = New System.Drawing.Size(92, 20)
-        Me.seLenseQty.StyleController = Me.LayoutControl1
-        Me.seLenseQty.TabIndex = 78
+        Me.seLenseQtyRight.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
+        Me.seLenseQtyRight.EnterMoveNextControl = True
+        Me.seLenseQtyRight.Location = New System.Drawing.Point(220, 409)
+        Me.seLenseQtyRight.Name = "seLenseQtyRight"
+        Me.seLenseQtyRight.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.seLenseQtyRight.Properties.Appearance.Options.UseFont = True
+        Me.seLenseQtyRight.Properties.AppearanceFocused.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.seLenseQtyRight.Properties.AppearanceFocused.Options.UseBackColor = True
+        Me.seLenseQtyRight.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton})
+        Me.seLenseQtyRight.Size = New System.Drawing.Size(92, 20)
+        Me.seLenseQtyRight.StyleController = Me.LayoutControl1
+        Me.seLenseQtyRight.TabIndex = 78
         '
         'LupFrame
         '
         Me.LupFrame.EnterMoveNextControl = True
-        Me.LupFrame.Location = New System.Drawing.Point(221, 434)
+        Me.LupFrame.Location = New System.Drawing.Point(579, 359)
         Me.LupFrame.Name = "LupFrame"
         Me.LupFrame.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
         Me.LupFrame.Properties.Appearance.Options.UseFont = True
@@ -1463,25 +1492,25 @@ Partial Class frmPrescription
         Me.LupFrame.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.LupFrame.Properties.Columns.AddRange(New DevExpress.XtraEditors.Controls.LookUpColumnInfo() {New DevExpress.XtraEditors.Controls.LookUpColumnInfo("StockCode", "StockCode", 20, DevExpress.Utils.FormatType.None, "", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("Description", "Description", 20, DevExpress.Utils.FormatType.None, "", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("SalesPrice", "Sales Price", 20, DevExpress.Utils.FormatType.Numeric, "F2", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("StockBalance", "Stock Balance", 20, DevExpress.Utils.FormatType.Numeric, "F2", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None)})
         Me.LupFrame.Properties.NullText = ""
-        Me.LupFrame.Size = New System.Drawing.Size(301, 20)
+        Me.LupFrame.Size = New System.Drawing.Size(108, 20)
         Me.LupFrame.StyleController = Me.LayoutControl1
         Me.LupFrame.TabIndex = 80
         '
-        'lupLense
+        'lupLenseRight
         '
-        Me.lupLense.EnterMoveNextControl = True
-        Me.lupLense.Location = New System.Drawing.Point(221, 384)
-        Me.lupLense.Name = "lupLense"
-        Me.lupLense.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.lupLense.Properties.Appearance.Options.UseFont = True
-        Me.lupLense.Properties.AppearanceFocused.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.lupLense.Properties.AppearanceFocused.Options.UseBackColor = True
-        Me.lupLense.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.lupLense.Properties.Columns.AddRange(New DevExpress.XtraEditors.Controls.LookUpColumnInfo() {New DevExpress.XtraEditors.Controls.LookUpColumnInfo("StockCode", "StockCode", 20, DevExpress.Utils.FormatType.None, "", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("Description", "Description", 20, DevExpress.Utils.FormatType.None, "", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("SalesPrice", "Sales Price", 20, DevExpress.Utils.FormatType.Numeric, "F2", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("StockBalance", "Stock Balance", 20, DevExpress.Utils.FormatType.Numeric, "F2", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None)})
-        Me.lupLense.Properties.NullText = ""
-        Me.lupLense.Size = New System.Drawing.Size(301, 20)
-        Me.lupLense.StyleController = Me.LayoutControl1
-        Me.lupLense.TabIndex = 77
+        Me.lupLenseRight.EnterMoveNextControl = True
+        Me.lupLenseRight.Location = New System.Drawing.Point(220, 384)
+        Me.lupLenseRight.Name = "lupLenseRight"
+        Me.lupLenseRight.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.lupLenseRight.Properties.Appearance.Options.UseFont = True
+        Me.lupLenseRight.Properties.AppearanceFocused.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.lupLenseRight.Properties.AppearanceFocused.Options.UseBackColor = True
+        Me.lupLenseRight.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.lupLenseRight.Properties.Columns.AddRange(New DevExpress.XtraEditors.Controls.LookUpColumnInfo() {New DevExpress.XtraEditors.Controls.LookUpColumnInfo("StockCode", "StockCode", 20, DevExpress.Utils.FormatType.None, "", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("Description", "Description", 20, DevExpress.Utils.FormatType.None, "", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("SalesPrice", "Sales Price", 20, DevExpress.Utils.FormatType.Numeric, "F2", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("StockBalance", "Stock Balance", 20, DevExpress.Utils.FormatType.Numeric, "F2", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None)})
+        Me.lupLenseRight.Properties.NullText = ""
+        Me.lupLenseRight.Size = New System.Drawing.Size(301, 20)
+        Me.lupLenseRight.StyleController = Me.LayoutControl1
+        Me.lupLenseRight.TabIndex = 77
         '
         'teSeachID
         '
@@ -1503,28 +1532,28 @@ Partial Class frmPrescription
         Me.lbcSearchList.HotTrackItems = True
         Me.lbcSearchList.Location = New System.Drawing.Point(4, 29)
         Me.lbcSearchList.Name = "lbcSearchList"
-        Me.lbcSearchList.Size = New System.Drawing.Size(85, 692)
+        Me.lbcSearchList.Size = New System.Drawing.Size(85, 675)
         Me.lbcSearchList.StyleController = Me.LayoutControl1
         Me.lbcSearchList.TabIndex = 0
         '
         'teMobileNo
         '
         Me.teMobileNo.EnterMoveNextControl = True
-        Me.teMobileNo.Location = New System.Drawing.Point(961, 53)
+        Me.teMobileNo.Location = New System.Drawing.Point(968, 53)
         Me.teMobileNo.Name = "teMobileNo"
         Me.teMobileNo.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
         Me.teMobileNo.Properties.Appearance.Options.UseFont = True
         Me.teMobileNo.Properties.AppearanceFocused.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.teMobileNo.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.teMobileNo.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.teMobileNo.Size = New System.Drawing.Size(149, 20)
+        Me.teMobileNo.Size = New System.Drawing.Size(151, 20)
         Me.teMobileNo.StyleController = Me.LayoutControl1
         Me.teMobileNo.TabIndex = 11
         '
         'teHbIOPRy
         '
         Me.teHbIOPRy.EnterMoveNextControl = True
-        Me.teHbIOPRy.Location = New System.Drawing.Point(963, 334)
+        Me.teHbIOPRy.Location = New System.Drawing.Point(972, 334)
         Me.teHbIOPRy.Name = "teHbIOPRy"
         Me.teHbIOPRy.Properties.Appearance.BackColor = System.Drawing.Color.LavenderBlush
         Me.teHbIOPRy.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -1543,7 +1572,7 @@ Partial Class frmPrescription
         'teHbIOPRx
         '
         Me.teHbIOPRx.EnterMoveNextControl = True
-        Me.teHbIOPRx.Location = New System.Drawing.Point(963, 309)
+        Me.teHbIOPRx.Location = New System.Drawing.Point(972, 309)
         Me.teHbIOPRx.Name = "teHbIOPRx"
         Me.teHbIOPRx.Properties.Appearance.BackColor = System.Drawing.Color.LavenderBlush
         Me.teHbIOPRx.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -1562,7 +1591,7 @@ Partial Class frmPrescription
         'teExIOPRy
         '
         Me.teExIOPRy.EnterMoveNextControl = True
-        Me.teExIOPRy.Location = New System.Drawing.Point(963, 284)
+        Me.teExIOPRy.Location = New System.Drawing.Point(972, 284)
         Me.teExIOPRy.Name = "teExIOPRy"
         Me.teExIOPRy.Properties.Appearance.BackColor = System.Drawing.Color.Linen
         Me.teExIOPRy.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -1579,7 +1608,7 @@ Partial Class frmPrescription
         'teExIOPRx
         '
         Me.teExIOPRx.EnterMoveNextControl = True
-        Me.teExIOPRx.Location = New System.Drawing.Point(963, 259)
+        Me.teExIOPRx.Location = New System.Drawing.Point(972, 259)
         Me.teExIOPRx.Name = "teExIOPRx"
         Me.teExIOPRx.Properties.Appearance.BackColor = System.Drawing.Color.Linen
         Me.teExIOPRx.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -1596,7 +1625,7 @@ Partial Class frmPrescription
         'teInIOPRy
         '
         Me.teInIOPRy.EnterMoveNextControl = True
-        Me.teInIOPRy.Location = New System.Drawing.Point(963, 234)
+        Me.teInIOPRy.Location = New System.Drawing.Point(972, 234)
         Me.teInIOPRy.Name = "teInIOPRy"
         Me.teInIOPRy.Properties.Appearance.BackColor = System.Drawing.Color.LavenderBlush
         Me.teInIOPRy.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -1615,7 +1644,7 @@ Partial Class frmPrescription
         'teInIOPRx
         '
         Me.teInIOPRx.EnterMoveNextControl = True
-        Me.teInIOPRx.Location = New System.Drawing.Point(963, 209)
+        Me.teInIOPRx.Location = New System.Drawing.Point(972, 209)
         Me.teInIOPRx.Name = "teInIOPRx"
         Me.teInIOPRx.Properties.Appearance.BackColor = System.Drawing.Color.LavenderBlush
         Me.teInIOPRx.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -1634,7 +1663,7 @@ Partial Class frmPrescription
         'teHbIOPLy
         '
         Me.teHbIOPLy.EnterMoveNextControl = True
-        Me.teHbIOPLy.Location = New System.Drawing.Point(177, 334)
+        Me.teHbIOPLy.Location = New System.Drawing.Point(176, 334)
         Me.teHbIOPLy.Name = "teHbIOPLy"
         Me.teHbIOPLy.Properties.Appearance.BackColor = System.Drawing.Color.LavenderBlush
         Me.teHbIOPLy.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -1653,7 +1682,7 @@ Partial Class frmPrescription
         'teHbIOPLx
         '
         Me.teHbIOPLx.EnterMoveNextControl = True
-        Me.teHbIOPLx.Location = New System.Drawing.Point(177, 309)
+        Me.teHbIOPLx.Location = New System.Drawing.Point(176, 309)
         Me.teHbIOPLx.Name = "teHbIOPLx"
         Me.teHbIOPLx.Properties.Appearance.BackColor = System.Drawing.Color.LavenderBlush
         Me.teHbIOPLx.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -1672,7 +1701,7 @@ Partial Class frmPrescription
         'teExIOPLy
         '
         Me.teExIOPLy.EnterMoveNextControl = True
-        Me.teExIOPLy.Location = New System.Drawing.Point(177, 284)
+        Me.teExIOPLy.Location = New System.Drawing.Point(176, 284)
         Me.teExIOPLy.Name = "teExIOPLy"
         Me.teExIOPLy.Properties.Appearance.BackColor = System.Drawing.Color.Linen
         Me.teExIOPLy.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -1689,7 +1718,7 @@ Partial Class frmPrescription
         'teExIOPLx
         '
         Me.teExIOPLx.EnterMoveNextControl = True
-        Me.teExIOPLx.Location = New System.Drawing.Point(177, 259)
+        Me.teExIOPLx.Location = New System.Drawing.Point(176, 259)
         Me.teExIOPLx.Name = "teExIOPLx"
         Me.teExIOPLx.Properties.Appearance.BackColor = System.Drawing.Color.Linen
         Me.teExIOPLx.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -1706,7 +1735,7 @@ Partial Class frmPrescription
         'teInIOPLy
         '
         Me.teInIOPLy.EnterMoveNextControl = True
-        Me.teInIOPLy.Location = New System.Drawing.Point(177, 234)
+        Me.teInIOPLy.Location = New System.Drawing.Point(176, 234)
         Me.teInIOPLy.Name = "teInIOPLy"
         Me.teInIOPLy.Properties.Appearance.BackColor = System.Drawing.Color.LavenderBlush
         Me.teInIOPLy.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -1725,7 +1754,7 @@ Partial Class frmPrescription
         'teInIOPLx
         '
         Me.teInIOPLx.EnterMoveNextControl = True
-        Me.teInIOPLx.Location = New System.Drawing.Point(177, 209)
+        Me.teInIOPLx.Location = New System.Drawing.Point(176, 209)
         Me.teInIOPLx.Name = "teInIOPLx"
         Me.teInIOPLx.Properties.Appearance.BackColor = System.Drawing.Color.LavenderBlush
         Me.teInIOPLx.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -1749,7 +1778,7 @@ Partial Class frmPrescription
         Me.LabelControl22.Appearance.Options.UseFont = True
         Me.LabelControl22.Appearance.Options.UseTextOptions = True
         Me.LabelControl22.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-        Me.LabelControl22.Location = New System.Drawing.Point(959, 184)
+        Me.LabelControl22.Location = New System.Drawing.Point(968, 184)
         Me.LabelControl22.Name = "LabelControl22"
         Me.LabelControl22.Size = New System.Drawing.Size(65, 19)
         Me.LabelControl22.StyleController = Me.LayoutControl1
@@ -1764,7 +1793,7 @@ Partial Class frmPrescription
         Me.LabelControl21.Appearance.Options.UseFont = True
         Me.LabelControl21.Appearance.Options.UseTextOptions = True
         Me.LabelControl21.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-        Me.LabelControl21.Location = New System.Drawing.Point(181, 184)
+        Me.LabelControl21.Location = New System.Drawing.Point(180, 184)
         Me.LabelControl21.Name = "LabelControl21"
         Me.LabelControl21.Size = New System.Drawing.Size(65, 19)
         Me.LabelControl21.StyleController = Me.LayoutControl1
@@ -1779,7 +1808,7 @@ Partial Class frmPrescription
         Me.LabelControl20.Appearance.Options.UseBackColor = True
         Me.LabelControl20.Appearance.Options.UseFont = True
         Me.LabelControl20.Appearance.Options.UseForeColor = True
-        Me.LabelControl20.Location = New System.Drawing.Point(1033, 334)
+        Me.LabelControl20.Location = New System.Drawing.Point(1042, 334)
         Me.LabelControl20.Name = "LabelControl20"
         Me.LabelControl20.Size = New System.Drawing.Size(62, 20)
         Me.LabelControl20.StyleController = Me.LayoutControl1
@@ -1789,7 +1818,7 @@ Partial Class frmPrescription
         'teHbR6
         '
         Me.teHbR6.EnterMoveNextControl = True
-        Me.teHbR6.Location = New System.Drawing.Point(823, 334)
+        Me.teHbR6.Location = New System.Drawing.Point(832, 334)
         Me.teHbR6.Name = "teHbR6"
         Me.teHbR6.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
         Me.teHbR6.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -1808,7 +1837,7 @@ Partial Class frmPrescription
         'teHbR4
         '
         Me.teHbR4.EnterMoveNextControl = True
-        Me.teHbR4.Location = New System.Drawing.Point(754, 334)
+        Me.teHbR4.Location = New System.Drawing.Point(763, 334)
         Me.teHbR4.Name = "teHbR4"
         Me.teHbR4.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
         Me.teHbR4.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -1827,7 +1856,7 @@ Partial Class frmPrescription
         'teHbRy
         '
         Me.teHbRy.EnterMoveNextControl = True
-        Me.teHbRy.Location = New System.Drawing.Point(893, 334)
+        Me.teHbRy.Location = New System.Drawing.Point(902, 334)
         Me.teHbRy.Name = "teHbRy"
         Me.teHbRy.Properties.Appearance.BackColor = System.Drawing.Color.Honeydew
         Me.teHbRy.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -1846,7 +1875,7 @@ Partial Class frmPrescription
         'teHbR2
         '
         Me.teHbR2.EnterMoveNextControl = True
-        Me.teHbR2.Location = New System.Drawing.Point(683, 334)
+        Me.teHbR2.Location = New System.Drawing.Point(692, 334)
         Me.teHbR2.Name = "teHbR2"
         Me.teHbR2.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
         Me.teHbR2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -1870,7 +1899,7 @@ Partial Class frmPrescription
         Me.LabelControl19.Appearance.Options.UseBackColor = True
         Me.LabelControl19.Appearance.Options.UseFont = True
         Me.LabelControl19.Appearance.Options.UseForeColor = True
-        Me.LabelControl19.Location = New System.Drawing.Point(1033, 309)
+        Me.LabelControl19.Location = New System.Drawing.Point(1042, 309)
         Me.LabelControl19.Name = "LabelControl19"
         Me.LabelControl19.Size = New System.Drawing.Size(62, 20)
         Me.LabelControl19.StyleController = Me.LayoutControl1
@@ -1880,7 +1909,7 @@ Partial Class frmPrescription
         'teHbR5
         '
         Me.teHbR5.EnterMoveNextControl = True
-        Me.teHbR5.Location = New System.Drawing.Point(823, 309)
+        Me.teHbR5.Location = New System.Drawing.Point(832, 309)
         Me.teHbR5.Name = "teHbR5"
         Me.teHbR5.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
         Me.teHbR5.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -1899,7 +1928,7 @@ Partial Class frmPrescription
         'teHbR1
         '
         Me.teHbR1.EnterMoveNextControl = True
-        Me.teHbR1.Location = New System.Drawing.Point(683, 309)
+        Me.teHbR1.Location = New System.Drawing.Point(692, 309)
         Me.teHbR1.Name = "teHbR1"
         Me.teHbR1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
         Me.teHbR1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -1918,7 +1947,7 @@ Partial Class frmPrescription
         'teHbR3
         '
         Me.teHbR3.EnterMoveNextControl = True
-        Me.teHbR3.Location = New System.Drawing.Point(754, 309)
+        Me.teHbR3.Location = New System.Drawing.Point(763, 309)
         Me.teHbR3.Name = "teHbR3"
         Me.teHbR3.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
         Me.teHbR3.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -1937,7 +1966,7 @@ Partial Class frmPrescription
         'teHbRx
         '
         Me.teHbRx.EnterMoveNextControl = True
-        Me.teHbRx.Location = New System.Drawing.Point(893, 309)
+        Me.teHbRx.Location = New System.Drawing.Point(902, 309)
         Me.teHbRx.Name = "teHbRx"
         Me.teHbRx.Properties.Appearance.BackColor = System.Drawing.Color.Honeydew
         Me.teHbRx.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -1956,7 +1985,7 @@ Partial Class frmPrescription
         'teHbL6
         '
         Me.teHbL6.EnterMoveNextControl = True
-        Me.teHbL6.Location = New System.Drawing.Point(457, 334)
+        Me.teHbL6.Location = New System.Drawing.Point(456, 334)
         Me.teHbL6.Name = "teHbL6"
         Me.teHbL6.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
         Me.teHbL6.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -1980,7 +2009,7 @@ Partial Class frmPrescription
         Me.LabelControl18.Appearance.Options.UseBackColor = True
         Me.LabelControl18.Appearance.Options.UseFont = True
         Me.LabelControl18.Appearance.Options.UseForeColor = True
-        Me.LabelControl18.Location = New System.Drawing.Point(110, 334)
+        Me.LabelControl18.Location = New System.Drawing.Point(109, 334)
         Me.LabelControl18.Name = "LabelControl18"
         Me.LabelControl18.Size = New System.Drawing.Size(62, 20)
         Me.LabelControl18.StyleController = Me.LayoutControl1
@@ -1990,7 +2019,7 @@ Partial Class frmPrescription
         'teHbL4
         '
         Me.teHbL4.EnterMoveNextControl = True
-        Me.teHbL4.Location = New System.Drawing.Point(387, 334)
+        Me.teHbL4.Location = New System.Drawing.Point(386, 334)
         Me.teHbL4.Name = "teHbL4"
         Me.teHbL4.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
         Me.teHbL4.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -2009,7 +2038,7 @@ Partial Class frmPrescription
         'teHbL2
         '
         Me.teHbL2.EnterMoveNextControl = True
-        Me.teHbL2.Location = New System.Drawing.Point(317, 334)
+        Me.teHbL2.Location = New System.Drawing.Point(316, 334)
         Me.teHbL2.Name = "teHbL2"
         Me.teHbL2.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
         Me.teHbL2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -2028,7 +2057,7 @@ Partial Class frmPrescription
         'teHbLy
         '
         Me.teHbLy.EnterMoveNextControl = True
-        Me.teHbLy.Location = New System.Drawing.Point(247, 334)
+        Me.teHbLy.Location = New System.Drawing.Point(246, 334)
         Me.teHbLy.Name = "teHbLy"
         Me.teHbLy.Properties.Appearance.BackColor = System.Drawing.Color.Honeydew
         Me.teHbLy.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -2052,7 +2081,7 @@ Partial Class frmPrescription
         Me.LabelControl17.Appearance.Options.UseBackColor = True
         Me.LabelControl17.Appearance.Options.UseFont = True
         Me.LabelControl17.Appearance.Options.UseForeColor = True
-        Me.LabelControl17.Location = New System.Drawing.Point(110, 309)
+        Me.LabelControl17.Location = New System.Drawing.Point(109, 309)
         Me.LabelControl17.Name = "LabelControl17"
         Me.LabelControl17.Size = New System.Drawing.Size(62, 20)
         Me.LabelControl17.StyleController = Me.LayoutControl1
@@ -2062,7 +2091,7 @@ Partial Class frmPrescription
         'teHbL5
         '
         Me.teHbL5.EnterMoveNextControl = True
-        Me.teHbL5.Location = New System.Drawing.Point(457, 309)
+        Me.teHbL5.Location = New System.Drawing.Point(456, 309)
         Me.teHbL5.Name = "teHbL5"
         Me.teHbL5.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
         Me.teHbL5.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -2081,7 +2110,7 @@ Partial Class frmPrescription
         'teHbL3
         '
         Me.teHbL3.EnterMoveNextControl = True
-        Me.teHbL3.Location = New System.Drawing.Point(388, 309)
+        Me.teHbL3.Location = New System.Drawing.Point(387, 309)
         Me.teHbL3.Name = "teHbL3"
         Me.teHbL3.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
         Me.teHbL3.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -2100,7 +2129,7 @@ Partial Class frmPrescription
         'teHbL1
         '
         Me.teHbL1.EnterMoveNextControl = True
-        Me.teHbL1.Location = New System.Drawing.Point(317, 309)
+        Me.teHbL1.Location = New System.Drawing.Point(316, 309)
         Me.teHbL1.Name = "teHbL1"
         Me.teHbL1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
         Me.teHbL1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -2119,7 +2148,7 @@ Partial Class frmPrescription
         'teHbLx
         '
         Me.teHbLx.EnterMoveNextControl = True
-        Me.teHbLx.Location = New System.Drawing.Point(247, 309)
+        Me.teHbLx.Location = New System.Drawing.Point(246, 309)
         Me.teHbLx.Name = "teHbLx"
         Me.teHbLx.Properties.Appearance.BackColor = System.Drawing.Color.Honeydew
         Me.teHbLx.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -2143,7 +2172,7 @@ Partial Class frmPrescription
         Me.LabelControl10.Appearance.Options.UseFont = True
         Me.LabelControl10.Appearance.Options.UseTextOptions = True
         Me.LabelControl10.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-        Me.LabelControl10.Location = New System.Drawing.Point(889, 184)
+        Me.LabelControl10.Location = New System.Drawing.Point(898, 184)
         Me.LabelControl10.Name = "LabelControl10"
         Me.LabelControl10.Size = New System.Drawing.Size(65, 19)
         Me.LabelControl10.StyleController = Me.LayoutControl1
@@ -2158,7 +2187,7 @@ Partial Class frmPrescription
         Me.LabelControl9.Appearance.Options.UseFont = True
         Me.LabelControl9.Appearance.Options.UseTextOptions = True
         Me.LabelControl9.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-        Me.LabelControl9.Location = New System.Drawing.Point(251, 184)
+        Me.LabelControl9.Location = New System.Drawing.Point(250, 184)
         Me.LabelControl9.Name = "LabelControl9"
         Me.LabelControl9.Size = New System.Drawing.Size(65, 19)
         Me.LabelControl9.StyleController = Me.LayoutControl1
@@ -2168,7 +2197,7 @@ Partial Class frmPrescription
         'teNIICNo
         '
         Me.teNIICNo.EnterMoveNextControl = True
-        Me.teNIICNo.Location = New System.Drawing.Point(515, 153)
+        Me.teNIICNo.Location = New System.Drawing.Point(518, 153)
         Me.teNIICNo.Name = "teNIICNo"
         Me.teNIICNo.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
         Me.teNIICNo.Properties.Appearance.Options.UseFont = True
@@ -2176,7 +2205,7 @@ Partial Class frmPrescription
         Me.teNIICNo.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.teNIICNo.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.teNIICNo.Properties.MaxLength = 15
-        Me.teNIICNo.Size = New System.Drawing.Size(133, 20)
+        Me.teNIICNo.Size = New System.Drawing.Size(135, 20)
         Me.teNIICNo.StyleController = Me.LayoutControl1
         Me.teNIICNo.TabIndex = 9
         '
@@ -2184,20 +2213,20 @@ Partial Class frmPrescription
         '
         Me.lblID.Location = New System.Drawing.Point(97, 7)
         Me.lblID.Name = "lblID"
-        Me.lblID.Size = New System.Drawing.Size(1010, 13)
+        Me.lblID.Size = New System.Drawing.Size(1019, 13)
         Me.lblID.StyleController = Me.LayoutControl1
         Me.lblID.TabIndex = 134
         '
         'tePrescriptionNo
         '
-        Me.tePrescriptionNo.Location = New System.Drawing.Point(961, 28)
+        Me.tePrescriptionNo.Location = New System.Drawing.Point(968, 28)
         Me.tePrescriptionNo.Name = "tePrescriptionNo"
         Me.tePrescriptionNo.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.tePrescriptionNo.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
         Me.tePrescriptionNo.Properties.Appearance.Options.UseBackColor = True
         Me.tePrescriptionNo.Properties.Appearance.Options.UseFont = True
         Me.tePrescriptionNo.Properties.ReadOnly = True
-        Me.tePrescriptionNo.Size = New System.Drawing.Size(149, 20)
+        Me.tePrescriptionNo.Size = New System.Drawing.Size(151, 20)
         Me.tePrescriptionNo.StyleController = Me.LayoutControl1
         Me.tePrescriptionNo.TabIndex = 133
         Me.tePrescriptionNo.TabStop = False
@@ -2210,7 +2239,7 @@ Partial Class frmPrescription
         Me.LabelControl14.Appearance.Options.UseFont = True
         Me.LabelControl14.Appearance.Options.UseTextOptions = True
         Me.LabelControl14.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-        Me.LabelControl14.Location = New System.Drawing.Point(819, 184)
+        Me.LabelControl14.Location = New System.Drawing.Point(828, 184)
         Me.LabelControl14.Name = "LabelControl14"
         Me.LabelControl14.Size = New System.Drawing.Size(65, 19)
         Me.LabelControl14.StyleController = Me.LayoutControl1
@@ -2225,7 +2254,7 @@ Partial Class frmPrescription
         Me.LabelControl15.Appearance.Options.UseFont = True
         Me.LabelControl15.Appearance.Options.UseTextOptions = True
         Me.LabelControl15.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-        Me.LabelControl15.Location = New System.Drawing.Point(749, 184)
+        Me.LabelControl15.Location = New System.Drawing.Point(758, 184)
         Me.LabelControl15.Name = "LabelControl15"
         Me.LabelControl15.Size = New System.Drawing.Size(65, 19)
         Me.LabelControl15.StyleController = Me.LayoutControl1
@@ -2240,7 +2269,7 @@ Partial Class frmPrescription
         Me.LabelControl16.Appearance.Options.UseFont = True
         Me.LabelControl16.Appearance.Options.UseTextOptions = True
         Me.LabelControl16.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-        Me.LabelControl16.Location = New System.Drawing.Point(684, 184)
+        Me.LabelControl16.Location = New System.Drawing.Point(693, 184)
         Me.LabelControl16.Name = "LabelControl16"
         Me.LabelControl16.Size = New System.Drawing.Size(60, 19)
         Me.LabelControl16.StyleController = Me.LayoutControl1
@@ -2255,7 +2284,7 @@ Partial Class frmPrescription
         Me.LabelControl13.Appearance.Options.UseFont = True
         Me.LabelControl13.Appearance.Options.UseTextOptions = True
         Me.LabelControl13.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-        Me.LabelControl13.Location = New System.Drawing.Point(461, 184)
+        Me.LabelControl13.Location = New System.Drawing.Point(460, 184)
         Me.LabelControl13.Name = "LabelControl13"
         Me.LabelControl13.Size = New System.Drawing.Size(60, 19)
         Me.LabelControl13.StyleController = Me.LayoutControl1
@@ -2270,7 +2299,7 @@ Partial Class frmPrescription
         Me.LabelControl8.Appearance.Options.UseBackColor = True
         Me.LabelControl8.Appearance.Options.UseFont = True
         Me.LabelControl8.Appearance.Options.UseForeColor = True
-        Me.LabelControl8.Location = New System.Drawing.Point(1033, 284)
+        Me.LabelControl8.Location = New System.Drawing.Point(1042, 284)
         Me.LabelControl8.Name = "LabelControl8"
         Me.LabelControl8.Size = New System.Drawing.Size(62, 20)
         Me.LabelControl8.StyleController = Me.LayoutControl1
@@ -2285,7 +2314,7 @@ Partial Class frmPrescription
         Me.LabelControl12.Appearance.Options.UseFont = True
         Me.LabelControl12.Appearance.Options.UseTextOptions = True
         Me.LabelControl12.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-        Me.LabelControl12.Location = New System.Drawing.Point(391, 184)
+        Me.LabelControl12.Location = New System.Drawing.Point(390, 184)
         Me.LabelControl12.Name = "LabelControl12"
         Me.LabelControl12.Size = New System.Drawing.Size(65, 19)
         Me.LabelControl12.StyleController = Me.LayoutControl1
@@ -2300,7 +2329,7 @@ Partial Class frmPrescription
         Me.LabelControl11.Appearance.Options.UseFont = True
         Me.LabelControl11.Appearance.Options.UseTextOptions = True
         Me.LabelControl11.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-        Me.LabelControl11.Location = New System.Drawing.Point(321, 184)
+        Me.LabelControl11.Location = New System.Drawing.Point(320, 184)
         Me.LabelControl11.Name = "LabelControl11"
         Me.LabelControl11.Size = New System.Drawing.Size(65, 19)
         Me.LabelControl11.StyleController = Me.LayoutControl1
@@ -2315,7 +2344,7 @@ Partial Class frmPrescription
         Me.LabelControl7.Appearance.Options.UseBackColor = True
         Me.LabelControl7.Appearance.Options.UseFont = True
         Me.LabelControl7.Appearance.Options.UseForeColor = True
-        Me.LabelControl7.Location = New System.Drawing.Point(1033, 259)
+        Me.LabelControl7.Location = New System.Drawing.Point(1042, 259)
         Me.LabelControl7.Name = "LabelControl7"
         Me.LabelControl7.Size = New System.Drawing.Size(62, 20)
         Me.LabelControl7.StyleController = Me.LayoutControl1
@@ -2325,7 +2354,7 @@ Partial Class frmPrescription
         'cbeFrame
         '
         Me.cbeFrame.EnterMoveNextControl = True
-        Me.cbeFrame.Location = New System.Drawing.Point(794, 359)
+        Me.cbeFrame.Location = New System.Drawing.Point(803, 359)
         Me.cbeFrame.Name = "cbeFrame"
         Me.cbeFrame.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
         Me.cbeFrame.Properties.Appearance.Options.UseFont = True
@@ -2347,7 +2376,7 @@ Partial Class frmPrescription
         Me.LabelControl6.Appearance.Options.UseBackColor = True
         Me.LabelControl6.Appearance.Options.UseFont = True
         Me.LabelControl6.Appearance.Options.UseForeColor = True
-        Me.LabelControl6.Location = New System.Drawing.Point(1033, 234)
+        Me.LabelControl6.Location = New System.Drawing.Point(1042, 234)
         Me.LabelControl6.Name = "LabelControl6"
         Me.LabelControl6.Size = New System.Drawing.Size(62, 20)
         Me.LabelControl6.StyleController = Me.LayoutControl1
@@ -2357,7 +2386,7 @@ Partial Class frmPrescription
         'cbeLense
         '
         Me.cbeLense.EnterMoveNextControl = True
-        Me.cbeLense.Location = New System.Drawing.Point(221, 359)
+        Me.cbeLense.Location = New System.Drawing.Point(220, 359)
         Me.cbeLense.Name = "cbeLense"
         Me.cbeLense.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
         Me.cbeLense.Properties.Appearance.Options.UseFont = True
@@ -2374,7 +2403,7 @@ Partial Class frmPrescription
         'teExLy
         '
         Me.teExLy.EnterMoveNextControl = True
-        Me.teExLy.Location = New System.Drawing.Point(247, 284)
+        Me.teExLy.Location = New System.Drawing.Point(246, 284)
         Me.teExLy.Name = "teExLy"
         Me.teExLy.Properties.Appearance.BackColor = System.Drawing.Color.Linen
         Me.teExLy.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -2391,7 +2420,7 @@ Partial Class frmPrescription
         'teExRy
         '
         Me.teExRy.EnterMoveNextControl = True
-        Me.teExRy.Location = New System.Drawing.Point(893, 284)
+        Me.teExRy.Location = New System.Drawing.Point(902, 284)
         Me.teExRy.Name = "teExRy"
         Me.teExRy.Properties.Appearance.BackColor = System.Drawing.Color.Linen
         Me.teExRy.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -2413,7 +2442,7 @@ Partial Class frmPrescription
         Me.LabelControl4.Appearance.Options.UseBackColor = True
         Me.LabelControl4.Appearance.Options.UseFont = True
         Me.LabelControl4.Appearance.Options.UseForeColor = True
-        Me.LabelControl4.Location = New System.Drawing.Point(110, 284)
+        Me.LabelControl4.Location = New System.Drawing.Point(109, 284)
         Me.LabelControl4.Name = "LabelControl4"
         Me.LabelControl4.Size = New System.Drawing.Size(62, 20)
         Me.LabelControl4.StyleController = Me.LayoutControl1
@@ -2428,7 +2457,7 @@ Partial Class frmPrescription
         Me.LabelControl5.Appearance.Options.UseBackColor = True
         Me.LabelControl5.Appearance.Options.UseFont = True
         Me.LabelControl5.Appearance.Options.UseForeColor = True
-        Me.LabelControl5.Location = New System.Drawing.Point(1033, 209)
+        Me.LabelControl5.Location = New System.Drawing.Point(1042, 209)
         Me.LabelControl5.Name = "LabelControl5"
         Me.LabelControl5.Size = New System.Drawing.Size(62, 20)
         Me.LabelControl5.StyleController = Me.LayoutControl1
@@ -2438,7 +2467,7 @@ Partial Class frmPrescription
         'teExRx
         '
         Me.teExRx.EnterMoveNextControl = True
-        Me.teExRx.Location = New System.Drawing.Point(893, 259)
+        Me.teExRx.Location = New System.Drawing.Point(902, 259)
         Me.teExRx.Name = "teExRx"
         Me.teExRx.Properties.Appearance.BackColor = System.Drawing.Color.Linen
         Me.teExRx.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -2455,7 +2484,7 @@ Partial Class frmPrescription
         'teExLx
         '
         Me.teExLx.EnterMoveNextControl = True
-        Me.teExLx.Location = New System.Drawing.Point(247, 259)
+        Me.teExLx.Location = New System.Drawing.Point(246, 259)
         Me.teExLx.Name = "teExLx"
         Me.teExLx.Properties.Appearance.BackColor = System.Drawing.Color.Linen
         Me.teExLx.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -2472,7 +2501,7 @@ Partial Class frmPrescription
         'teInRy
         '
         Me.teInRy.EnterMoveNextControl = True
-        Me.teInRy.Location = New System.Drawing.Point(893, 234)
+        Me.teInRy.Location = New System.Drawing.Point(902, 234)
         Me.teInRy.Name = "teInRy"
         Me.teInRy.Properties.Appearance.BackColor = System.Drawing.Color.Honeydew
         Me.teInRy.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -2491,7 +2520,7 @@ Partial Class frmPrescription
         'teExR6
         '
         Me.teExR6.EnterMoveNextControl = True
-        Me.teExR6.Location = New System.Drawing.Point(823, 284)
+        Me.teExR6.Location = New System.Drawing.Point(832, 284)
         Me.teExR6.Name = "teExR6"
         Me.teExR6.Properties.Appearance.BackColor = System.Drawing.Color.Linen
         Me.teExR6.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -2508,7 +2537,7 @@ Partial Class frmPrescription
         'teInRx
         '
         Me.teInRx.EnterMoveNextControl = True
-        Me.teInRx.Location = New System.Drawing.Point(893, 209)
+        Me.teInRx.Location = New System.Drawing.Point(902, 209)
         Me.teInRx.Name = "teInRx"
         Me.teInRx.Properties.Appearance.BackColor = System.Drawing.Color.Honeydew
         Me.teInRx.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -2532,7 +2561,7 @@ Partial Class frmPrescription
         Me.LabelControl3.Appearance.Options.UseBackColor = True
         Me.LabelControl3.Appearance.Options.UseFont = True
         Me.LabelControl3.Appearance.Options.UseForeColor = True
-        Me.LabelControl3.Location = New System.Drawing.Point(110, 259)
+        Me.LabelControl3.Location = New System.Drawing.Point(109, 259)
         Me.LabelControl3.Name = "LabelControl3"
         Me.LabelControl3.Size = New System.Drawing.Size(62, 20)
         Me.LabelControl3.StyleController = Me.LayoutControl1
@@ -2542,7 +2571,7 @@ Partial Class frmPrescription
         'teExR5
         '
         Me.teExR5.EnterMoveNextControl = True
-        Me.teExR5.Location = New System.Drawing.Point(823, 259)
+        Me.teExR5.Location = New System.Drawing.Point(832, 259)
         Me.teExR5.Name = "teExR5"
         Me.teExR5.Properties.Appearance.BackColor = System.Drawing.Color.Linen
         Me.teExR5.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -2559,7 +2588,7 @@ Partial Class frmPrescription
         'teInLy
         '
         Me.teInLy.EnterMoveNextControl = True
-        Me.teInLy.Location = New System.Drawing.Point(247, 234)
+        Me.teInLy.Location = New System.Drawing.Point(246, 234)
         Me.teInLy.Name = "teInLy"
         Me.teInLy.Properties.Appearance.BackColor = System.Drawing.Color.Honeydew
         Me.teInLy.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -2578,7 +2607,7 @@ Partial Class frmPrescription
         'teExR4
         '
         Me.teExR4.EnterMoveNextControl = True
-        Me.teExR4.Location = New System.Drawing.Point(753, 284)
+        Me.teExR4.Location = New System.Drawing.Point(762, 284)
         Me.teExR4.Name = "teExR4"
         Me.teExR4.Properties.Appearance.BackColor = System.Drawing.Color.Linen
         Me.teExR4.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -2600,7 +2629,7 @@ Partial Class frmPrescription
         Me.LabelControl2.Appearance.Options.UseBackColor = True
         Me.LabelControl2.Appearance.Options.UseFont = True
         Me.LabelControl2.Appearance.Options.UseForeColor = True
-        Me.LabelControl2.Location = New System.Drawing.Point(110, 234)
+        Me.LabelControl2.Location = New System.Drawing.Point(109, 234)
         Me.LabelControl2.Name = "LabelControl2"
         Me.LabelControl2.Size = New System.Drawing.Size(62, 20)
         Me.LabelControl2.StyleController = Me.LayoutControl1
@@ -2610,7 +2639,7 @@ Partial Class frmPrescription
         'teInR6
         '
         Me.teInR6.EnterMoveNextControl = True
-        Me.teInR6.Location = New System.Drawing.Point(823, 234)
+        Me.teInR6.Location = New System.Drawing.Point(832, 234)
         Me.teInR6.Name = "teInR6"
         Me.teInR6.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
         Me.teInR6.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -2629,7 +2658,7 @@ Partial Class frmPrescription
         'teExR3
         '
         Me.teExR3.EnterMoveNextControl = True
-        Me.teExR3.Location = New System.Drawing.Point(753, 259)
+        Me.teExR3.Location = New System.Drawing.Point(762, 259)
         Me.teExR3.Name = "teExR3"
         Me.teExR3.Properties.Appearance.BackColor = System.Drawing.Color.Linen
         Me.teExR3.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -2646,7 +2675,7 @@ Partial Class frmPrescription
         'teInR5
         '
         Me.teInR5.EnterMoveNextControl = True
-        Me.teInR5.Location = New System.Drawing.Point(823, 209)
+        Me.teInR5.Location = New System.Drawing.Point(832, 209)
         Me.teInR5.Name = "teInR5"
         Me.teInR5.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
         Me.teInR5.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -2665,7 +2694,7 @@ Partial Class frmPrescription
         'teInLx
         '
         Me.teInLx.EnterMoveNextControl = True
-        Me.teInLx.Location = New System.Drawing.Point(247, 209)
+        Me.teInLx.Location = New System.Drawing.Point(246, 209)
         Me.teInLx.Name = "teInLx"
         Me.teInLx.Properties.Appearance.BackColor = System.Drawing.Color.Honeydew
         Me.teInLx.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -2684,7 +2713,7 @@ Partial Class frmPrescription
         'teExR2
         '
         Me.teExR2.EnterMoveNextControl = True
-        Me.teExR2.Location = New System.Drawing.Point(683, 284)
+        Me.teExR2.Location = New System.Drawing.Point(692, 284)
         Me.teExR2.Name = "teExR2"
         Me.teExR2.Properties.Appearance.BackColor = System.Drawing.Color.Linen
         Me.teExR2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -2706,7 +2735,7 @@ Partial Class frmPrescription
         Me.LabelControl1.Appearance.Options.UseBackColor = True
         Me.LabelControl1.Appearance.Options.UseFont = True
         Me.LabelControl1.Appearance.Options.UseForeColor = True
-        Me.LabelControl1.Location = New System.Drawing.Point(110, 209)
+        Me.LabelControl1.Location = New System.Drawing.Point(109, 209)
         Me.LabelControl1.Name = "LabelControl1"
         Me.LabelControl1.Size = New System.Drawing.Size(62, 20)
         Me.LabelControl1.StyleController = Me.LayoutControl1
@@ -2716,7 +2745,7 @@ Partial Class frmPrescription
         'teExR1
         '
         Me.teExR1.EnterMoveNextControl = True
-        Me.teExR1.Location = New System.Drawing.Point(683, 259)
+        Me.teExR1.Location = New System.Drawing.Point(692, 259)
         Me.teExR1.Name = "teExR1"
         Me.teExR1.Properties.Appearance.BackColor = System.Drawing.Color.Linen
         Me.teExR1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -2733,7 +2762,7 @@ Partial Class frmPrescription
         'teInR4
         '
         Me.teInR4.EnterMoveNextControl = True
-        Me.teInR4.Location = New System.Drawing.Point(753, 234)
+        Me.teInR4.Location = New System.Drawing.Point(762, 234)
         Me.teInR4.Name = "teInR4"
         Me.teInR4.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
         Me.teInR4.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -2752,7 +2781,7 @@ Partial Class frmPrescription
         'teInR3
         '
         Me.teInR3.EnterMoveNextControl = True
-        Me.teInR3.Location = New System.Drawing.Point(753, 209)
+        Me.teInR3.Location = New System.Drawing.Point(762, 209)
         Me.teInR3.Name = "teInR3"
         Me.teInR3.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
         Me.teInR3.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -2787,17 +2816,17 @@ Partial Class frmPrescription
         Me.LayoutControl3.Controls.Add(Me.seSPCharges)
         Me.LayoutControl3.Controls.Add(Me.teOrderOrder)
         Me.LayoutControl3.Controls.Add(Me.seFullAmount)
-        Me.LayoutControl3.Location = New System.Drawing.Point(94, 464)
+        Me.LayoutControl3.Location = New System.Drawing.Point(94, 439)
         Me.LayoutControl3.Name = "LayoutControl3"
         Me.LayoutControl3.Root = Me.LayoutControlGroup6
-        Me.LayoutControl3.Size = New System.Drawing.Size(1016, 257)
+        Me.LayoutControl3.Size = New System.Drawing.Size(1025, 265)
         Me.LayoutControl3.TabIndex = 118
         Me.LayoutControl3.Text = "LayoutControl3"
         '
         'deDelivaryDate
         '
         Me.deDelivaryDate.EditValue = Nothing
-        Me.deDelivaryDate.Location = New System.Drawing.Point(826, 143)
+        Me.deDelivaryDate.Location = New System.Drawing.Point(833, 143)
         Me.deDelivaryDate.Name = "deDelivaryDate"
         Me.deDelivaryDate.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
         Me.deDelivaryDate.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -2810,7 +2839,7 @@ Partial Class frmPrescription
         Me.deDelivaryDate.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Buffered
         Me.deDelivaryDate.Properties.Mask.EditMask = "dd-MMM-yy"
         Me.deDelivaryDate.Properties.VistaTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton})
-        Me.deDelivaryDate.Size = New System.Drawing.Size(170, 20)
+        Me.deDelivaryDate.Size = New System.Drawing.Size(172, 20)
         Me.deDelivaryDate.StyleController = Me.LayoutControl3
         Me.deDelivaryDate.TabIndex = 51
         Me.deDelivaryDate.ToolTip = "Delivered Date"
@@ -2830,7 +2859,7 @@ Partial Class frmPrescription
         Me.leDispensedBy.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.leDispensedBy.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.leDispensedBy.Properties.MaxLength = 150
-        Me.leDispensedBy.Size = New System.Drawing.Size(314, 20)
+        Me.leDispensedBy.Size = New System.Drawing.Size(318, 20)
         Me.leDispensedBy.StyleController = Me.LayoutControl3
         Me.leDispensedBy.TabIndex = 3
         '
@@ -2846,7 +2875,7 @@ Partial Class frmPrescription
         Me.leAttendedBy.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.leAttendedBy.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.leAttendedBy.Properties.MaxLength = 150
-        Me.leAttendedBy.Size = New System.Drawing.Size(318, 20)
+        Me.leAttendedBy.Size = New System.Drawing.Size(321, 20)
         Me.leAttendedBy.StyleController = Me.LayoutControl3
         Me.leAttendedBy.TabIndex = 10
         '
@@ -2862,14 +2891,14 @@ Partial Class frmPrescription
         Me.leRefractedBy.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.leRefractedBy.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.leRefractedBy.Properties.MaxLength = 150
-        Me.leRefractedBy.Size = New System.Drawing.Size(314, 20)
+        Me.leRefractedBy.Size = New System.Drawing.Size(318, 20)
         Me.leRefractedBy.StyleController = Me.LayoutControl3
         Me.leRefractedBy.TabIndex = 0
         '
         'seBalance
         '
         Me.seBalance.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.seBalance.Location = New System.Drawing.Point(499, 243)
+        Me.seBalance.Location = New System.Drawing.Point(502, 243)
         Me.seBalance.Name = "seBalance"
         Me.seBalance.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
         Me.seBalance.Properties.Appearance.ForeColor = System.Drawing.Color.Red
@@ -2884,24 +2913,24 @@ Partial Class frmPrescription
         Me.seBalance.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.Numeric
         Me.seBalance.Properties.Mask.EditMask = "F2"
         Me.seBalance.Properties.ReadOnly = True
-        Me.seBalance.Size = New System.Drawing.Size(322, 20)
+        Me.seBalance.Size = New System.Drawing.Size(326, 20)
         Me.seBalance.StyleController = Me.LayoutControl3
         Me.seBalance.TabIndex = 11
         '
         'sbReceipt
         '
-        Me.sbReceipt.Location = New System.Drawing.Point(826, 218)
+        Me.sbReceipt.Location = New System.Drawing.Point(833, 218)
         Me.sbReceipt.Name = "sbReceipt"
-        Me.sbReceipt.Size = New System.Drawing.Size(170, 45)
+        Me.sbReceipt.Size = New System.Drawing.Size(172, 45)
         Me.sbReceipt.StyleController = Me.LayoutControl3
         Me.sbReceipt.TabIndex = 12
         Me.sbReceipt.Text = "Receip&t"
         '
         'sbPirceList
         '
-        Me.sbPirceList.Location = New System.Drawing.Point(826, 168)
+        Me.sbPirceList.Location = New System.Drawing.Point(833, 168)
         Me.sbPirceList.Name = "sbPirceList"
-        Me.sbPirceList.Size = New System.Drawing.Size(170, 45)
+        Me.sbPirceList.Size = New System.Drawing.Size(172, 45)
         Me.sbPirceList.StyleController = Me.LayoutControl3
         Me.sbPirceList.TabIndex = 50
         Me.sbPirceList.Text = "Price List"
@@ -2924,7 +2953,7 @@ Partial Class frmPrescription
         Me.gcCollections.MainView = Me.gvCollections
         Me.gcCollections.Name = "gcCollections"
         Me.gcCollections.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.ricbType, Me.rideCollectionDate, Me.RepositoryItemLookUpEdit1, Me.RepositoryItemSpinEdit1, Me.RepositoryItemComboBox2, Me.RepositoryItemMemoExEdit1, Me.RepositoryItemDateEdit2})
-        Me.gcCollections.Size = New System.Drawing.Size(817, 159)
+        Me.gcCollections.Size = New System.Drawing.Size(824, 159)
         Me.gcCollections.TabIndex = 9
         Me.gcCollections.UseEmbeddedNavigator = True
         Me.gcCollections.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.gvCollections})
@@ -3108,32 +3137,32 @@ Partial Class frmPrescription
         '
         'ceDelivered
         '
-        Me.ceDelivered.Location = New System.Drawing.Point(829, 114)
+        Me.ceDelivered.Location = New System.Drawing.Point(836, 114)
         Me.ceDelivered.Name = "ceDelivered"
         Me.ceDelivered.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
         Me.ceDelivered.Properties.Appearance.Options.UseFont = True
         Me.ceDelivered.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple
         Me.ceDelivered.Properties.Caption = "DELIVERED"
-        Me.ceDelivered.Size = New System.Drawing.Size(164, 21)
+        Me.ceDelivered.Size = New System.Drawing.Size(166, 21)
         Me.ceDelivered.StyleController = Me.LayoutControl3
         Me.ceDelivered.TabIndex = 11
         '
         'ceReady
         '
-        Me.ceReady.Location = New System.Drawing.Point(829, 82)
+        Me.ceReady.Location = New System.Drawing.Point(836, 82)
         Me.ceReady.Name = "ceReady"
         Me.ceReady.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
         Me.ceReady.Properties.Appearance.Options.UseFont = True
         Me.ceReady.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple
         Me.ceReady.Properties.Caption = "READY"
-        Me.ceReady.Size = New System.Drawing.Size(164, 21)
+        Me.ceReady.Size = New System.Drawing.Size(166, 21)
         Me.ceReady.StyleController = Me.LayoutControl3
         Me.ceReady.TabIndex = 10
         '
         'meNote
         '
         Me.meNote.EnterMoveNextControl = True
-        Me.meNote.Location = New System.Drawing.Point(695, 54)
+        Me.meNote.Location = New System.Drawing.Point(701, 54)
         Me.meNote.Name = "meNote"
         Me.meNote.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
         Me.meNote.Properties.Appearance.Options.UseFont = True
@@ -3145,14 +3174,14 @@ Partial Class frmPrescription
         Me.meNote.Properties.PopupStartSize = New System.Drawing.Size(400, 400)
         Me.meNote.Properties.ScrollBars = System.Windows.Forms.ScrollBars.Both
         Me.meNote.Properties.ShowIcon = False
-        Me.meNote.Size = New System.Drawing.Size(301, 20)
+        Me.meNote.Size = New System.Drawing.Size(304, 20)
         Me.meNote.StyleController = Me.LayoutControl3
         Me.meNote.TabIndex = 8
         '
         'tePD
         '
         Me.tePD.EnterMoveNextControl = True
-        Me.tePD.Location = New System.Drawing.Point(495, 4)
+        Me.tePD.Location = New System.Drawing.Point(499, 4)
         Me.tePD.Name = "tePD"
         Me.tePD.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
         Me.tePD.Properties.Appearance.Options.UseFont = True
@@ -3160,14 +3189,14 @@ Partial Class frmPrescription
         Me.tePD.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.tePD.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.tePD.Properties.MaxLength = 10
-        Me.tePD.Size = New System.Drawing.Size(109, 20)
+        Me.tePD.Size = New System.Drawing.Size(111, 20)
         Me.tePD.StyleController = Me.LayoutControl3
         Me.tePD.TabIndex = 1
         '
         'teInsert
         '
         Me.teInsert.EnterMoveNextControl = True
-        Me.teInsert.Location = New System.Drawing.Point(695, 4)
+        Me.teInsert.Location = New System.Drawing.Point(701, 4)
         Me.teInsert.Name = "teInsert"
         Me.teInsert.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
         Me.teInsert.Properties.Appearance.Options.UseFont = True
@@ -3175,14 +3204,14 @@ Partial Class frmPrescription
         Me.teInsert.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.teInsert.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.teInsert.Properties.MaxLength = 10
-        Me.teInsert.Size = New System.Drawing.Size(301, 20)
+        Me.teInsert.Size = New System.Drawing.Size(304, 20)
         Me.teInsert.StyleController = Me.LayoutControl3
         Me.teInsert.TabIndex = 2
         '
         'teSegSize
         '
         Me.teSegSize.EnterMoveNextControl = True
-        Me.teSegSize.Location = New System.Drawing.Point(495, 29)
+        Me.teSegSize.Location = New System.Drawing.Point(499, 29)
         Me.teSegSize.Name = "teSegSize"
         Me.teSegSize.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
         Me.teSegSize.Properties.Appearance.Options.UseFont = True
@@ -3190,7 +3219,7 @@ Partial Class frmPrescription
         Me.teSegSize.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.teSegSize.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.teSegSize.Properties.MaxLength = 10
-        Me.teSegSize.Size = New System.Drawing.Size(109, 20)
+        Me.teSegSize.Size = New System.Drawing.Size(111, 20)
         Me.teSegSize.StyleController = Me.LayoutControl3
         Me.teSegSize.TabIndex = 4
         '
@@ -3198,7 +3227,7 @@ Partial Class frmPrescription
         '
         Me.seSPCharges.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
         Me.seSPCharges.EnterMoveNextControl = True
-        Me.seSPCharges.Location = New System.Drawing.Point(495, 54)
+        Me.seSPCharges.Location = New System.Drawing.Point(499, 54)
         Me.seSPCharges.Name = "seSPCharges"
         Me.seSPCharges.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
         Me.seSPCharges.Properties.Appearance.Options.UseFont = True
@@ -3210,14 +3239,14 @@ Partial Class frmPrescription
         Me.seSPCharges.Properties.EditFormat.FormatString = "F2"
         Me.seSPCharges.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.Numeric
         Me.seSPCharges.Properties.MaxLength = 10
-        Me.seSPCharges.Size = New System.Drawing.Size(109, 20)
+        Me.seSPCharges.Size = New System.Drawing.Size(111, 20)
         Me.seSPCharges.StyleController = Me.LayoutControl3
         Me.seSPCharges.TabIndex = 7
         '
         'teOrderOrder
         '
         Me.teOrderOrder.EnterMoveNextControl = True
-        Me.teOrderOrder.Location = New System.Drawing.Point(695, 29)
+        Me.teOrderOrder.Location = New System.Drawing.Point(701, 29)
         Me.teOrderOrder.Name = "teOrderOrder"
         Me.teOrderOrder.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
         Me.teOrderOrder.Properties.Appearance.Options.UseFont = True
@@ -3225,7 +3254,7 @@ Partial Class frmPrescription
         Me.teOrderOrder.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.teOrderOrder.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.teOrderOrder.Properties.MaxLength = 10
-        Me.teOrderOrder.Size = New System.Drawing.Size(301, 20)
+        Me.teOrderOrder.Size = New System.Drawing.Size(304, 20)
         Me.teOrderOrder.StyleController = Me.LayoutControl3
         Me.teOrderOrder.TabIndex = 5
         '
@@ -3245,7 +3274,7 @@ Partial Class frmPrescription
         Me.seFullAmount.Properties.EditFormat.FormatString = "F2"
         Me.seFullAmount.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.Numeric
         Me.seFullAmount.Properties.MaxLength = 10
-        Me.seFullAmount.Size = New System.Drawing.Size(314, 20)
+        Me.seFullAmount.Size = New System.Drawing.Size(318, 20)
         Me.seFullAmount.StyleController = Me.LayoutControl3
         Me.seFullAmount.TabIndex = 6
         '
@@ -3255,7 +3284,7 @@ Partial Class frmPrescription
         Me.LayoutControlGroup6.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem72, Me.LayoutControlItem67, Me.LayoutControlItem68, Me.LayoutControlItem71, Me.LayoutControlItem70, Me.LayoutControlItem73, Me.LayoutControlItem58, Me.LayoutControlItem91, Me.LayoutControlItem92, Me.LayoutControlItem82, Me.LayoutControlItem80, Me.LayoutControlItem81, Me.LayoutControlItem83, Me.LayoutControlItem84, Me.LayoutControlItem74, Me.LayoutControlItem66, Me.lciDelivaryDate})
         Me.LayoutControlGroup6.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControlGroup6.Name = "LayoutControlGroup6"
-        Me.LayoutControlGroup6.Size = New System.Drawing.Size(999, 266)
+        Me.LayoutControlGroup6.Size = New System.Drawing.Size(1008, 266)
         Me.LayoutControlGroup6.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
         Me.LayoutControlGroup6.Text = "LayoutControlGroup6"
         Me.LayoutControlGroup6.TextVisible = False
@@ -3273,7 +3302,7 @@ Partial Class frmPrescription
         Me.LayoutControlItem72.Location = New System.Drawing.Point(0, 50)
         Me.LayoutControlItem72.Name = "LayoutControlItem72"
         Me.LayoutControlItem72.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem72.Size = New System.Drawing.Size(405, 25)
+        Me.LayoutControlItem72.Size = New System.Drawing.Size(409, 25)
         Me.LayoutControlItem72.Text = "FULL AMOUNT"
         Me.LayoutControlItem72.TextLocation = DevExpress.Utils.Locations.Left
         Me.LayoutControlItem72.TextSize = New System.Drawing.Size(81, 20)
@@ -3288,10 +3317,10 @@ Partial Class frmPrescription
         Me.LayoutControlItem67.AppearanceItemCaption.Options.UseForeColor = True
         Me.LayoutControlItem67.Control = Me.tePD
         Me.LayoutControlItem67.CustomizationFormText = "PD"
-        Me.LayoutControlItem67.Location = New System.Drawing.Point(405, 0)
+        Me.LayoutControlItem67.Location = New System.Drawing.Point(409, 0)
         Me.LayoutControlItem67.Name = "LayoutControlItem67"
         Me.LayoutControlItem67.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem67.Size = New System.Drawing.Size(200, 25)
+        Me.LayoutControlItem67.Size = New System.Drawing.Size(202, 25)
         Me.LayoutControlItem67.Text = "PD"
         Me.LayoutControlItem67.TextLocation = DevExpress.Utils.Locations.Left
         Me.LayoutControlItem67.TextSize = New System.Drawing.Size(81, 20)
@@ -3306,10 +3335,10 @@ Partial Class frmPrescription
         Me.LayoutControlItem68.AppearanceItemCaption.Options.UseForeColor = True
         Me.LayoutControlItem68.Control = Me.teInsert
         Me.LayoutControlItem68.CustomizationFormText = "Insert"
-        Me.LayoutControlItem68.Location = New System.Drawing.Point(605, 0)
+        Me.LayoutControlItem68.Location = New System.Drawing.Point(611, 0)
         Me.LayoutControlItem68.Name = "LayoutControlItem68"
         Me.LayoutControlItem68.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem68.Size = New System.Drawing.Size(392, 25)
+        Me.LayoutControlItem68.Size = New System.Drawing.Size(395, 25)
         Me.LayoutControlItem68.Text = "INSERT"
         Me.LayoutControlItem68.TextLocation = DevExpress.Utils.Locations.Left
         Me.LayoutControlItem68.TextSize = New System.Drawing.Size(81, 20)
@@ -3324,10 +3353,10 @@ Partial Class frmPrescription
         Me.LayoutControlItem71.AppearanceItemCaption.Options.UseForeColor = True
         Me.LayoutControlItem71.Control = Me.teOrderOrder
         Me.LayoutControlItem71.CustomizationFormText = "Order No"
-        Me.LayoutControlItem71.Location = New System.Drawing.Point(605, 25)
+        Me.LayoutControlItem71.Location = New System.Drawing.Point(611, 25)
         Me.LayoutControlItem71.Name = "LayoutControlItem71"
         Me.LayoutControlItem71.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem71.Size = New System.Drawing.Size(392, 25)
+        Me.LayoutControlItem71.Size = New System.Drawing.Size(395, 25)
         Me.LayoutControlItem71.Text = "ORDER NO"
         Me.LayoutControlItem71.TextLocation = DevExpress.Utils.Locations.Left
         Me.LayoutControlItem71.TextSize = New System.Drawing.Size(81, 20)
@@ -3342,10 +3371,10 @@ Partial Class frmPrescription
         Me.LayoutControlItem70.AppearanceItemCaption.Options.UseForeColor = True
         Me.LayoutControlItem70.Control = Me.teSegSize
         Me.LayoutControlItem70.CustomizationFormText = "Seg Size"
-        Me.LayoutControlItem70.Location = New System.Drawing.Point(405, 25)
+        Me.LayoutControlItem70.Location = New System.Drawing.Point(409, 25)
         Me.LayoutControlItem70.Name = "LayoutControlItem70"
         Me.LayoutControlItem70.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem70.Size = New System.Drawing.Size(200, 25)
+        Me.LayoutControlItem70.Size = New System.Drawing.Size(202, 25)
         Me.LayoutControlItem70.Text = "SEG SIZE"
         Me.LayoutControlItem70.TextLocation = DevExpress.Utils.Locations.Left
         Me.LayoutControlItem70.TextSize = New System.Drawing.Size(81, 20)
@@ -3360,10 +3389,10 @@ Partial Class frmPrescription
         Me.LayoutControlItem73.AppearanceItemCaption.Options.UseForeColor = True
         Me.LayoutControlItem73.Control = Me.seSPCharges
         Me.LayoutControlItem73.CustomizationFormText = "SP Charges"
-        Me.LayoutControlItem73.Location = New System.Drawing.Point(405, 50)
+        Me.LayoutControlItem73.Location = New System.Drawing.Point(409, 50)
         Me.LayoutControlItem73.Name = "LayoutControlItem73"
         Me.LayoutControlItem73.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem73.Size = New System.Drawing.Size(200, 25)
+        Me.LayoutControlItem73.Size = New System.Drawing.Size(202, 25)
         Me.LayoutControlItem73.Text = "SP CHARGES"
         Me.LayoutControlItem73.TextLocation = DevExpress.Utils.Locations.Left
         Me.LayoutControlItem73.TextSize = New System.Drawing.Size(81, 20)
@@ -3375,7 +3404,7 @@ Partial Class frmPrescription
         Me.LayoutControlItem58.Location = New System.Drawing.Point(0, 75)
         Me.LayoutControlItem58.Name = "LayoutControlItem58"
         Me.LayoutControlItem58.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem58.Size = New System.Drawing.Size(822, 164)
+        Me.LayoutControlItem58.Size = New System.Drawing.Size(829, 164)
         Me.LayoutControlItem58.Text = "LayoutControlItem58"
         Me.LayoutControlItem58.TextLocation = DevExpress.Utils.Locations.Left
         Me.LayoutControlItem58.TextSize = New System.Drawing.Size(0, 0)
@@ -3386,9 +3415,9 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem91.Control = Me.ceReady
         Me.LayoutControlItem91.CustomizationFormText = "LayoutControlItem91"
-        Me.LayoutControlItem91.Location = New System.Drawing.Point(822, 75)
+        Me.LayoutControlItem91.Location = New System.Drawing.Point(829, 75)
         Me.LayoutControlItem91.Name = "LayoutControlItem91"
-        Me.LayoutControlItem91.Size = New System.Drawing.Size(175, 32)
+        Me.LayoutControlItem91.Size = New System.Drawing.Size(177, 32)
         Me.LayoutControlItem91.Text = "LayoutControlItem91"
         Me.LayoutControlItem91.TextLocation = DevExpress.Utils.Locations.Left
         Me.LayoutControlItem91.TextSize = New System.Drawing.Size(0, 0)
@@ -3399,9 +3428,9 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem92.Control = Me.ceDelivered
         Me.LayoutControlItem92.CustomizationFormText = "LayoutControlItem92"
-        Me.LayoutControlItem92.Location = New System.Drawing.Point(822, 107)
+        Me.LayoutControlItem92.Location = New System.Drawing.Point(829, 107)
         Me.LayoutControlItem92.Name = "LayoutControlItem92"
-        Me.LayoutControlItem92.Size = New System.Drawing.Size(175, 32)
+        Me.LayoutControlItem92.Size = New System.Drawing.Size(177, 32)
         Me.LayoutControlItem92.Text = "LayoutControlItem92"
         Me.LayoutControlItem92.TextLocation = DevExpress.Utils.Locations.Left
         Me.LayoutControlItem92.TextSize = New System.Drawing.Size(0, 0)
@@ -3418,10 +3447,10 @@ Partial Class frmPrescription
         Me.LayoutControlItem82.AppearanceItemCaption.Options.UseForeColor = True
         Me.LayoutControlItem82.Control = Me.meNote
         Me.LayoutControlItem82.CustomizationFormText = "Remarks"
-        Me.LayoutControlItem82.Location = New System.Drawing.Point(605, 50)
+        Me.LayoutControlItem82.Location = New System.Drawing.Point(611, 50)
         Me.LayoutControlItem82.Name = "LayoutControlItem82"
         Me.LayoutControlItem82.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem82.Size = New System.Drawing.Size(392, 25)
+        Me.LayoutControlItem82.Size = New System.Drawing.Size(395, 25)
         Me.LayoutControlItem82.Text = "REMARKS"
         Me.LayoutControlItem82.TextLocation = DevExpress.Utils.Locations.Left
         Me.LayoutControlItem82.TextSize = New System.Drawing.Size(81, 20)
@@ -3430,12 +3459,12 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem80.Control = Me.sbPirceList
         Me.LayoutControlItem80.CustomizationFormText = "LayoutControlItem80"
-        Me.LayoutControlItem80.Location = New System.Drawing.Point(822, 164)
+        Me.LayoutControlItem80.Location = New System.Drawing.Point(829, 164)
         Me.LayoutControlItem80.MaxSize = New System.Drawing.Size(0, 50)
         Me.LayoutControlItem80.MinSize = New System.Drawing.Size(66, 50)
         Me.LayoutControlItem80.Name = "LayoutControlItem80"
         Me.LayoutControlItem80.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem80.Size = New System.Drawing.Size(175, 50)
+        Me.LayoutControlItem80.Size = New System.Drawing.Size(177, 50)
         Me.LayoutControlItem80.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
         Me.LayoutControlItem80.Text = "LayoutControlItem80"
         Me.LayoutControlItem80.TextLocation = DevExpress.Utils.Locations.Left
@@ -3448,12 +3477,12 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem81.Control = Me.sbReceipt
         Me.LayoutControlItem81.CustomizationFormText = "LayoutControlItem81"
-        Me.LayoutControlItem81.Location = New System.Drawing.Point(822, 214)
+        Me.LayoutControlItem81.Location = New System.Drawing.Point(829, 214)
         Me.LayoutControlItem81.MaxSize = New System.Drawing.Size(0, 50)
         Me.LayoutControlItem81.MinSize = New System.Drawing.Size(60, 50)
         Me.LayoutControlItem81.Name = "LayoutControlItem81"
         Me.LayoutControlItem81.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem81.Size = New System.Drawing.Size(175, 50)
+        Me.LayoutControlItem81.Size = New System.Drawing.Size(177, 50)
         Me.LayoutControlItem81.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
         Me.LayoutControlItem81.Text = "LayoutControlItem81"
         Me.LayoutControlItem81.TextLocation = DevExpress.Utils.Locations.Left
@@ -3471,10 +3500,10 @@ Partial Class frmPrescription
         Me.LayoutControlItem83.AppearanceItemCaption.Options.UseForeColor = True
         Me.LayoutControlItem83.Control = Me.seBalance
         Me.LayoutControlItem83.CustomizationFormText = "Balance"
-        Me.LayoutControlItem83.Location = New System.Drawing.Point(409, 239)
+        Me.LayoutControlItem83.Location = New System.Drawing.Point(412, 239)
         Me.LayoutControlItem83.Name = "LayoutControlItem83"
         Me.LayoutControlItem83.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem83.Size = New System.Drawing.Size(413, 25)
+        Me.LayoutControlItem83.Size = New System.Drawing.Size(417, 25)
         Me.LayoutControlItem83.Text = "BALANCE"
         Me.LayoutControlItem83.TextLocation = DevExpress.Utils.Locations.Left
         Me.LayoutControlItem83.TextSize = New System.Drawing.Size(81, 20)
@@ -3492,7 +3521,7 @@ Partial Class frmPrescription
         Me.LayoutControlItem84.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControlItem84.Name = "LayoutControlItem84"
         Me.LayoutControlItem84.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem84.Size = New System.Drawing.Size(405, 25)
+        Me.LayoutControlItem84.Size = New System.Drawing.Size(409, 25)
         Me.LayoutControlItem84.Text = "REFRACTED BY"
         Me.LayoutControlItem84.TextLocation = DevExpress.Utils.Locations.Left
         Me.LayoutControlItem84.TextSize = New System.Drawing.Size(81, 20)
@@ -3510,7 +3539,7 @@ Partial Class frmPrescription
         Me.LayoutControlItem74.Location = New System.Drawing.Point(0, 239)
         Me.LayoutControlItem74.Name = "LayoutControlItem74"
         Me.LayoutControlItem74.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem74.Size = New System.Drawing.Size(409, 25)
+        Me.LayoutControlItem74.Size = New System.Drawing.Size(412, 25)
         Me.LayoutControlItem74.Text = "ATTENDED BY"
         Me.LayoutControlItem74.TextLocation = DevExpress.Utils.Locations.Left
         Me.LayoutControlItem74.TextSize = New System.Drawing.Size(81, 20)
@@ -3528,7 +3557,7 @@ Partial Class frmPrescription
         Me.LayoutControlItem66.Location = New System.Drawing.Point(0, 25)
         Me.LayoutControlItem66.Name = "LayoutControlItem66"
         Me.LayoutControlItem66.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem66.Size = New System.Drawing.Size(405, 25)
+        Me.LayoutControlItem66.Size = New System.Drawing.Size(409, 25)
         Me.LayoutControlItem66.Text = "DISPENSED BY"
         Me.LayoutControlItem66.TextLocation = DevExpress.Utils.Locations.Left
         Me.LayoutControlItem66.TextSize = New System.Drawing.Size(81, 20)
@@ -3537,10 +3566,10 @@ Partial Class frmPrescription
         '
         Me.lciDelivaryDate.Control = Me.deDelivaryDate
         Me.lciDelivaryDate.CustomizationFormText = "lciDelivaryDate"
-        Me.lciDelivaryDate.Location = New System.Drawing.Point(822, 139)
+        Me.lciDelivaryDate.Location = New System.Drawing.Point(829, 139)
         Me.lciDelivaryDate.Name = "lciDelivaryDate"
         Me.lciDelivaryDate.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.lciDelivaryDate.Size = New System.Drawing.Size(175, 25)
+        Me.lciDelivaryDate.Size = New System.Drawing.Size(177, 25)
         Me.lciDelivaryDate.Text = "lciDelivaryDate"
         Me.lciDelivaryDate.TextLocation = DevExpress.Utils.Locations.Left
         Me.lciDelivaryDate.TextSize = New System.Drawing.Size(0, 0)
@@ -3551,7 +3580,7 @@ Partial Class frmPrescription
         'teCustomerName
         '
         Me.teCustomerName.EnterMoveNextControl = True
-        Me.teCustomerName.Location = New System.Drawing.Point(283, 28)
+        Me.teCustomerName.Location = New System.Drawing.Point(285, 28)
         Me.teCustomerName.Name = "teCustomerName"
         Me.teCustomerName.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
         Me.teCustomerName.Properties.Appearance.Options.UseFont = True
@@ -3559,7 +3588,7 @@ Partial Class frmPrescription
         Me.teCustomerName.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.teCustomerName.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.teCustomerName.Properties.MaxLength = 100
-        Me.teCustomerName.Size = New System.Drawing.Size(365, 20)
+        Me.teCustomerName.Size = New System.Drawing.Size(368, 20)
         Me.teCustomerName.StyleController = Me.LayoutControl1
         Me.teCustomerName.TabIndex = 1
         ConditionValidationRule2.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
@@ -3580,14 +3609,14 @@ Partial Class frmPrescription
         Me.cbeCareOf.Properties.ImmediatePopup = True
         Me.cbeCareOf.Properties.Items.AddRange(New Object() {"MR.", "MRS.", "MISS.", "BABY.", "DR.", "HON.", "MASTER.", "MS.", "VEN.", "REV."})
         Me.cbeCareOf.Properties.MaxLength = 10
-        Me.cbeCareOf.Size = New System.Drawing.Size(73, 20)
+        Me.cbeCareOf.Size = New System.Drawing.Size(75, 20)
         Me.cbeCareOf.StyleController = Me.LayoutControl1
         Me.cbeCareOf.TabIndex = 3
         '
         'teCateOf
         '
         Me.teCateOf.EnterMoveNextControl = True
-        Me.teCateOf.Location = New System.Drawing.Point(283, 53)
+        Me.teCateOf.Location = New System.Drawing.Point(285, 53)
         Me.teCateOf.Name = "teCateOf"
         Me.teCateOf.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
         Me.teCateOf.Properties.Appearance.Options.UseFont = True
@@ -3595,14 +3624,14 @@ Partial Class frmPrescription
         Me.teCateOf.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.teCateOf.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.teCateOf.Properties.MaxLength = 100
-        Me.teCateOf.Size = New System.Drawing.Size(365, 20)
+        Me.teCateOf.Size = New System.Drawing.Size(368, 20)
         Me.teCateOf.StyleController = Me.LayoutControl1
         Me.teCateOf.TabIndex = 4
         '
         'teExL6
         '
         Me.teExL6.EnterMoveNextControl = True
-        Me.teExL6.Location = New System.Drawing.Point(457, 284)
+        Me.teExL6.Location = New System.Drawing.Point(456, 284)
         Me.teExL6.Name = "teExL6"
         Me.teExL6.Properties.Appearance.BackColor = System.Drawing.Color.Linen
         Me.teExL6.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -3627,14 +3656,14 @@ Partial Class frmPrescription
         Me.teAddress1.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.teAddress1.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.teAddress1.Properties.MaxLength = 100
-        Me.teAddress1.Size = New System.Drawing.Size(444, 20)
+        Me.teAddress1.Size = New System.Drawing.Size(449, 20)
         Me.teAddress1.StyleController = Me.LayoutControl1
         Me.teAddress1.TabIndex = 5
         '
         'teInR2
         '
         Me.teInR2.EnterMoveNextControl = True
-        Me.teInR2.Location = New System.Drawing.Point(683, 234)
+        Me.teInR2.Location = New System.Drawing.Point(692, 234)
         Me.teInR2.Name = "teInR2"
         Me.teInR2.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
         Me.teInR2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -3653,7 +3682,7 @@ Partial Class frmPrescription
         'teExL5
         '
         Me.teExL5.EnterMoveNextControl = True
-        Me.teExL5.Location = New System.Drawing.Point(457, 259)
+        Me.teExL5.Location = New System.Drawing.Point(456, 259)
         Me.teExL5.Name = "teExL5"
         Me.teExL5.Properties.Appearance.BackColor = System.Drawing.Color.Linen
         Me.teExL5.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -3670,7 +3699,7 @@ Partial Class frmPrescription
         'teInR1
         '
         Me.teInR1.EnterMoveNextControl = True
-        Me.teInR1.Location = New System.Drawing.Point(683, 209)
+        Me.teInR1.Location = New System.Drawing.Point(692, 209)
         Me.teInR1.Name = "teInR1"
         Me.teInR1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
         Me.teInR1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -3697,14 +3726,14 @@ Partial Class frmPrescription
         Me.teAddress2.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.teAddress2.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.teAddress2.Properties.MaxLength = 100
-        Me.teAddress2.Size = New System.Drawing.Size(445, 20)
+        Me.teAddress2.Size = New System.Drawing.Size(450, 20)
         Me.teAddress2.StyleController = Me.LayoutControl1
         Me.teAddress2.TabIndex = 6
         '
         'teExL4
         '
         Me.teExL4.EnterMoveNextControl = True
-        Me.teExL4.Location = New System.Drawing.Point(388, 284)
+        Me.teExL4.Location = New System.Drawing.Point(387, 284)
         Me.teExL4.Name = "teExL4"
         Me.teExL4.Properties.Appearance.BackColor = System.Drawing.Color.Linen
         Me.teExL4.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -3729,14 +3758,14 @@ Partial Class frmPrescription
         Me.teAddress3.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.teAddress3.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.teAddress3.Properties.MaxLength = 100
-        Me.teAddress3.Size = New System.Drawing.Size(445, 20)
+        Me.teAddress3.Size = New System.Drawing.Size(450, 20)
         Me.teAddress3.StyleController = Me.LayoutControl1
         Me.teAddress3.TabIndex = 7
         '
         'teExL3
         '
         Me.teExL3.EnterMoveNextControl = True
-        Me.teExL3.Location = New System.Drawing.Point(388, 259)
+        Me.teExL3.Location = New System.Drawing.Point(387, 259)
         Me.teExL3.Name = "teExL3"
         Me.teExL3.Properties.Appearance.BackColor = System.Drawing.Color.Linen
         Me.teExL3.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -3754,7 +3783,7 @@ Partial Class frmPrescription
         '
         Me.seAge.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
         Me.seAge.EnterMoveNextControl = True
-        Me.seAge.Location = New System.Drawing.Point(764, 28)
+        Me.seAge.Location = New System.Drawing.Point(769, 28)
         Me.seAge.Name = "seAge"
         Me.seAge.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
         Me.seAge.Properties.Appearance.Options.UseFont = True
@@ -3762,14 +3791,14 @@ Partial Class frmPrescription
         Me.seAge.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.seAge.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton})
         Me.seAge.Properties.MaxLength = 4
-        Me.seAge.Size = New System.Drawing.Size(81, 20)
+        Me.seAge.Size = New System.Drawing.Size(83, 20)
         Me.seAge.StyleController = Me.LayoutControl1
         Me.seAge.TabIndex = 9
         '
         'teExL2
         '
         Me.teExL2.EnterMoveNextControl = True
-        Me.teExL2.Location = New System.Drawing.Point(317, 284)
+        Me.teExL2.Location = New System.Drawing.Point(316, 284)
         Me.teExL2.Name = "teExL2"
         Me.teExL2.Properties.Appearance.BackColor = System.Drawing.Color.Linen
         Me.teExL2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -3786,7 +3815,7 @@ Partial Class frmPrescription
         'teTelephoneNo
         '
         Me.teTelephoneNo.EnterMoveNextControl = True
-        Me.teTelephoneNo.Location = New System.Drawing.Point(764, 53)
+        Me.teTelephoneNo.Location = New System.Drawing.Point(769, 53)
         Me.teTelephoneNo.Name = "teTelephoneNo"
         Me.teTelephoneNo.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
         Me.teTelephoneNo.Properties.Appearance.Options.UseFont = True
@@ -3794,14 +3823,14 @@ Partial Class frmPrescription
         Me.teTelephoneNo.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.teTelephoneNo.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.teTelephoneNo.Properties.MaxLength = 20
-        Me.teTelephoneNo.Size = New System.Drawing.Size(81, 20)
+        Me.teTelephoneNo.Size = New System.Drawing.Size(83, 20)
         Me.teTelephoneNo.StyleController = Me.LayoutControl1
         Me.teTelephoneNo.TabIndex = 10
         '
         'teExL1
         '
         Me.teExL1.EnterMoveNextControl = True
-        Me.teExL1.Location = New System.Drawing.Point(317, 259)
+        Me.teExL1.Location = New System.Drawing.Point(316, 259)
         Me.teExL1.Name = "teExL1"
         Me.teExL1.Properties.Appearance.BackColor = System.Drawing.Color.Linen
         Me.teExL1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -3818,7 +3847,7 @@ Partial Class frmPrescription
         'teOfficeTelNo
         '
         Me.teOfficeTelNo.EnterMoveNextControl = True
-        Me.teOfficeTelNo.Location = New System.Drawing.Point(765, 78)
+        Me.teOfficeTelNo.Location = New System.Drawing.Point(770, 78)
         Me.teOfficeTelNo.Name = "teOfficeTelNo"
         Me.teOfficeTelNo.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
         Me.teOfficeTelNo.Properties.Appearance.Options.UseFont = True
@@ -3826,14 +3855,14 @@ Partial Class frmPrescription
         Me.teOfficeTelNo.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.teOfficeTelNo.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.teOfficeTelNo.Properties.MaxLength = 20
-        Me.teOfficeTelNo.Size = New System.Drawing.Size(345, 20)
+        Me.teOfficeTelNo.Size = New System.Drawing.Size(349, 20)
         Me.teOfficeTelNo.StyleController = Me.LayoutControl1
         Me.teOfficeTelNo.TabIndex = 11
         '
         'teInL6
         '
         Me.teInL6.EnterMoveNextControl = True
-        Me.teInL6.Location = New System.Drawing.Point(457, 234)
+        Me.teInL6.Location = New System.Drawing.Point(456, 234)
         Me.teInL6.Name = "teInL6"
         Me.teInL6.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
         Me.teInL6.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -3852,7 +3881,7 @@ Partial Class frmPrescription
         'teBillNo
         '
         Me.teBillNo.EnterMoveNextControl = True
-        Me.teBillNo.Location = New System.Drawing.Point(766, 103)
+        Me.teBillNo.Location = New System.Drawing.Point(771, 103)
         Me.teBillNo.Name = "teBillNo"
         Me.teBillNo.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
         Me.teBillNo.Properties.Appearance.Options.UseFont = True
@@ -3860,14 +3889,14 @@ Partial Class frmPrescription
         Me.teBillNo.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.teBillNo.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.teBillNo.Properties.MaxLength = 20
-        Me.teBillNo.Size = New System.Drawing.Size(344, 20)
+        Me.teBillNo.Size = New System.Drawing.Size(348, 20)
         Me.teBillNo.StyleController = Me.LayoutControl1
         Me.teBillNo.TabIndex = 12
         '
         'teInL5
         '
         Me.teInL5.EnterMoveNextControl = True
-        Me.teInL5.Location = New System.Drawing.Point(457, 209)
+        Me.teInL5.Location = New System.Drawing.Point(456, 209)
         Me.teInL5.Name = "teInL5"
         Me.teInL5.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
         Me.teInL5.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -3887,7 +3916,7 @@ Partial Class frmPrescription
         '
         Me.dePrescriptionDate.EditValue = Nothing
         Me.dePrescriptionDate.EnterMoveNextControl = True
-        Me.dePrescriptionDate.Location = New System.Drawing.Point(766, 128)
+        Me.dePrescriptionDate.Location = New System.Drawing.Point(771, 128)
         Me.dePrescriptionDate.Name = "dePrescriptionDate"
         Me.dePrescriptionDate.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
         Me.dePrescriptionDate.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -3901,7 +3930,7 @@ Partial Class frmPrescription
         Me.dePrescriptionDate.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime
         Me.dePrescriptionDate.Properties.Mask.EditMask = "dd-MMM-yy"
         Me.dePrescriptionDate.Properties.VistaTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton})
-        Me.dePrescriptionDate.Size = New System.Drawing.Size(344, 20)
+        Me.dePrescriptionDate.Size = New System.Drawing.Size(348, 20)
         Me.dePrescriptionDate.StyleController = Me.LayoutControl1
         Me.dePrescriptionDate.TabIndex = 13
         ConditionValidationRule3.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
@@ -3912,7 +3941,7 @@ Partial Class frmPrescription
         '
         Me.deDueDate.EditValue = Nothing
         Me.deDueDate.EnterMoveNextControl = True
-        Me.deDueDate.Location = New System.Drawing.Point(764, 153)
+        Me.deDueDate.Location = New System.Drawing.Point(769, 153)
         Me.deDueDate.Name = "deDueDate"
         Me.deDueDate.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
         Me.deDueDate.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -3926,7 +3955,7 @@ Partial Class frmPrescription
         Me.deDueDate.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime
         Me.deDueDate.Properties.Mask.EditMask = "dd-MMM-yy"
         Me.deDueDate.Properties.VistaTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton})
-        Me.deDueDate.Size = New System.Drawing.Size(346, 20)
+        Me.deDueDate.Size = New System.Drawing.Size(350, 20)
         Me.deDueDate.StyleController = Me.LayoutControl1
         Me.deDueDate.TabIndex = 14
         ConditionValidationRule4.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
@@ -3944,14 +3973,14 @@ Partial Class frmPrescription
         Me.teOfficeAddress.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.teOfficeAddress.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.teOfficeAddress.Properties.MaxLength = 100
-        Me.teOfficeAddress.Size = New System.Drawing.Size(194, 20)
+        Me.teOfficeAddress.Size = New System.Drawing.Size(197, 20)
         Me.teOfficeAddress.StyleController = Me.LayoutControl1
         Me.teOfficeAddress.TabIndex = 8
         '
         'teInL1
         '
         Me.teInL1.EnterMoveNextControl = True
-        Me.teInL1.Location = New System.Drawing.Point(317, 209)
+        Me.teInL1.Location = New System.Drawing.Point(316, 209)
         Me.teInL1.Name = "teInL1"
         Me.teInL1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
         Me.teInL1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -3970,7 +3999,7 @@ Partial Class frmPrescription
         'teInL2
         '
         Me.teInL2.EnterMoveNextControl = True
-        Me.teInL2.Location = New System.Drawing.Point(317, 234)
+        Me.teInL2.Location = New System.Drawing.Point(316, 234)
         Me.teInL2.Name = "teInL2"
         Me.teInL2.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
         Me.teInL2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -3989,7 +4018,7 @@ Partial Class frmPrescription
         'teInL4
         '
         Me.teInL4.EnterMoveNextControl = True
-        Me.teInL4.Location = New System.Drawing.Point(387, 234)
+        Me.teInL4.Location = New System.Drawing.Point(386, 234)
         Me.teInL4.Name = "teInL4"
         Me.teInL4.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
         Me.teInL4.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -4008,7 +4037,7 @@ Partial Class frmPrescription
         'teInL3
         '
         Me.teInL3.EnterMoveNextControl = True
-        Me.teInL3.Location = New System.Drawing.Point(387, 209)
+        Me.teInL3.Location = New System.Drawing.Point(386, 209)
         Me.teInL3.Name = "teInL3"
         Me.teInL3.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
         Me.teInL3.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -4030,7 +4059,7 @@ Partial Class frmPrescription
         Me.LayoutControlGroup1.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem1, Me.LayoutControlItem2, Me.LayoutControlItem3, Me.LayoutControlItem4, Me.LayoutControlItem5, Me.LayoutControlItem6, Me.LayoutControlItem7, Me.LayoutControlItem8, Me.LayoutControlItem9, Me.LayoutControlItem10, Me.LayoutControlItem11, Me.LayoutControlItem12, Me.LayoutControlItem13, Me.LayoutControlItem15, Me.EmptySpaceItem3, Me.LayoutControlGroup5, Me.LayoutControlItem75, Me.EmptySpaceItem11, Me.lciPrescriptionNo, Me.LayoutControlItem85, Me.LayoutControlItem14, Me.LayoutControlItem69, Me.LayoutControlItem127, Me.LayoutControlItem128})
         Me.LayoutControlGroup1.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControlGroup1.Name = "LayoutControlGroup1"
-        Me.LayoutControlGroup1.Size = New System.Drawing.Size(1113, 724)
+        Me.LayoutControlGroup1.Size = New System.Drawing.Size(1122, 707)
         Me.LayoutControlGroup1.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
         Me.LayoutControlGroup1.Text = "LayoutControlGroup1"
         Me.LayoutControlGroup1.TextVisible = False
@@ -4048,7 +4077,7 @@ Partial Class frmPrescription
         Me.LayoutControlItem1.Location = New System.Drawing.Point(90, 24)
         Me.LayoutControlItem1.Name = "LayoutControlItem1"
         Me.LayoutControlItem1.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem1.Size = New System.Drawing.Size(189, 25)
+        Me.LayoutControlItem1.Size = New System.Drawing.Size(191, 25)
         Me.LayoutControlItem1.Text = "NAME"
         Me.LayoutControlItem1.TextLocation = DevExpress.Utils.Locations.Left
         Me.LayoutControlItem1.TextSize = New System.Drawing.Size(106, 20)
@@ -4057,10 +4086,10 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem2.Control = Me.teCustomerName
         Me.LayoutControlItem2.CustomizationFormText = "LayoutControlItem2"
-        Me.LayoutControlItem2.Location = New System.Drawing.Point(279, 24)
+        Me.LayoutControlItem2.Location = New System.Drawing.Point(281, 24)
         Me.LayoutControlItem2.Name = "LayoutControlItem2"
         Me.LayoutControlItem2.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem2.Size = New System.Drawing.Size(370, 25)
+        Me.LayoutControlItem2.Size = New System.Drawing.Size(373, 25)
         Me.LayoutControlItem2.Text = "LayoutControlItem2"
         Me.LayoutControlItem2.TextLocation = DevExpress.Utils.Locations.Left
         Me.LayoutControlItem2.TextSize = New System.Drawing.Size(0, 0)
@@ -4080,7 +4109,7 @@ Partial Class frmPrescription
         Me.LayoutControlItem3.Location = New System.Drawing.Point(90, 49)
         Me.LayoutControlItem3.Name = "LayoutControlItem3"
         Me.LayoutControlItem3.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem3.Size = New System.Drawing.Size(189, 25)
+        Me.LayoutControlItem3.Size = New System.Drawing.Size(191, 25)
         Me.LayoutControlItem3.Text = "CARE OF"
         Me.LayoutControlItem3.TextLocation = DevExpress.Utils.Locations.Left
         Me.LayoutControlItem3.TextSize = New System.Drawing.Size(106, 20)
@@ -4089,10 +4118,10 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem4.Control = Me.teCateOf
         Me.LayoutControlItem4.CustomizationFormText = "LayoutControlItem4"
-        Me.LayoutControlItem4.Location = New System.Drawing.Point(279, 49)
+        Me.LayoutControlItem4.Location = New System.Drawing.Point(281, 49)
         Me.LayoutControlItem4.Name = "LayoutControlItem4"
         Me.LayoutControlItem4.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem4.Size = New System.Drawing.Size(370, 25)
+        Me.LayoutControlItem4.Size = New System.Drawing.Size(373, 25)
         Me.LayoutControlItem4.Text = "LayoutControlItem4"
         Me.LayoutControlItem4.TextLocation = DevExpress.Utils.Locations.Left
         Me.LayoutControlItem4.TextSize = New System.Drawing.Size(0, 0)
@@ -4112,7 +4141,7 @@ Partial Class frmPrescription
         Me.LayoutControlItem5.Location = New System.Drawing.Point(90, 74)
         Me.LayoutControlItem5.Name = "LayoutControlItem5"
         Me.LayoutControlItem5.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem5.Size = New System.Drawing.Size(560, 25)
+        Me.LayoutControlItem5.Size = New System.Drawing.Size(565, 25)
         Me.LayoutControlItem5.Text = "ADDRESS LINE1"
         Me.LayoutControlItem5.TextLocation = DevExpress.Utils.Locations.Left
         Me.LayoutControlItem5.TextSize = New System.Drawing.Size(106, 20)
@@ -4130,7 +4159,7 @@ Partial Class frmPrescription
         Me.LayoutControlItem6.Location = New System.Drawing.Point(90, 99)
         Me.LayoutControlItem6.Name = "LayoutControlItem6"
         Me.LayoutControlItem6.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem6.Size = New System.Drawing.Size(561, 25)
+        Me.LayoutControlItem6.Size = New System.Drawing.Size(566, 25)
         Me.LayoutControlItem6.Text = "ADDRESS LINE2"
         Me.LayoutControlItem6.TextLocation = DevExpress.Utils.Locations.Left
         Me.LayoutControlItem6.TextSize = New System.Drawing.Size(106, 0)
@@ -4148,7 +4177,7 @@ Partial Class frmPrescription
         Me.LayoutControlItem7.Location = New System.Drawing.Point(90, 124)
         Me.LayoutControlItem7.Name = "LayoutControlItem7"
         Me.LayoutControlItem7.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem7.Size = New System.Drawing.Size(561, 25)
+        Me.LayoutControlItem7.Size = New System.Drawing.Size(566, 25)
         Me.LayoutControlItem7.Text = "ADDRESS LINE3"
         Me.LayoutControlItem7.TextLocation = DevExpress.Utils.Locations.Left
         Me.LayoutControlItem7.TextSize = New System.Drawing.Size(106, 0)
@@ -4163,10 +4192,10 @@ Partial Class frmPrescription
         Me.LayoutControlItem8.AppearanceItemCaption.Options.UseForeColor = True
         Me.LayoutControlItem8.Control = Me.seAge
         Me.LayoutControlItem8.CustomizationFormText = "Age"
-        Me.LayoutControlItem8.Location = New System.Drawing.Point(649, 24)
+        Me.LayoutControlItem8.Location = New System.Drawing.Point(654, 24)
         Me.LayoutControlItem8.Name = "LayoutControlItem8"
         Me.LayoutControlItem8.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem8.Size = New System.Drawing.Size(197, 25)
+        Me.LayoutControlItem8.Size = New System.Drawing.Size(199, 25)
         Me.LayoutControlItem8.Text = "AGE"
         Me.LayoutControlItem8.TextLocation = DevExpress.Utils.Locations.Left
         Me.LayoutControlItem8.TextSize = New System.Drawing.Size(106, 20)
@@ -4181,10 +4210,10 @@ Partial Class frmPrescription
         Me.LayoutControlItem9.AppearanceItemCaption.Options.UseForeColor = True
         Me.LayoutControlItem9.Control = Me.teTelephoneNo
         Me.LayoutControlItem9.CustomizationFormText = "Telephone"
-        Me.LayoutControlItem9.Location = New System.Drawing.Point(649, 49)
+        Me.LayoutControlItem9.Location = New System.Drawing.Point(654, 49)
         Me.LayoutControlItem9.Name = "LayoutControlItem9"
         Me.LayoutControlItem9.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem9.Size = New System.Drawing.Size(197, 25)
+        Me.LayoutControlItem9.Size = New System.Drawing.Size(199, 25)
         Me.LayoutControlItem9.Text = "TELEPHONE"
         Me.LayoutControlItem9.TextLocation = DevExpress.Utils.Locations.Left
         Me.LayoutControlItem9.TextSize = New System.Drawing.Size(106, 20)
@@ -4199,10 +4228,10 @@ Partial Class frmPrescription
         Me.LayoutControlItem10.AppearanceItemCaption.Options.UseForeColor = True
         Me.LayoutControlItem10.Control = Me.teOfficeTelNo
         Me.LayoutControlItem10.CustomizationFormText = "Office Telephone"
-        Me.LayoutControlItem10.Location = New System.Drawing.Point(650, 74)
+        Me.LayoutControlItem10.Location = New System.Drawing.Point(655, 74)
         Me.LayoutControlItem10.Name = "LayoutControlItem10"
         Me.LayoutControlItem10.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem10.Size = New System.Drawing.Size(461, 25)
+        Me.LayoutControlItem10.Size = New System.Drawing.Size(465, 25)
         Me.LayoutControlItem10.Text = "OFFICE TELEPHONE"
         Me.LayoutControlItem10.TextLocation = DevExpress.Utils.Locations.Left
         Me.LayoutControlItem10.TextSize = New System.Drawing.Size(106, 20)
@@ -4217,10 +4246,10 @@ Partial Class frmPrescription
         Me.LayoutControlItem11.AppearanceItemCaption.Options.UseForeColor = True
         Me.LayoutControlItem11.Control = Me.teBillNo
         Me.LayoutControlItem11.CustomizationFormText = "Bill No"
-        Me.LayoutControlItem11.Location = New System.Drawing.Point(651, 99)
+        Me.LayoutControlItem11.Location = New System.Drawing.Point(656, 99)
         Me.LayoutControlItem11.Name = "LayoutControlItem11"
         Me.LayoutControlItem11.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem11.Size = New System.Drawing.Size(460, 25)
+        Me.LayoutControlItem11.Size = New System.Drawing.Size(464, 25)
         Me.LayoutControlItem11.Text = "BILL NO"
         Me.LayoutControlItem11.TextLocation = DevExpress.Utils.Locations.Left
         Me.LayoutControlItem11.TextSize = New System.Drawing.Size(106, 20)
@@ -4235,10 +4264,10 @@ Partial Class frmPrescription
         Me.LayoutControlItem12.AppearanceItemCaption.Options.UseForeColor = True
         Me.LayoutControlItem12.Control = Me.dePrescriptionDate
         Me.LayoutControlItem12.CustomizationFormText = "Date"
-        Me.LayoutControlItem12.Location = New System.Drawing.Point(651, 124)
+        Me.LayoutControlItem12.Location = New System.Drawing.Point(656, 124)
         Me.LayoutControlItem12.Name = "LayoutControlItem12"
         Me.LayoutControlItem12.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem12.Size = New System.Drawing.Size(460, 25)
+        Me.LayoutControlItem12.Size = New System.Drawing.Size(464, 25)
         Me.LayoutControlItem12.Text = "DATE"
         Me.LayoutControlItem12.TextLocation = DevExpress.Utils.Locations.Left
         Me.LayoutControlItem12.TextSize = New System.Drawing.Size(106, 20)
@@ -4253,10 +4282,10 @@ Partial Class frmPrescription
         Me.LayoutControlItem13.AppearanceItemCaption.Options.UseForeColor = True
         Me.LayoutControlItem13.Control = Me.deDueDate
         Me.LayoutControlItem13.CustomizationFormText = "Expire Date"
-        Me.LayoutControlItem13.Location = New System.Drawing.Point(649, 149)
+        Me.LayoutControlItem13.Location = New System.Drawing.Point(654, 149)
         Me.LayoutControlItem13.Name = "LayoutControlItem13"
         Me.LayoutControlItem13.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem13.Size = New System.Drawing.Size(462, 25)
+        Me.LayoutControlItem13.Size = New System.Drawing.Size(466, 25)
         Me.LayoutControlItem13.Text = "EXPIRE DATE"
         Me.LayoutControlItem13.TextLocation = DevExpress.Utils.Locations.Left
         Me.LayoutControlItem13.TextSize = New System.Drawing.Size(106, 20)
@@ -4274,7 +4303,7 @@ Partial Class frmPrescription
         Me.LayoutControlItem15.Location = New System.Drawing.Point(90, 149)
         Me.LayoutControlItem15.Name = "LayoutControlItem15"
         Me.LayoutControlItem15.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem15.Size = New System.Drawing.Size(310, 25)
+        Me.LayoutControlItem15.Size = New System.Drawing.Size(313, 25)
         Me.LayoutControlItem15.Text = "OFFICE ADDRESS"
         Me.LayoutControlItem15.TextLocation = DevExpress.Utils.Locations.Left
         Me.LayoutControlItem15.TextSize = New System.Drawing.Size(106, 20)
@@ -4285,18 +4314,18 @@ Partial Class frmPrescription
         Me.EmptySpaceItem3.CustomizationFormText = "EmptySpaceItem3"
         Me.EmptySpaceItem3.Location = New System.Drawing.Point(90, 174)
         Me.EmptySpaceItem3.Name = "EmptySpaceItem3"
-        Me.EmptySpaceItem3.Size = New System.Drawing.Size(11, 286)
+        Me.EmptySpaceItem3.Size = New System.Drawing.Size(10, 261)
         Me.EmptySpaceItem3.Text = "EmptySpaceItem3"
         Me.EmptySpaceItem3.TextSize = New System.Drawing.Size(0, 0)
         '
         'LayoutControlGroup5
         '
         Me.LayoutControlGroup5.CustomizationFormText = "LayoutControlGroup5"
-        Me.LayoutControlGroup5.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlGroup3, Me.LayoutControlGroup4, Me.LayoutControlItem16, Me.LayoutControlItem21, Me.LayoutControlItem17, Me.LayoutControlItem18, Me.LayoutControlItem19, Me.LayoutControlItem23, Me.LayoutControlItem22, Me.LayoutControlItem20, Me.LayoutControlItem25, Me.LayoutControlItem24, Me.LayoutControlItem26, Me.LayoutControlItem27, Me.LayoutControlItem56, Me.LayoutControlItem57, Me.LayoutControlItem43, Me.LayoutControlItem46, Me.LayoutControlItem47, Me.LayoutControlItem51, Me.LayoutControlItem50, Me.LayoutControlItem55, Me.LayoutControlItem54, Me.LayoutControlItem53, Me.LayoutControlItem52, Me.LayoutControlItem42, Me.LayoutControlItem41, Me.LayoutControlItem40, Me.LayoutControlItem45, Me.LayoutControlItem49, Me.LayoutControlItem48, Me.LayoutControlItem44, Me.LayoutControlItem34, Me.LayoutControlItem33, Me.LayoutControlItem35, Me.LayoutControlItem31, Me.LayoutControlItem30, Me.LayoutControlItem29, Me.LayoutControlItem28, Me.LayoutControlItem32, Me.LayoutControlItem37, Me.LayoutControlItem38, Me.LayoutControlItem39, Me.LayoutControlItem36, Me.LayoutControlItem88, Me.LayoutControlItem89, Me.LayoutControlItem90, Me.LayoutControlItem96, Me.LayoutControlItem97, Me.LayoutControlItem98, Me.LayoutControlItem99, Me.LayoutControlItem100, Me.LayoutControlItem101, Me.LayoutControlItem102, Me.LayoutControlItem103, Me.LayoutControlItem104, Me.LayoutControlItem105, Me.LayoutControlItem106, Me.LayoutControlItem107, Me.LayoutControlItem108, Me.LayoutControlItem109, Me.LayoutControlItem110, Me.LayoutControlItem111, Me.LayoutControlItem112, Me.LayoutControlItem115, Me.LayoutControlItem116, Me.LayoutControlItem117, Me.LayoutControlItem118, Me.LayoutControlItem119, Me.LayoutControlItem120, Me.LayoutControlItem121, Me.LayoutControlItem122, Me.LayoutControlItem123, Me.LayoutControlItem124, Me.LayoutControlItem125, Me.LayoutControlItem126, Me.EmptySpaceItem1, Me.EmptySpaceItem13, Me.LayoutControlGroup8, Me.LayoutControlGroup9, Me.LayoutControlGroup10, Me.LayoutControlItem129, Me.LayoutControlItem131, Me.LayoutControlItem132, Me.LayoutControlItem133, Me.LayoutControlItem130, Me.LayoutControlItem137, Me.LayoutControlItem134, Me.LayoutControlItem135, Me.LayoutControlItem136})
-        Me.LayoutControlGroup5.Location = New System.Drawing.Point(101, 174)
+        Me.LayoutControlGroup5.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlGroup3, Me.LayoutControlGroup4, Me.LayoutControlItem16, Me.LayoutControlItem21, Me.LayoutControlItem17, Me.LayoutControlItem18, Me.LayoutControlItem19, Me.LayoutControlItem23, Me.LayoutControlItem22, Me.LayoutControlItem20, Me.LayoutControlItem25, Me.LayoutControlItem24, Me.LayoutControlItem26, Me.LayoutControlItem27, Me.LayoutControlItem56, Me.LayoutControlItem57, Me.LayoutControlItem43, Me.LayoutControlItem46, Me.LayoutControlItem47, Me.LayoutControlItem51, Me.LayoutControlItem50, Me.LayoutControlItem55, Me.LayoutControlItem54, Me.LayoutControlItem53, Me.LayoutControlItem52, Me.LayoutControlItem42, Me.LayoutControlItem41, Me.LayoutControlItem40, Me.LayoutControlItem45, Me.LayoutControlItem49, Me.LayoutControlItem48, Me.LayoutControlItem44, Me.LayoutControlItem34, Me.LayoutControlItem33, Me.LayoutControlItem35, Me.LayoutControlItem31, Me.LayoutControlItem30, Me.LayoutControlItem29, Me.LayoutControlItem28, Me.LayoutControlItem32, Me.LayoutControlItem37, Me.LayoutControlItem38, Me.LayoutControlItem39, Me.LayoutControlItem36, Me.LayoutControlItem88, Me.LayoutControlItem89, Me.LayoutControlItem90, Me.LayoutControlItem96, Me.LayoutControlItem97, Me.LayoutControlItem98, Me.LayoutControlItem99, Me.LayoutControlItem100, Me.LayoutControlItem101, Me.LayoutControlItem102, Me.LayoutControlItem103, Me.LayoutControlItem104, Me.LayoutControlItem105, Me.LayoutControlItem106, Me.LayoutControlItem107, Me.LayoutControlItem108, Me.LayoutControlItem109, Me.LayoutControlItem110, Me.LayoutControlItem111, Me.LayoutControlItem112, Me.LayoutControlItem115, Me.LayoutControlItem116, Me.LayoutControlItem117, Me.LayoutControlItem118, Me.LayoutControlItem119, Me.LayoutControlItem120, Me.LayoutControlItem121, Me.LayoutControlItem122, Me.LayoutControlItem123, Me.LayoutControlItem124, Me.LayoutControlItem125, Me.LayoutControlItem126, Me.EmptySpaceItem1, Me.LayoutControlGroup8, Me.LayoutControlGroup9, Me.LayoutControlGroup10, Me.LayoutControlItem129, Me.LayoutControlItem131, Me.LayoutControlItem132, Me.LayoutControlItem137, Me.LayoutControlItem135, Me.LayoutControlItem136, Me.LayoutControlItem130, Me.LayoutControlItem133, Me.LayoutControlItem134})
+        Me.LayoutControlGroup5.Location = New System.Drawing.Point(100, 174)
         Me.LayoutControlGroup5.Name = "LayoutControlGroup5"
         Me.LayoutControlGroup5.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlGroup5.Size = New System.Drawing.Size(1000, 286)
+        Me.LayoutControlGroup5.Size = New System.Drawing.Size(1010, 261)
         Me.LayoutControlGroup5.Text = "LayoutControlGroup5"
         Me.LayoutControlGroup5.TextVisible = False
         '
@@ -4409,7 +4438,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlGroup4.CustomizationFormText = "LayoutControlGroup4"
         Me.LayoutControlGroup4.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem62, Me.LayoutControlItem63, Me.LayoutControlItem64, Me.EmptySpaceItem5, Me.LayoutControlItem87, Me.LayoutControlItem114})
-        Me.LayoutControlGroup4.Location = New System.Drawing.Point(573, 0)
+        Me.LayoutControlGroup4.Location = New System.Drawing.Point(583, 0)
         Me.LayoutControlGroup4.Name = "LayoutControlGroup4"
         Me.LayoutControlGroup4.Size = New System.Drawing.Size(417, 26)
         Me.LayoutControlGroup4.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
@@ -4724,7 +4753,7 @@ Partial Class frmPrescription
         Me.LayoutControlItem57.AppearanceItemCaption.Options.UseForeColor = True
         Me.LayoutControlItem57.Control = Me.cbeFrame
         Me.LayoutControlItem57.CustomizationFormText = "Frame"
-        Me.LayoutControlItem57.Location = New System.Drawing.Point(573, 176)
+        Me.LayoutControlItem57.Location = New System.Drawing.Point(583, 176)
         Me.LayoutControlItem57.Name = "LayoutControlItem57"
         Me.LayoutControlItem57.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
         Me.LayoutControlItem57.Size = New System.Drawing.Size(417, 25)
@@ -4736,7 +4765,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem43.Control = Me.teExR2
         Me.LayoutControlItem43.CustomizationFormText = "LayoutControlItem43"
-        Me.LayoutControlItem43.Location = New System.Drawing.Point(573, 101)
+        Me.LayoutControlItem43.Location = New System.Drawing.Point(583, 101)
         Me.LayoutControlItem43.Name = "LayoutControlItem43"
         Me.LayoutControlItem43.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
         Me.LayoutControlItem43.Size = New System.Drawing.Size(70, 25)
@@ -4750,7 +4779,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem46.Control = Me.teExR3
         Me.LayoutControlItem46.CustomizationFormText = "LayoutControlItem46"
-        Me.LayoutControlItem46.Location = New System.Drawing.Point(643, 76)
+        Me.LayoutControlItem46.Location = New System.Drawing.Point(653, 76)
         Me.LayoutControlItem46.Name = "LayoutControlItem46"
         Me.LayoutControlItem46.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
         Me.LayoutControlItem46.Size = New System.Drawing.Size(70, 25)
@@ -4764,7 +4793,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem47.Control = Me.teExR4
         Me.LayoutControlItem47.CustomizationFormText = "LayoutControlItem47"
-        Me.LayoutControlItem47.Location = New System.Drawing.Point(643, 101)
+        Me.LayoutControlItem47.Location = New System.Drawing.Point(653, 101)
         Me.LayoutControlItem47.Name = "LayoutControlItem47"
         Me.LayoutControlItem47.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
         Me.LayoutControlItem47.Size = New System.Drawing.Size(70, 25)
@@ -4778,7 +4807,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem51.Control = Me.teExR6
         Me.LayoutControlItem51.CustomizationFormText = "LayoutControlItem51"
-        Me.LayoutControlItem51.Location = New System.Drawing.Point(713, 101)
+        Me.LayoutControlItem51.Location = New System.Drawing.Point(723, 101)
         Me.LayoutControlItem51.Name = "LayoutControlItem51"
         Me.LayoutControlItem51.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
         Me.LayoutControlItem51.Size = New System.Drawing.Size(70, 25)
@@ -4792,7 +4821,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem50.Control = Me.teExR5
         Me.LayoutControlItem50.CustomizationFormText = "LayoutControlItem50"
-        Me.LayoutControlItem50.Location = New System.Drawing.Point(713, 76)
+        Me.LayoutControlItem50.Location = New System.Drawing.Point(723, 76)
         Me.LayoutControlItem50.Name = "LayoutControlItem50"
         Me.LayoutControlItem50.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
         Me.LayoutControlItem50.Size = New System.Drawing.Size(70, 25)
@@ -4806,7 +4835,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem55.Control = Me.teExRy
         Me.LayoutControlItem55.CustomizationFormText = "LayoutControlItem55"
-        Me.LayoutControlItem55.Location = New System.Drawing.Point(783, 101)
+        Me.LayoutControlItem55.Location = New System.Drawing.Point(793, 101)
         Me.LayoutControlItem55.Name = "LayoutControlItem55"
         Me.LayoutControlItem55.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
         Me.LayoutControlItem55.Size = New System.Drawing.Size(70, 25)
@@ -4820,7 +4849,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem54.Control = Me.teExRx
         Me.LayoutControlItem54.CustomizationFormText = "LayoutControlItem54"
-        Me.LayoutControlItem54.Location = New System.Drawing.Point(783, 76)
+        Me.LayoutControlItem54.Location = New System.Drawing.Point(793, 76)
         Me.LayoutControlItem54.Name = "LayoutControlItem54"
         Me.LayoutControlItem54.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
         Me.LayoutControlItem54.Size = New System.Drawing.Size(70, 25)
@@ -4834,7 +4863,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem53.Control = Me.teInRy
         Me.LayoutControlItem53.CustomizationFormText = "LayoutControlItem53"
-        Me.LayoutControlItem53.Location = New System.Drawing.Point(783, 51)
+        Me.LayoutControlItem53.Location = New System.Drawing.Point(793, 51)
         Me.LayoutControlItem53.Name = "LayoutControlItem53"
         Me.LayoutControlItem53.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
         Me.LayoutControlItem53.Size = New System.Drawing.Size(70, 25)
@@ -4848,7 +4877,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem52.Control = Me.teInRx
         Me.LayoutControlItem52.CustomizationFormText = "LayoutControlItem52"
-        Me.LayoutControlItem52.Location = New System.Drawing.Point(783, 26)
+        Me.LayoutControlItem52.Location = New System.Drawing.Point(793, 26)
         Me.LayoutControlItem52.MaxSize = New System.Drawing.Size(70, 25)
         Me.LayoutControlItem52.MinSize = New System.Drawing.Size(70, 25)
         Me.LayoutControlItem52.Name = "LayoutControlItem52"
@@ -4865,7 +4894,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem42.Control = Me.teExR1
         Me.LayoutControlItem42.CustomizationFormText = "LayoutControlItem42"
-        Me.LayoutControlItem42.Location = New System.Drawing.Point(573, 76)
+        Me.LayoutControlItem42.Location = New System.Drawing.Point(583, 76)
         Me.LayoutControlItem42.Name = "LayoutControlItem42"
         Me.LayoutControlItem42.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
         Me.LayoutControlItem42.Size = New System.Drawing.Size(70, 25)
@@ -4879,7 +4908,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem41.Control = Me.teInR2
         Me.LayoutControlItem41.CustomizationFormText = "LayoutControlItem41"
-        Me.LayoutControlItem41.Location = New System.Drawing.Point(573, 51)
+        Me.LayoutControlItem41.Location = New System.Drawing.Point(583, 51)
         Me.LayoutControlItem41.Name = "LayoutControlItem41"
         Me.LayoutControlItem41.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
         Me.LayoutControlItem41.Size = New System.Drawing.Size(70, 25)
@@ -4893,7 +4922,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem40.Control = Me.teInR1
         Me.LayoutControlItem40.CustomizationFormText = "LayoutControlItem40"
-        Me.LayoutControlItem40.Location = New System.Drawing.Point(573, 26)
+        Me.LayoutControlItem40.Location = New System.Drawing.Point(583, 26)
         Me.LayoutControlItem40.MaxSize = New System.Drawing.Size(70, 31)
         Me.LayoutControlItem40.MinSize = New System.Drawing.Size(70, 25)
         Me.LayoutControlItem40.Name = "LayoutControlItem40"
@@ -4910,7 +4939,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem45.Control = Me.teInR4
         Me.LayoutControlItem45.CustomizationFormText = "LayoutControlItem45"
-        Me.LayoutControlItem45.Location = New System.Drawing.Point(643, 51)
+        Me.LayoutControlItem45.Location = New System.Drawing.Point(653, 51)
         Me.LayoutControlItem45.Name = "LayoutControlItem45"
         Me.LayoutControlItem45.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
         Me.LayoutControlItem45.Size = New System.Drawing.Size(70, 25)
@@ -4924,7 +4953,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem49.Control = Me.teInR6
         Me.LayoutControlItem49.CustomizationFormText = "LayoutControlItem49"
-        Me.LayoutControlItem49.Location = New System.Drawing.Point(713, 51)
+        Me.LayoutControlItem49.Location = New System.Drawing.Point(723, 51)
         Me.LayoutControlItem49.Name = "LayoutControlItem49"
         Me.LayoutControlItem49.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
         Me.LayoutControlItem49.Size = New System.Drawing.Size(70, 25)
@@ -4938,7 +4967,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem48.Control = Me.teInR5
         Me.LayoutControlItem48.CustomizationFormText = "LayoutControlItem48"
-        Me.LayoutControlItem48.Location = New System.Drawing.Point(713, 26)
+        Me.LayoutControlItem48.Location = New System.Drawing.Point(723, 26)
         Me.LayoutControlItem48.MaxSize = New System.Drawing.Size(70, 31)
         Me.LayoutControlItem48.MinSize = New System.Drawing.Size(70, 25)
         Me.LayoutControlItem48.Name = "LayoutControlItem48"
@@ -4955,7 +4984,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem44.Control = Me.teInR3
         Me.LayoutControlItem44.CustomizationFormText = "LayoutControlItem44"
-        Me.LayoutControlItem44.Location = New System.Drawing.Point(643, 26)
+        Me.LayoutControlItem44.Location = New System.Drawing.Point(653, 26)
         Me.LayoutControlItem44.MaxSize = New System.Drawing.Size(70, 25)
         Me.LayoutControlItem44.MinSize = New System.Drawing.Size(70, 25)
         Me.LayoutControlItem44.Name = "LayoutControlItem44"
@@ -5090,7 +5119,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem37.Control = Me.LabelControl6
         Me.LayoutControlItem37.CustomizationFormText = "LayoutControlItem37"
-        Me.LayoutControlItem37.Location = New System.Drawing.Point(923, 51)
+        Me.LayoutControlItem37.Location = New System.Drawing.Point(933, 51)
         Me.LayoutControlItem37.MaxSize = New System.Drawing.Size(67, 25)
         Me.LayoutControlItem37.MinSize = New System.Drawing.Size(67, 25)
         Me.LayoutControlItem37.Name = "LayoutControlItem37"
@@ -5107,7 +5136,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem38.Control = Me.LabelControl7
         Me.LayoutControlItem38.CustomizationFormText = "LayoutControlItem38"
-        Me.LayoutControlItem38.Location = New System.Drawing.Point(923, 76)
+        Me.LayoutControlItem38.Location = New System.Drawing.Point(933, 76)
         Me.LayoutControlItem38.MaxSize = New System.Drawing.Size(67, 25)
         Me.LayoutControlItem38.MinSize = New System.Drawing.Size(67, 25)
         Me.LayoutControlItem38.Name = "LayoutControlItem38"
@@ -5124,7 +5153,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem39.Control = Me.LabelControl8
         Me.LayoutControlItem39.CustomizationFormText = "LayoutControlItem39"
-        Me.LayoutControlItem39.Location = New System.Drawing.Point(923, 101)
+        Me.LayoutControlItem39.Location = New System.Drawing.Point(933, 101)
         Me.LayoutControlItem39.MaxSize = New System.Drawing.Size(67, 25)
         Me.LayoutControlItem39.MinSize = New System.Drawing.Size(67, 25)
         Me.LayoutControlItem39.Name = "LayoutControlItem39"
@@ -5141,7 +5170,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem36.Control = Me.LabelControl5
         Me.LayoutControlItem36.CustomizationFormText = "LayoutControlItem36"
-        Me.LayoutControlItem36.Location = New System.Drawing.Point(923, 26)
+        Me.LayoutControlItem36.Location = New System.Drawing.Point(933, 26)
         Me.LayoutControlItem36.MaxSize = New System.Drawing.Size(67, 25)
         Me.LayoutControlItem36.MinSize = New System.Drawing.Size(67, 25)
         Me.LayoutControlItem36.Name = "LayoutControlItem36"
@@ -5304,7 +5333,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem103.Control = Me.teHbRx
         Me.LayoutControlItem103.CustomizationFormText = "LayoutControlItem103"
-        Me.LayoutControlItem103.Location = New System.Drawing.Point(783, 126)
+        Me.LayoutControlItem103.Location = New System.Drawing.Point(793, 126)
         Me.LayoutControlItem103.Name = "LayoutControlItem103"
         Me.LayoutControlItem103.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
         Me.LayoutControlItem103.Size = New System.Drawing.Size(70, 25)
@@ -5318,7 +5347,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem104.Control = Me.teHbR3
         Me.LayoutControlItem104.CustomizationFormText = "LayoutControlItem104"
-        Me.LayoutControlItem104.Location = New System.Drawing.Point(644, 126)
+        Me.LayoutControlItem104.Location = New System.Drawing.Point(654, 126)
         Me.LayoutControlItem104.Name = "LayoutControlItem104"
         Me.LayoutControlItem104.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
         Me.LayoutControlItem104.Size = New System.Drawing.Size(69, 25)
@@ -5332,7 +5361,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem105.Control = Me.teHbR1
         Me.LayoutControlItem105.CustomizationFormText = "LayoutControlItem105"
-        Me.LayoutControlItem105.Location = New System.Drawing.Point(573, 126)
+        Me.LayoutControlItem105.Location = New System.Drawing.Point(583, 126)
         Me.LayoutControlItem105.Name = "LayoutControlItem105"
         Me.LayoutControlItem105.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
         Me.LayoutControlItem105.Size = New System.Drawing.Size(71, 25)
@@ -5346,7 +5375,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem106.Control = Me.teHbR5
         Me.LayoutControlItem106.CustomizationFormText = "LayoutControlItem106"
-        Me.LayoutControlItem106.Location = New System.Drawing.Point(713, 126)
+        Me.LayoutControlItem106.Location = New System.Drawing.Point(723, 126)
         Me.LayoutControlItem106.Name = "LayoutControlItem106"
         Me.LayoutControlItem106.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
         Me.LayoutControlItem106.Size = New System.Drawing.Size(70, 25)
@@ -5360,7 +5389,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem107.Control = Me.LabelControl19
         Me.LayoutControlItem107.CustomizationFormText = "LayoutControlItem107"
-        Me.LayoutControlItem107.Location = New System.Drawing.Point(923, 126)
+        Me.LayoutControlItem107.Location = New System.Drawing.Point(933, 126)
         Me.LayoutControlItem107.MaxSize = New System.Drawing.Size(67, 25)
         Me.LayoutControlItem107.MinSize = New System.Drawing.Size(67, 25)
         Me.LayoutControlItem107.Name = "LayoutControlItem107"
@@ -5377,7 +5406,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem108.Control = Me.teHbR2
         Me.LayoutControlItem108.CustomizationFormText = "LayoutControlItem108"
-        Me.LayoutControlItem108.Location = New System.Drawing.Point(573, 151)
+        Me.LayoutControlItem108.Location = New System.Drawing.Point(583, 151)
         Me.LayoutControlItem108.Name = "LayoutControlItem108"
         Me.LayoutControlItem108.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
         Me.LayoutControlItem108.Size = New System.Drawing.Size(71, 25)
@@ -5391,7 +5420,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem109.Control = Me.teHbRy
         Me.LayoutControlItem109.CustomizationFormText = "LayoutControlItem109"
-        Me.LayoutControlItem109.Location = New System.Drawing.Point(783, 151)
+        Me.LayoutControlItem109.Location = New System.Drawing.Point(793, 151)
         Me.LayoutControlItem109.Name = "LayoutControlItem109"
         Me.LayoutControlItem109.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
         Me.LayoutControlItem109.Size = New System.Drawing.Size(70, 25)
@@ -5405,7 +5434,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem110.Control = Me.teHbR4
         Me.LayoutControlItem110.CustomizationFormText = "LayoutControlItem110"
-        Me.LayoutControlItem110.Location = New System.Drawing.Point(644, 151)
+        Me.LayoutControlItem110.Location = New System.Drawing.Point(654, 151)
         Me.LayoutControlItem110.Name = "LayoutControlItem110"
         Me.LayoutControlItem110.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
         Me.LayoutControlItem110.Size = New System.Drawing.Size(69, 25)
@@ -5419,7 +5448,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem111.Control = Me.teHbR6
         Me.LayoutControlItem111.CustomizationFormText = "LayoutControlItem111"
-        Me.LayoutControlItem111.Location = New System.Drawing.Point(713, 151)
+        Me.LayoutControlItem111.Location = New System.Drawing.Point(723, 151)
         Me.LayoutControlItem111.Name = "LayoutControlItem111"
         Me.LayoutControlItem111.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
         Me.LayoutControlItem111.Size = New System.Drawing.Size(70, 25)
@@ -5433,7 +5462,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem112.Control = Me.LabelControl20
         Me.LayoutControlItem112.CustomizationFormText = "LayoutControlItem112"
-        Me.LayoutControlItem112.Location = New System.Drawing.Point(923, 151)
+        Me.LayoutControlItem112.Location = New System.Drawing.Point(933, 151)
         Me.LayoutControlItem112.MaxSize = New System.Drawing.Size(67, 25)
         Me.LayoutControlItem112.MinSize = New System.Drawing.Size(67, 25)
         Me.LayoutControlItem112.Name = "LayoutControlItem112"
@@ -5537,7 +5566,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem121.Control = Me.teInIOPRx
         Me.LayoutControlItem121.CustomizationFormText = "LayoutControlItem121"
-        Me.LayoutControlItem121.Location = New System.Drawing.Point(853, 26)
+        Me.LayoutControlItem121.Location = New System.Drawing.Point(863, 26)
         Me.LayoutControlItem121.MaxSize = New System.Drawing.Size(70, 25)
         Me.LayoutControlItem121.MinSize = New System.Drawing.Size(70, 25)
         Me.LayoutControlItem121.Name = "LayoutControlItem121"
@@ -5554,7 +5583,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem122.Control = Me.teInIOPRy
         Me.LayoutControlItem122.CustomizationFormText = "LayoutControlItem122"
-        Me.LayoutControlItem122.Location = New System.Drawing.Point(853, 51)
+        Me.LayoutControlItem122.Location = New System.Drawing.Point(863, 51)
         Me.LayoutControlItem122.Name = "LayoutControlItem122"
         Me.LayoutControlItem122.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
         Me.LayoutControlItem122.Size = New System.Drawing.Size(70, 25)
@@ -5568,7 +5597,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem123.Control = Me.teExIOPRx
         Me.LayoutControlItem123.CustomizationFormText = "LayoutControlItem123"
-        Me.LayoutControlItem123.Location = New System.Drawing.Point(853, 76)
+        Me.LayoutControlItem123.Location = New System.Drawing.Point(863, 76)
         Me.LayoutControlItem123.Name = "LayoutControlItem123"
         Me.LayoutControlItem123.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
         Me.LayoutControlItem123.Size = New System.Drawing.Size(70, 25)
@@ -5582,7 +5611,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem124.Control = Me.teExIOPRy
         Me.LayoutControlItem124.CustomizationFormText = "LayoutControlItem124"
-        Me.LayoutControlItem124.Location = New System.Drawing.Point(853, 101)
+        Me.LayoutControlItem124.Location = New System.Drawing.Point(863, 101)
         Me.LayoutControlItem124.Name = "LayoutControlItem124"
         Me.LayoutControlItem124.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
         Me.LayoutControlItem124.Size = New System.Drawing.Size(70, 25)
@@ -5596,7 +5625,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem125.Control = Me.teHbIOPRx
         Me.LayoutControlItem125.CustomizationFormText = "LayoutControlItem125"
-        Me.LayoutControlItem125.Location = New System.Drawing.Point(853, 126)
+        Me.LayoutControlItem125.Location = New System.Drawing.Point(863, 126)
         Me.LayoutControlItem125.Name = "LayoutControlItem125"
         Me.LayoutControlItem125.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
         Me.LayoutControlItem125.Size = New System.Drawing.Size(70, 25)
@@ -5610,7 +5639,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem126.Control = Me.teHbIOPRy
         Me.LayoutControlItem126.CustomizationFormText = "LayoutControlItem126"
-        Me.LayoutControlItem126.Location = New System.Drawing.Point(853, 151)
+        Me.LayoutControlItem126.Location = New System.Drawing.Point(863, 151)
         Me.LayoutControlItem126.Name = "LayoutControlItem126"
         Me.LayoutControlItem126.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
         Me.LayoutControlItem126.Size = New System.Drawing.Size(70, 25)
@@ -5625,18 +5654,9 @@ Partial Class frmPrescription
         Me.EmptySpaceItem1.CustomizationFormText = "EmptySpaceItem1"
         Me.EmptySpaceItem1.Location = New System.Drawing.Point(417, 0)
         Me.EmptySpaceItem1.Name = "EmptySpaceItem1"
-        Me.EmptySpaceItem1.Size = New System.Drawing.Size(156, 26)
+        Me.EmptySpaceItem1.Size = New System.Drawing.Size(166, 26)
         Me.EmptySpaceItem1.Text = "EmptySpaceItem1"
         Me.EmptySpaceItem1.TextSize = New System.Drawing.Size(0, 0)
-        '
-        'EmptySpaceItem13
-        '
-        Me.EmptySpaceItem13.CustomizationFormText = "EmptySpaceItem13"
-        Me.EmptySpaceItem13.Location = New System.Drawing.Point(417, 176)
-        Me.EmptySpaceItem13.Name = "EmptySpaceItem13"
-        Me.EmptySpaceItem13.Size = New System.Drawing.Size(156, 100)
-        Me.EmptySpaceItem13.Text = "EmptySpaceItem13"
-        Me.EmptySpaceItem13.TextSize = New System.Drawing.Size(0, 0)
         '
         'LayoutControlGroup8
         '
@@ -5644,7 +5664,7 @@ Partial Class frmPrescription
         Me.LayoutControlGroup8.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.EmptySpaceItem7})
         Me.LayoutControlGroup8.Location = New System.Drawing.Point(417, 26)
         Me.LayoutControlGroup8.Name = "LayoutControlGroup8"
-        Me.LayoutControlGroup8.Size = New System.Drawing.Size(156, 50)
+        Me.LayoutControlGroup8.Size = New System.Drawing.Size(166, 50)
         Me.LayoutControlGroup8.Text = "LayoutControlGroup8"
         Me.LayoutControlGroup8.TextVisible = False
         '
@@ -5661,7 +5681,7 @@ Partial Class frmPrescription
         Me.EmptySpaceItem7.MinSize = New System.Drawing.Size(60, 10)
         Me.EmptySpaceItem7.Name = "EmptySpaceItem7"
         Me.EmptySpaceItem7.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-        Me.EmptySpaceItem7.Size = New System.Drawing.Size(150, 44)
+        Me.EmptySpaceItem7.Size = New System.Drawing.Size(160, 44)
         Me.EmptySpaceItem7.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
         Me.EmptySpaceItem7.Text = "HOME"
         Me.EmptySpaceItem7.TextSize = New System.Drawing.Size(106, 20)
@@ -5673,7 +5693,7 @@ Partial Class frmPrescription
         Me.LayoutControlGroup9.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.EmptySpaceItem8})
         Me.LayoutControlGroup9.Location = New System.Drawing.Point(417, 76)
         Me.LayoutControlGroup9.Name = "LayoutControlGroup9"
-        Me.LayoutControlGroup9.Size = New System.Drawing.Size(156, 50)
+        Me.LayoutControlGroup9.Size = New System.Drawing.Size(166, 50)
         Me.LayoutControlGroup9.Text = "LayoutControlGroup9"
         Me.LayoutControlGroup9.TextVisible = False
         '
@@ -5689,7 +5709,7 @@ Partial Class frmPrescription
         Me.EmptySpaceItem8.Location = New System.Drawing.Point(0, 0)
         Me.EmptySpaceItem8.Name = "EmptySpaceItem8"
         Me.EmptySpaceItem8.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-        Me.EmptySpaceItem8.Size = New System.Drawing.Size(150, 44)
+        Me.EmptySpaceItem8.Size = New System.Drawing.Size(160, 44)
         Me.EmptySpaceItem8.Text = "EXTERNAL"
         Me.EmptySpaceItem8.TextSize = New System.Drawing.Size(106, 20)
         Me.EmptySpaceItem8.TextVisible = True
@@ -5700,7 +5720,7 @@ Partial Class frmPrescription
         Me.LayoutControlGroup10.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.EmptySpaceItem6})
         Me.LayoutControlGroup10.Location = New System.Drawing.Point(417, 126)
         Me.LayoutControlGroup10.Name = "LayoutControlGroup10"
-        Me.LayoutControlGroup10.Size = New System.Drawing.Size(156, 50)
+        Me.LayoutControlGroup10.Size = New System.Drawing.Size(166, 50)
         Me.LayoutControlGroup10.Text = "LayoutControlGroup10"
         Me.LayoutControlGroup10.TextVisible = False
         '
@@ -5716,7 +5736,7 @@ Partial Class frmPrescription
         Me.EmptySpaceItem6.Location = New System.Drawing.Point(0, 0)
         Me.EmptySpaceItem6.Name = "EmptySpaceItem6"
         Me.EmptySpaceItem6.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-        Me.EmptySpaceItem6.Size = New System.Drawing.Size(150, 44)
+        Me.EmptySpaceItem6.Size = New System.Drawing.Size(160, 44)
         Me.EmptySpaceItem6.Text = "Hb Rx"
         Me.EmptySpaceItem6.TextSize = New System.Drawing.Size(106, 20)
         Me.EmptySpaceItem6.TextVisible = True
@@ -5729,33 +5749,15 @@ Partial Class frmPrescription
         Me.LayoutControlItem129.AppearanceItemCaption.Options.UseBackColor = True
         Me.LayoutControlItem129.AppearanceItemCaption.Options.UseFont = True
         Me.LayoutControlItem129.AppearanceItemCaption.Options.UseForeColor = True
-        Me.LayoutControlItem129.Control = Me.lupLense
+        Me.LayoutControlItem129.Control = Me.lupLenseRight
         Me.LayoutControlItem129.CustomizationFormText = "LENSE"
         Me.LayoutControlItem129.Location = New System.Drawing.Point(0, 201)
         Me.LayoutControlItem129.Name = "LayoutControlItem129"
         Me.LayoutControlItem129.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
         Me.LayoutControlItem129.Size = New System.Drawing.Size(417, 25)
-        Me.LayoutControlItem129.Text = "LENSE"
+        Me.LayoutControlItem129.Text = "LENSE RIGHT"
         Me.LayoutControlItem129.TextLocation = DevExpress.Utils.Locations.Left
         Me.LayoutControlItem129.TextSize = New System.Drawing.Size(106, 20)
-        '
-        'LayoutControlItem130
-        '
-        Me.LayoutControlItem130.AppearanceItemCaption.BackColor = System.Drawing.Color.Navy
-        Me.LayoutControlItem130.AppearanceItemCaption.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.LayoutControlItem130.AppearanceItemCaption.ForeColor = System.Drawing.Color.White
-        Me.LayoutControlItem130.AppearanceItemCaption.Options.UseBackColor = True
-        Me.LayoutControlItem130.AppearanceItemCaption.Options.UseFont = True
-        Me.LayoutControlItem130.AppearanceItemCaption.Options.UseForeColor = True
-        Me.LayoutControlItem130.Control = Me.LupFrame
-        Me.LayoutControlItem130.CustomizationFormText = "FRAME"
-        Me.LayoutControlItem130.Location = New System.Drawing.Point(0, 251)
-        Me.LayoutControlItem130.Name = "LayoutControlItem130"
-        Me.LayoutControlItem130.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem130.Size = New System.Drawing.Size(417, 25)
-        Me.LayoutControlItem130.Text = "FRAME"
-        Me.LayoutControlItem130.TextLocation = DevExpress.Utils.Locations.Left
-        Me.LayoutControlItem130.TextSize = New System.Drawing.Size(106, 20)
         '
         'LayoutControlItem131
         '
@@ -5765,7 +5767,7 @@ Partial Class frmPrescription
         Me.LayoutControlItem131.AppearanceItemCaption.Options.UseBackColor = True
         Me.LayoutControlItem131.AppearanceItemCaption.Options.UseFont = True
         Me.LayoutControlItem131.AppearanceItemCaption.Options.UseForeColor = True
-        Me.LayoutControlItem131.Control = Me.seLenseQty
+        Me.LayoutControlItem131.Control = Me.seLenseQtyRight
         Me.LayoutControlItem131.CustomizationFormText = "Qty"
         Me.LayoutControlItem131.Location = New System.Drawing.Point(0, 226)
         Me.LayoutControlItem131.Name = "LayoutControlItem131"
@@ -5783,7 +5785,7 @@ Partial Class frmPrescription
         Me.LayoutControlItem132.AppearanceItemCaption.Options.UseBackColor = True
         Me.LayoutControlItem132.AppearanceItemCaption.Options.UseFont = True
         Me.LayoutControlItem132.AppearanceItemCaption.Options.UseForeColor = True
-        Me.LayoutControlItem132.Control = Me.seLensePrice
+        Me.LayoutControlItem132.Control = Me.seLensePriceRight
         Me.LayoutControlItem132.CustomizationFormText = "Price"
         Me.LayoutControlItem132.Location = New System.Drawing.Point(208, 226)
         Me.LayoutControlItem132.Name = "LayoutControlItem132"
@@ -5792,6 +5794,84 @@ Partial Class frmPrescription
         Me.LayoutControlItem132.Text = "Price"
         Me.LayoutControlItem132.TextLocation = DevExpress.Utils.Locations.Left
         Me.LayoutControlItem132.TextSize = New System.Drawing.Size(106, 20)
+        '
+        'LayoutControlItem137
+        '
+        Me.LayoutControlItem137.AppearanceItemCaption.BackColor = System.Drawing.Color.Navy
+        Me.LayoutControlItem137.AppearanceItemCaption.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.LayoutControlItem137.AppearanceItemCaption.ForeColor = System.Drawing.Color.White
+        Me.LayoutControlItem137.AppearanceItemCaption.Options.UseBackColor = True
+        Me.LayoutControlItem137.AppearanceItemCaption.Options.UseFont = True
+        Me.LayoutControlItem137.AppearanceItemCaption.Options.UseForeColor = True
+        Me.LayoutControlItem137.Control = Me.seLenseQtyLeft
+        Me.LayoutControlItem137.CustomizationFormText = "Qty"
+        Me.LayoutControlItem137.Location = New System.Drawing.Point(583, 226)
+        Me.LayoutControlItem137.Name = "LayoutControlItem137"
+        Me.LayoutControlItem137.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
+        Me.LayoutControlItem137.Size = New System.Drawing.Size(220, 25)
+        Me.LayoutControlItem137.Text = "Qty"
+        Me.LayoutControlItem137.TextLocation = DevExpress.Utils.Locations.Left
+        Me.LayoutControlItem137.TextSize = New System.Drawing.Size(106, 20)
+        '
+        'LayoutControlItem135
+        '
+        Me.LayoutControlItem135.AppearanceItemCaption.BackColor = System.Drawing.Color.Navy
+        Me.LayoutControlItem135.AppearanceItemCaption.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.LayoutControlItem135.AppearanceItemCaption.ForeColor = System.Drawing.Color.White
+        Me.LayoutControlItem135.AppearanceItemCaption.Options.UseBackColor = True
+        Me.LayoutControlItem135.AppearanceItemCaption.Options.UseFont = True
+        Me.LayoutControlItem135.AppearanceItemCaption.Options.UseForeColor = True
+        Me.LayoutControlItem135.Control = Me.lupLenseLeft
+        Me.LayoutControlItem135.CustomizationFormText = "LENSE LEFT"
+        Me.LayoutControlItem135.Location = New System.Drawing.Point(583, 201)
+        Me.LayoutControlItem135.Name = "LayoutControlItem135"
+        Me.LayoutControlItem135.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
+        Me.LayoutControlItem135.Size = New System.Drawing.Size(417, 25)
+        Me.LayoutControlItem135.Text = "LENSE LEFT"
+        Me.LayoutControlItem135.TextLocation = DevExpress.Utils.Locations.Left
+        Me.LayoutControlItem135.TextSize = New System.Drawing.Size(106, 20)
+        '
+        'LayoutControlItem136
+        '
+        Me.LayoutControlItem136.AppearanceItemCaption.BackColor = System.Drawing.Color.Navy
+        Me.LayoutControlItem136.AppearanceItemCaption.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.LayoutControlItem136.AppearanceItemCaption.ForeColor = System.Drawing.Color.White
+        Me.LayoutControlItem136.AppearanceItemCaption.Options.UseBackColor = True
+        Me.LayoutControlItem136.AppearanceItemCaption.Options.UseFont = True
+        Me.LayoutControlItem136.AppearanceItemCaption.Options.UseForeColor = True
+        Me.LayoutControlItem136.Control = Me.seLensePriceLeft
+        Me.LayoutControlItem136.CustomizationFormText = "Price"
+        Me.LayoutControlItem136.Location = New System.Drawing.Point(803, 226)
+        Me.LayoutControlItem136.Name = "LayoutControlItem136"
+        Me.LayoutControlItem136.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
+        Me.LayoutControlItem136.Size = New System.Drawing.Size(197, 25)
+        Me.LayoutControlItem136.Text = "Price"
+        Me.LayoutControlItem136.TextLocation = DevExpress.Utils.Locations.Left
+        Me.LayoutControlItem136.TextSize = New System.Drawing.Size(106, 20)
+        '
+        'LayoutControlItem130
+        '
+        Me.LayoutControlItem130.AppearanceItemCaption.BackColor = System.Drawing.Color.Navy
+        Me.LayoutControlItem130.AppearanceItemCaption.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.LayoutControlItem130.AppearanceItemCaption.ForeColor = System.Drawing.Color.White
+        Me.LayoutControlItem130.AppearanceItemCaption.Options.UseBackColor = True
+        Me.LayoutControlItem130.AppearanceItemCaption.Options.UseFont = True
+        Me.LayoutControlItem130.AppearanceItemCaption.Options.UseForeColor = True
+        Me.LayoutControlItem130.Control = Me.LupFrame
+        Me.LayoutControlItem130.CustomizationFormText = "FRAME"
+        Me.LayoutControlItem130.Location = New System.Drawing.Point(417, 176)
+        Me.LayoutControlItem130.MaxSize = New System.Drawing.Size(0, 25)
+        Me.LayoutControlItem130.MinSize = New System.Drawing.Size(166, 25)
+        Me.LayoutControlItem130.Name = "LayoutControlItem130"
+        Me.LayoutControlItem130.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
+        Me.LayoutControlItem130.Size = New System.Drawing.Size(166, 25)
+        Me.LayoutControlItem130.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
+        Me.LayoutControlItem130.Text = "FRAME"
+        Me.LayoutControlItem130.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize
+        Me.LayoutControlItem130.TextLocation = DevExpress.Utils.Locations.Left
+        Me.LayoutControlItem130.TextSize = New System.Drawing.Size(50, 20)
+        Me.LayoutControlItem130.TextToControlDistance = 3
+        Me.LayoutControlItem130.TrimClientAreaToControl = False
         '
         'LayoutControlItem133
         '
@@ -5803,13 +5883,16 @@ Partial Class frmPrescription
         Me.LayoutControlItem133.AppearanceItemCaption.Options.UseForeColor = True
         Me.LayoutControlItem133.Control = Me.seFrameQty
         Me.LayoutControlItem133.CustomizationFormText = "Qty"
-        Me.LayoutControlItem133.Location = New System.Drawing.Point(573, 251)
+        Me.LayoutControlItem133.Location = New System.Drawing.Point(417, 201)
         Me.LayoutControlItem133.Name = "LayoutControlItem133"
         Me.LayoutControlItem133.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem133.Size = New System.Drawing.Size(221, 25)
+        Me.LayoutControlItem133.Size = New System.Drawing.Size(166, 25)
         Me.LayoutControlItem133.Text = "Qty"
+        Me.LayoutControlItem133.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize
         Me.LayoutControlItem133.TextLocation = DevExpress.Utils.Locations.Left
-        Me.LayoutControlItem133.TextSize = New System.Drawing.Size(106, 20)
+        Me.LayoutControlItem133.TextSize = New System.Drawing.Size(50, 20)
+        Me.LayoutControlItem133.TextToControlDistance = 3
+        Me.LayoutControlItem133.TrimClientAreaToControl = False
         '
         'LayoutControlItem134
         '
@@ -5821,23 +5904,26 @@ Partial Class frmPrescription
         Me.LayoutControlItem134.AppearanceItemCaption.Options.UseForeColor = True
         Me.LayoutControlItem134.Control = Me.seFramePrice
         Me.LayoutControlItem134.CustomizationFormText = "Price"
-        Me.LayoutControlItem134.Location = New System.Drawing.Point(794, 251)
+        Me.LayoutControlItem134.Location = New System.Drawing.Point(417, 226)
         Me.LayoutControlItem134.Name = "LayoutControlItem134"
         Me.LayoutControlItem134.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem134.Size = New System.Drawing.Size(196, 25)
+        Me.LayoutControlItem134.Size = New System.Drawing.Size(166, 25)
         Me.LayoutControlItem134.Text = "Price"
+        Me.LayoutControlItem134.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize
         Me.LayoutControlItem134.TextLocation = DevExpress.Utils.Locations.Left
-        Me.LayoutControlItem134.TextSize = New System.Drawing.Size(106, 20)
+        Me.LayoutControlItem134.TextSize = New System.Drawing.Size(50, 20)
+        Me.LayoutControlItem134.TextToControlDistance = 3
+        Me.LayoutControlItem134.TrimClientAreaToControl = False
         '
         'LayoutControlItem75
         '
         Me.LayoutControlItem75.Control = Me.LayoutControl3
         Me.LayoutControlItem75.CustomizationFormText = "LayoutControlItem75"
-        Me.LayoutControlItem75.Location = New System.Drawing.Point(90, 460)
+        Me.LayoutControlItem75.Location = New System.Drawing.Point(90, 435)
         Me.LayoutControlItem75.MinSize = New System.Drawing.Size(111, 31)
         Me.LayoutControlItem75.Name = "LayoutControlItem75"
         Me.LayoutControlItem75.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem75.Size = New System.Drawing.Size(1021, 262)
+        Me.LayoutControlItem75.Size = New System.Drawing.Size(1030, 270)
         Me.LayoutControlItem75.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
         Me.LayoutControlItem75.Text = "LayoutControlItem75"
         Me.LayoutControlItem75.TextLocation = DevExpress.Utils.Locations.Left
@@ -5848,9 +5934,9 @@ Partial Class frmPrescription
         'EmptySpaceItem11
         '
         Me.EmptySpaceItem11.CustomizationFormText = "EmptySpaceItem11"
-        Me.EmptySpaceItem11.Location = New System.Drawing.Point(1101, 174)
+        Me.EmptySpaceItem11.Location = New System.Drawing.Point(1110, 174)
         Me.EmptySpaceItem11.Name = "EmptySpaceItem11"
-        Me.EmptySpaceItem11.Size = New System.Drawing.Size(10, 286)
+        Me.EmptySpaceItem11.Size = New System.Drawing.Size(10, 261)
         Me.EmptySpaceItem11.Text = "EmptySpaceItem11"
         Me.EmptySpaceItem11.TextSize = New System.Drawing.Size(0, 0)
         '
@@ -5864,10 +5950,10 @@ Partial Class frmPrescription
         Me.lciPrescriptionNo.AppearanceItemCaption.Options.UseForeColor = True
         Me.lciPrescriptionNo.Control = Me.tePrescriptionNo
         Me.lciPrescriptionNo.CustomizationFormText = "Prescription No"
-        Me.lciPrescriptionNo.Location = New System.Drawing.Point(846, 24)
+        Me.lciPrescriptionNo.Location = New System.Drawing.Point(853, 24)
         Me.lciPrescriptionNo.Name = "lciPrescriptionNo"
         Me.lciPrescriptionNo.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.lciPrescriptionNo.Size = New System.Drawing.Size(265, 25)
+        Me.lciPrescriptionNo.Size = New System.Drawing.Size(267, 25)
         Me.lciPrescriptionNo.Text = "PRESCRIPTION NO"
         Me.lciPrescriptionNo.TextLocation = DevExpress.Utils.Locations.Left
         Me.lciPrescriptionNo.TextSize = New System.Drawing.Size(106, 20)
@@ -5879,7 +5965,7 @@ Partial Class frmPrescription
         Me.LayoutControlItem85.CustomizationFormText = "LayoutControlItem85"
         Me.LayoutControlItem85.Location = New System.Drawing.Point(90, 0)
         Me.LayoutControlItem85.Name = "LayoutControlItem85"
-        Me.LayoutControlItem85.Size = New System.Drawing.Size(1021, 24)
+        Me.LayoutControlItem85.Size = New System.Drawing.Size(1030, 24)
         Me.LayoutControlItem85.Text = "LayoutControlItem85"
         Me.LayoutControlItem85.TextLocation = DevExpress.Utils.Locations.Left
         Me.LayoutControlItem85.TextSize = New System.Drawing.Size(0, 0)
@@ -5897,10 +5983,10 @@ Partial Class frmPrescription
         Me.LayoutControlItem14.AppearanceItemCaption.Options.UseForeColor = True
         Me.LayoutControlItem14.Control = Me.teNIICNo
         Me.LayoutControlItem14.CustomizationFormText = "NIC No"
-        Me.LayoutControlItem14.Location = New System.Drawing.Point(400, 149)
+        Me.LayoutControlItem14.Location = New System.Drawing.Point(403, 149)
         Me.LayoutControlItem14.Name = "LayoutControlItem14"
         Me.LayoutControlItem14.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem14.Size = New System.Drawing.Size(249, 25)
+        Me.LayoutControlItem14.Size = New System.Drawing.Size(251, 25)
         Me.LayoutControlItem14.Text = "NIC NO"
         Me.LayoutControlItem14.TextLocation = DevExpress.Utils.Locations.Left
         Me.LayoutControlItem14.TextSize = New System.Drawing.Size(106, 20)
@@ -5915,10 +6001,10 @@ Partial Class frmPrescription
         Me.LayoutControlItem69.AppearanceItemCaption.Options.UseForeColor = True
         Me.LayoutControlItem69.Control = Me.teMobileNo
         Me.LayoutControlItem69.CustomizationFormText = "MOBILE TELEPHONE"
-        Me.LayoutControlItem69.Location = New System.Drawing.Point(846, 49)
+        Me.LayoutControlItem69.Location = New System.Drawing.Point(853, 49)
         Me.LayoutControlItem69.Name = "LayoutControlItem69"
         Me.LayoutControlItem69.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem69.Size = New System.Drawing.Size(265, 25)
+        Me.LayoutControlItem69.Size = New System.Drawing.Size(267, 25)
         Me.LayoutControlItem69.Text = "MOBILE TELEPHONE"
         Me.LayoutControlItem69.TextLocation = DevExpress.Utils.Locations.Left
         Me.LayoutControlItem69.TextSize = New System.Drawing.Size(106, 20)
@@ -5930,7 +6016,7 @@ Partial Class frmPrescription
         Me.LayoutControlItem127.Location = New System.Drawing.Point(0, 25)
         Me.LayoutControlItem127.Name = "LayoutControlItem127"
         Me.LayoutControlItem127.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem127.Size = New System.Drawing.Size(90, 697)
+        Me.LayoutControlItem127.Size = New System.Drawing.Size(90, 680)
         Me.LayoutControlItem127.Text = "LayoutControlItem127"
         Me.LayoutControlItem127.TextLocation = DevExpress.Utils.Locations.Left
         Me.LayoutControlItem127.TextSize = New System.Drawing.Size(0, 0)
@@ -6071,7 +6157,7 @@ Partial Class frmPrescription
         '
         Me.XtraTabPage4.Controls.Add(Me.LayoutControl4)
         Me.XtraTabPage4.Name = "XtraTabPage4"
-        Me.XtraTabPage4.Size = New System.Drawing.Size(886, 724)
+        Me.XtraTabPage4.Size = New System.Drawing.Size(1113, 724)
         Me.XtraTabPage4.Text = "History Record"
         '
         'LayoutControl2
@@ -6109,89 +6195,6 @@ Partial Class frmPrescription
         Me.LayoutControlItem65.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem65.TextToControlDistance = 0
         Me.LayoutControlItem65.TextVisible = False
-        '
-        'LookUpEdit1
-        '
-        Me.LookUpEdit1.Location = New System.Drawing.Point(794, 384)
-        Me.LookUpEdit1.Name = "LookUpEdit1"
-        Me.LookUpEdit1.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.LookUpEdit1.Size = New System.Drawing.Size(301, 20)
-        Me.LookUpEdit1.StyleController = Me.LayoutControl1
-        Me.LookUpEdit1.TabIndex = 161
-        '
-        'LayoutControlItem135
-        '
-        Me.LayoutControlItem135.AppearanceItemCaption.BackColor = System.Drawing.Color.Navy
-        Me.LayoutControlItem135.AppearanceItemCaption.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.LayoutControlItem135.AppearanceItemCaption.ForeColor = System.Drawing.Color.White
-        Me.LayoutControlItem135.AppearanceItemCaption.Options.UseBackColor = True
-        Me.LayoutControlItem135.AppearanceItemCaption.Options.UseFont = True
-        Me.LayoutControlItem135.AppearanceItemCaption.Options.UseForeColor = True
-        Me.LayoutControlItem135.Control = Me.LookUpEdit1
-        Me.LayoutControlItem135.CustomizationFormText = "LENSE LEFT"
-        Me.LayoutControlItem135.Location = New System.Drawing.Point(573, 201)
-        Me.LayoutControlItem135.Name = "LayoutControlItem135"
-        Me.LayoutControlItem135.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem135.Size = New System.Drawing.Size(417, 25)
-        Me.LayoutControlItem135.Text = "LENSE LEFT"
-        Me.LayoutControlItem135.TextLocation = DevExpress.Utils.Locations.Left
-        Me.LayoutControlItem135.TextSize = New System.Drawing.Size(106, 20)
-        '
-        'SpinEdit1
-        '
-        Me.SpinEdit1.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.SpinEdit1.Location = New System.Drawing.Point(1014, 409)
-        Me.SpinEdit1.Name = "SpinEdit1"
-        Me.SpinEdit1.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton})
-        Me.SpinEdit1.Size = New System.Drawing.Size(81, 20)
-        Me.SpinEdit1.StyleController = Me.LayoutControl1
-        Me.SpinEdit1.TabIndex = 162
-        '
-        'LayoutControlItem136
-        '
-        Me.LayoutControlItem136.AppearanceItemCaption.BackColor = System.Drawing.Color.Navy
-        Me.LayoutControlItem136.AppearanceItemCaption.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.LayoutControlItem136.AppearanceItemCaption.ForeColor = System.Drawing.Color.White
-        Me.LayoutControlItem136.AppearanceItemCaption.Options.UseBackColor = True
-        Me.LayoutControlItem136.AppearanceItemCaption.Options.UseFont = True
-        Me.LayoutControlItem136.AppearanceItemCaption.Options.UseForeColor = True
-        Me.LayoutControlItem136.Control = Me.SpinEdit1
-        Me.LayoutControlItem136.CustomizationFormText = "Price"
-        Me.LayoutControlItem136.Location = New System.Drawing.Point(793, 226)
-        Me.LayoutControlItem136.Name = "LayoutControlItem136"
-        Me.LayoutControlItem136.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem136.Size = New System.Drawing.Size(197, 25)
-        Me.LayoutControlItem136.Text = "Price"
-        Me.LayoutControlItem136.TextLocation = DevExpress.Utils.Locations.Left
-        Me.LayoutControlItem136.TextSize = New System.Drawing.Size(106, 20)
-        '
-        'SpinEdit2
-        '
-        Me.SpinEdit2.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.SpinEdit2.Location = New System.Drawing.Point(794, 409)
-        Me.SpinEdit2.Name = "SpinEdit2"
-        Me.SpinEdit2.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton})
-        Me.SpinEdit2.Size = New System.Drawing.Size(104, 20)
-        Me.SpinEdit2.StyleController = Me.LayoutControl1
-        Me.SpinEdit2.TabIndex = 163
-        '
-        'LayoutControlItem137
-        '
-        Me.LayoutControlItem137.AppearanceItemCaption.BackColor = System.Drawing.Color.Navy
-        Me.LayoutControlItem137.AppearanceItemCaption.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.LayoutControlItem137.AppearanceItemCaption.ForeColor = System.Drawing.Color.White
-        Me.LayoutControlItem137.AppearanceItemCaption.Options.UseBackColor = True
-        Me.LayoutControlItem137.AppearanceItemCaption.Options.UseFont = True
-        Me.LayoutControlItem137.AppearanceItemCaption.Options.UseForeColor = True
-        Me.LayoutControlItem137.Control = Me.SpinEdit2
-        Me.LayoutControlItem137.CustomizationFormText = "Qty"
-        Me.LayoutControlItem137.Location = New System.Drawing.Point(573, 226)
-        Me.LayoutControlItem137.Name = "LayoutControlItem137"
-        Me.LayoutControlItem137.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem137.Size = New System.Drawing.Size(220, 25)
-        Me.LayoutControlItem137.Text = "Qty"
-        Me.LayoutControlItem137.TextLocation = DevExpress.Utils.Locations.Left
-        Me.LayoutControlItem137.TextSize = New System.Drawing.Size(106, 20)
         '
         'frmPrescription
         '
@@ -6233,12 +6236,15 @@ Partial Class frmPrescription
         CType(Me.cbeName.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.LayoutControl1.ResumeLayout(False)
+        CType(Me.seLenseQtyLeft.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.seLensePriceLeft.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.lupLenseLeft.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.seFramePrice.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.seFrameQty.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.seLensePrice.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.seLenseQty.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.seLensePriceRight.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.seLenseQtyRight.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LupFrame.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.lupLense.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.lupLenseRight.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.teSeachID.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.lbcSearchList, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.teMobileNo.Properties, System.ComponentModel.ISupportInitialize).EndInit()
@@ -6473,7 +6479,6 @@ Partial Class frmPrescription
         CType(Me.LayoutControlItem125, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem126, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EmptySpaceItem1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.EmptySpaceItem13, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlGroup8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EmptySpaceItem7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlGroup9, System.ComponentModel.ISupportInitialize).EndInit()
@@ -6481,9 +6486,12 @@ Partial Class frmPrescription
         CType(Me.LayoutControlGroup10, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EmptySpaceItem6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem129, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem130, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem131, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem132, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem137, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem135, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem136, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem130, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem133, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem134, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem75, System.ComponentModel.ISupportInitialize).EndInit()
@@ -6508,12 +6516,6 @@ Partial Class frmPrescription
         CType(Me.dxvpPrescriptionHistory, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dxvpPrescription, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dxvpDeliveredDate, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LookUpEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem135, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.SpinEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem136, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.SpinEdit2.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem137, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -6848,7 +6850,6 @@ Partial Class frmPrescription
     Friend WithEvents EmptySpaceItem7 As DevExpress.XtraLayout.EmptySpaceItem
     Friend WithEvents EmptySpaceItem8 As DevExpress.XtraLayout.EmptySpaceItem
     Friend WithEvents EmptySpaceItem6 As DevExpress.XtraLayout.EmptySpaceItem
-    Friend WithEvents EmptySpaceItem13 As DevExpress.XtraLayout.EmptySpaceItem
     Friend WithEvents LayoutControlGroup8 As DevExpress.XtraLayout.LayoutControlGroup
     Friend WithEvents LayoutControlGroup9 As DevExpress.XtraLayout.LayoutControlGroup
     Friend WithEvents LayoutControlGroup10 As DevExpress.XtraLayout.LayoutControlGroup
@@ -6867,20 +6868,20 @@ Partial Class frmPrescription
     Friend WithEvents LayoutControlItem127 As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents LayoutControlItem128 As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents LupFrame As DevExpress.XtraEditors.LookUpEdit
-    Friend WithEvents lupLense As DevExpress.XtraEditors.LookUpEdit
+    Friend WithEvents lupLenseRight As DevExpress.XtraEditors.LookUpEdit
     Friend WithEvents LayoutControlItem129 As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents LayoutControlItem130 As DevExpress.XtraLayout.LayoutControlItem
-    Friend WithEvents seLensePrice As DevExpress.XtraEditors.SpinEdit
-    Friend WithEvents seLenseQty As DevExpress.XtraEditors.SpinEdit
+    Friend WithEvents seLensePriceRight As DevExpress.XtraEditors.SpinEdit
+    Friend WithEvents seLenseQtyRight As DevExpress.XtraEditors.SpinEdit
     Friend WithEvents LayoutControlItem131 As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents LayoutControlItem132 As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents seFramePrice As DevExpress.XtraEditors.SpinEdit
     Friend WithEvents seFrameQty As DevExpress.XtraEditors.SpinEdit
     Friend WithEvents LayoutControlItem133 As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents LayoutControlItem134 As DevExpress.XtraLayout.LayoutControlItem
-    Friend WithEvents SpinEdit2 As DevExpress.XtraEditors.SpinEdit
-    Friend WithEvents SpinEdit1 As DevExpress.XtraEditors.SpinEdit
-    Friend WithEvents LookUpEdit1 As DevExpress.XtraEditors.LookUpEdit
+    Friend WithEvents seLenseQtyLeft As DevExpress.XtraEditors.SpinEdit
+    Friend WithEvents seLensePriceLeft As DevExpress.XtraEditors.SpinEdit
+    Friend WithEvents lupLenseLeft As DevExpress.XtraEditors.LookUpEdit
     Friend WithEvents LayoutControlItem137 As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents LayoutControlItem135 As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents LayoutControlItem136 As DevExpress.XtraLayout.LayoutControlItem

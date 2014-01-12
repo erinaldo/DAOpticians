@@ -385,10 +385,15 @@ Public Class frmPrescription
             Me.deDelivaryDate.EditValue = Nothing
             lciDelivaryDate.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never
 
-            Me.lupLense.EditValue = Nothing
+            Me.lupLenseRight.EditValue = Nothing
+            Me.seLenseQtyRight.EditValue = 0
+            Me.seLensePriceRight.EditValue = 0
+
+            Me.lupLenseLeft.EditValue = Nothing
+            Me.seLenseQtyLeft.EditValue = 0
+            Me.seLensePriceLeft.EditValue = 0
+
             Me.LupFrame.EditValue = Nothing
-            Me.seLenseQty.EditValue = 0
-            Me.seLensePrice.EditValue = 0
             Me.seFrameQty.EditValue = 0
             Me.seFramePrice.EditValue = 0
 
@@ -472,9 +477,13 @@ Public Class frmPrescription
 
                 End If
 
-                .LenseStockID = lupLense.EditValue
-                .LenseQty = seLenseQty.EditValue
-                .LensePrice = seLensePrice.EditValue
+                .LenseRightStockID = lupLenseRight.EditValue
+                .LenseRightQty = seLenseQtyRight.EditValue
+                .LenseRightPrice = seLensePriceRight.EditValue
+
+                .LenseLeftStockID = lupLenseLeft.EditValue
+                .LenseLeftQty = seLenseQtyLeft.EditValue
+                .LenseLeftPrice = seLensePriceLeft.EditValue
 
                 .FrameStockID = LupFrame.EditValue
                 .FrameQty = seFrameQty.EditValue
@@ -680,9 +689,13 @@ Public Class frmPrescription
                 End If
 
 
-                .LenseStockID = lupLense.EditValue
-                .LenseQty = seLenseQty.EditValue
-                .LensePrice = seLensePrice.EditValue
+                .LenseRightStockID = lupLenseRight.EditValue
+                .LenseRightQty = seLenseQtyRight.EditValue
+                .LenseRightPrice = seLensePriceRight.EditValue
+
+                .LenseLeftStockID = lupLenseLeft.EditValue
+                .LenseLeftQty = seLenseQtyLeft.EditValue
+                .LenseLeftPrice = seLensePriceLeft.EditValue
 
                 .FrameStockID = LupFrame.EditValue
                 .FrameQty = seFrameQty.EditValue
@@ -852,7 +865,7 @@ Public Class frmPrescription
 
         Dim _Connection As DbConnection = Nothing
         Dim _Transaction As DbTransaction = Nothing
-   
+
         Try
             Dim _DB As Database = DatabaseFactory.CreateDatabase(DA_DBCONNECTION_STRING)
             _Connection = _DB.CreateConnection
@@ -984,7 +997,7 @@ Public Class frmPrescription
                         lciDelivaryDate.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Always
                     End If
 
-                  
+
                 Else
                     ceDelivered.Checked = False
                     lciDelivaryDate.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never
@@ -992,13 +1005,15 @@ Public Class frmPrescription
                 End If
 
 
-
-
                 leAttendedBy.EditValue = .AttendedBy
 
-                lupLense.EditValue = .LenseStockID
-                seLenseQty.EditValue = .LenseQty
-                seLensePrice.EditValue = .LensePrice
+                lupLenseRight.EditValue = .LenseRightStockID
+                seLenseQtyRight.EditValue = .LenseRightQty
+                seLensePriceRight.EditValue = .LenseRightPrice
+
+                lupLenseLeft.EditValue = .LenseLeftStockID
+                seLenseQtyLeft.EditValue = .LenseLeftQty
+                seLensePriceLeft.EditValue = .LenseLeftPrice
 
                 LupFrame.EditValue = .FrameStockID
                 seFrameQty.EditValue = .FrameQty
@@ -1022,11 +1037,11 @@ Public Class frmPrescription
             End If
         End Try
 
-       
 
-      
 
-       
+
+
+
 
     End Sub
 
@@ -1100,7 +1115,7 @@ Public Class frmPrescription
             End If
 
 
-         
+
         Catch ex As Exception
             MessageError(ex.ToString)
         End Try
@@ -1525,12 +1540,17 @@ Public Class frmPrescription
     Private Sub PopulateLenseFrames()
         Try
 
-            Me.lupLense.Properties.ValueMember = "StockID"
-            Me.lupLense.Properties.DisplayMember = "StockCode"
+            Me.lupLenseRight.Properties.ValueMember = "StockID"
+            Me.lupLenseLeft.Properties.ValueMember = "StockID"
+
+            Me.lupLenseRight.Properties.DisplayMember = "StockCode"
+            Me.lupLenseLeft.Properties.DisplayMember = "StockCode"
+
 
             Dim dvlense As New DataView(DAStock.GetAllStockItems().Tables(0))
             dvlense.RowFilter = "CategoryName='LENSE'"
-            Me.lupLense.Properties.DataSource = dvlense
+            Me.lupLenseRight.Properties.DataSource = dvlense
+            Me.lupLenseLeft.Properties.DataSource = dvlense
 
             Me.LupFrame.Properties.ValueMember = "StockID"
             Me.LupFrame.Properties.DisplayMember = "StockCode"
@@ -1539,7 +1559,7 @@ Public Class frmPrescription
             dvlense1.RowFilter = "CategoryName='FRAME'"
             Me.LupFrame.Properties.DataSource = dvlense1
 
-          
+
 
         Catch ex As Exception
             MessageError(ex.ToString)
@@ -1549,9 +1569,9 @@ Public Class frmPrescription
 
 #End Region
 
-    Private Sub lupLense_EditValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lupLense.EditValueChanged
+    Private Sub lupLense_EditValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lupLenseRight.EditValueChanged
         Try
-            Me.seLensePrice.EditValue = FormatNumber(Me.lupLense.GetColumnValue("SalesPrice"), 2)
+            Me.seLensePriceRight.EditValue = FormatNumber(Me.lupLenseRight.GetColumnValue("SalesPrice"), 2)
         Catch ex As Exception
             MessageError(ex.ToString)
         End Try
@@ -1560,11 +1580,18 @@ Public Class frmPrescription
 
     Private Sub LupFrame_EditValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LupFrame.EditValueChanged
         Try
-            Me.seFramePrice.EditValue = FormatNumber(Me.lupLense.GetColumnValue("SalesPrice"), 2)
+            Me.seFramePrice.EditValue = FormatNumber(Me.lupLenseRight.GetColumnValue("SalesPrice"), 2)
             Me.seFrameQty.EditValue = 1
         Catch ex As Exception
             MessageError(ex.ToString)
         End Try
     End Sub
 
+    Private Sub lupLenseLeft_EditValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lupLenseLeft.EditValueChanged
+        Try
+            Me.seLensePriceLeft.EditValue = FormatNumber(Me.lupLenseLeft.GetColumnValue("SalesPrice"), 2)
+        Catch ex As Exception
+            MessageError(ex.ToString)
+        End Try
+    End Sub
 End Class
