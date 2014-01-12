@@ -1394,6 +1394,8 @@ Partial Class frmPrescription
         Me.seLenseQtyLeft.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
         Me.seLenseQtyLeft.Location = New System.Drawing.Point(803, 409)
         Me.seLenseQtyLeft.Name = "seLenseQtyLeft"
+        Me.seLenseQtyLeft.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.seLenseQtyLeft.Properties.Appearance.Options.UseFont = True
         Me.seLenseQtyLeft.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton})
         Me.seLenseQtyLeft.Size = New System.Drawing.Size(104, 20)
         Me.seLenseQtyLeft.StyleController = Me.LayoutControl1
@@ -1404,6 +1406,8 @@ Partial Class frmPrescription
         Me.seLensePriceLeft.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
         Me.seLensePriceLeft.Location = New System.Drawing.Point(1023, 409)
         Me.seLensePriceLeft.Name = "seLensePriceLeft"
+        Me.seLensePriceLeft.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.seLensePriceLeft.Properties.Appearance.Options.UseFont = True
         Me.seLensePriceLeft.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton})
         Me.seLensePriceLeft.Size = New System.Drawing.Size(81, 20)
         Me.seLensePriceLeft.StyleController = Me.LayoutControl1
@@ -1413,6 +1417,8 @@ Partial Class frmPrescription
         '
         Me.lupLenseLeft.Location = New System.Drawing.Point(803, 384)
         Me.lupLenseLeft.Name = "lupLenseLeft"
+        Me.lupLenseLeft.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.lupLenseLeft.Properties.Appearance.Options.UseFont = True
         Me.lupLenseLeft.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.lupLenseLeft.Properties.Columns.AddRange(New DevExpress.XtraEditors.Controls.LookUpColumnInfo() {New DevExpress.XtraEditors.Controls.LookUpColumnInfo("StockCode", "StockCode", 20, DevExpress.Utils.FormatType.None, "", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("Description", "Description", 20, DevExpress.Utils.FormatType.None, "", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("SalesPrice", "SalesPrice", 20, DevExpress.Utils.FormatType.Numeric, "F2", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("StockBalance", "StockBalance", 20, DevExpress.Utils.FormatType.Numeric, "F2", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None)})
         Me.lupLenseLeft.Properties.NullText = ""

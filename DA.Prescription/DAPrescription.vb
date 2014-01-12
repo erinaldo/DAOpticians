@@ -1107,16 +1107,20 @@ Public Class DAPrescription
             End If
 
             DB.AddInParameter(DBC, "@LenseStockID", DbType.Int64, Me.LenseRightStockID)
-            DB.AddInParameter(DBC, "@FrameStockID", DbType.Int64, Me.FrameStockID)
-            DB.AddInParameter(DBC, "@LenseQty", DbType.Decimal, Me.LenseRightQty)
-            DB.AddInParameter(DBC, "@FrameQty", DbType.Decimal, Me.FrameQty)
             DB.AddInParameter(DBC, "@LensePrice", DbType.Decimal, Me.LenseRightPrice)
-            DB.AddInParameter(DBC, "@FramePrice", DbType.Decimal, Me.FramePrice)
+            DB.AddInParameter(DBC, "@LenseQty", DbType.Decimal, Me.LenseRightQty)
 
+            DB.AddInParameter(DBC, "@LenseLeftStockID", DbType.Int64, Me.LenseLeftStockID)
+            DB.AddInParameter(DBC, "@LenseLeftPrice", DbType.Decimal, Me.LenseLeftPrice)
+            DB.AddInParameter(DBC, "@LenseLeftQty", DbType.Decimal, Me.LenseLeftQty)
+
+
+            DB.AddInParameter(DBC, "@FrameStockID", DbType.Int64, Me.FrameStockID)
+            DB.AddInParameter(DBC, "@FrameQty", DbType.Decimal, Me.FrameQty)
+            DB.AddInParameter(DBC, "@FramePrice", DbType.Decimal, Me.FramePrice)
 
             DB.AddOutParameter(DBC, "@CurrentSysNo", DbType.String, 10)
             DB.AddOutParameter(DBC, "@NewPrescriptionID", DbType.Int64, 10)
-
 
             DB.ExecuteNonQuery(DBC, transaction)
 
@@ -1222,10 +1226,6 @@ Public Class DAPrescription
 
 
 
-
-
-
-
             DB.ExecuteNonQuery(DBH)
 
 
@@ -1309,6 +1309,10 @@ Public Class DAPrescription
                         Me.FrameQty = Convert.ToInt32(IIf(Not IsDBNull(.Item("FrameQty")), Trim(.Item("FrameQty").ToString), 0))
                         Me.LenseRightPrice = Convert.ToDecimal(IIf(Not IsDBNull(.Item("LensePrice")), Trim(.Item("LensePrice").ToString), 0))
                         Me.FramePrice = Convert.ToDecimal(IIf(Not IsDBNull(.Item("FramePrice")), Trim(.Item("FramePrice").ToString), 0))
+
+                        Me.LenseLeftStockID = Convert.ToInt64(IIf(Not IsDBNull(.Item("LenseLeftStockID")), Trim(.Item("LenseLeftStockID").ToString), 0))
+                        Me.LenseLeftQty = Convert.ToDecimal(IIf(Not IsDBNull(.Item("LenseLeftQty")), Trim(.Item("LenseLeftQty").ToString), 0))
+                        Me.LenseLeftPrice = Convert.ToDecimal(IIf(Not IsDBNull(.Item("LenseLeftPrice")), Trim(.Item("LenseLeftPrice").ToString), 0))
 
                         result = True
 
