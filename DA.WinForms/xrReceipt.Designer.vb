@@ -71,15 +71,15 @@ Partial Public Class xrReceipt
         '
         'xrRefractBy
         '
-        Me.xrRefractBy.Location = New System.Drawing.Point(575, 75)
+        Me.xrRefractBy.Location = New System.Drawing.Point(592, 175)
         Me.xrRefractBy.Name = "xrRefractBy"
         Me.xrRefractBy.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.xrRefractBy.Size = New System.Drawing.Size(200, 17)
+        Me.xrRefractBy.Size = New System.Drawing.Size(167, 17)
         Me.xrRefractBy.StylePriority.UseTextAlignment = False
         '
         'xrlDate
         '
-        Me.xrlDate.Location = New System.Drawing.Point(575, 8)
+        Me.xrlDate.Location = New System.Drawing.Point(592, 50)
         Me.xrlDate.Name = "xrlDate"
         Me.xrlDate.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.xrlDate.Size = New System.Drawing.Size(150, 17)
@@ -87,7 +87,7 @@ Partial Public Class xrReceipt
         '
         'xrlTotal
         '
-        Me.xrlTotal.Location = New System.Drawing.Point(592, 375)
+        Me.xrlTotal.Location = New System.Drawing.Point(592, 350)
         Me.xrlTotal.Name = "xrlTotal"
         Me.xrlTotal.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.xrlTotal.Size = New System.Drawing.Size(125, 17)
@@ -96,34 +96,34 @@ Partial Public Class xrReceipt
         '
         'xrlBalance
         '
-        Me.xrlBalance.Location = New System.Drawing.Point(592, 200)
+        Me.xrlBalance.Location = New System.Drawing.Point(592, 150)
         Me.xrlBalance.Name = "xrlBalance"
         Me.xrlBalance.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.xrlBalance.Size = New System.Drawing.Size(125, 17)
         Me.xrlBalance.StylePriority.UseTextAlignment = False
-        Me.xrlBalance.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight
+        Me.xrlBalance.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
         '
         'xrlAdvance
         '
-        Me.xrlAdvance.Location = New System.Drawing.Point(400, 200)
+        Me.xrlAdvance.Location = New System.Drawing.Point(400, 150)
         Me.xrlAdvance.Name = "xrlAdvance"
         Me.xrlAdvance.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.xrlAdvance.Size = New System.Drawing.Size(133, 17)
         Me.xrlAdvance.StylePriority.UseTextAlignment = False
-        Me.xrlAdvance.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight
+        Me.xrlAdvance.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
         '
         'xrlFullAmount
         '
-        Me.xrlFullAmount.Location = New System.Drawing.Point(133, 200)
+        Me.xrlFullAmount.Location = New System.Drawing.Point(133, 150)
         Me.xrlFullAmount.Name = "xrlFullAmount"
         Me.xrlFullAmount.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.xrlFullAmount.Size = New System.Drawing.Size(133, 17)
         Me.xrlFullAmount.StylePriority.UseTextAlignment = False
-        Me.xrlFullAmount.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight
+        Me.xrlFullAmount.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
         '
         'xrlReceiptNo
         '
-        Me.xrlReceiptNo.Location = New System.Drawing.Point(575, 42)
+        Me.xrlReceiptNo.Location = New System.Drawing.Point(592, 67)
         Me.xrlReceiptNo.Name = "xrlReceiptNo"
         Me.xrlReceiptNo.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.xrlReceiptNo.Size = New System.Drawing.Size(150, 17)
@@ -131,7 +131,7 @@ Partial Public Class xrReceipt
         '
         'xrlPrescriptionNo
         '
-        Me.xrlPrescriptionNo.Location = New System.Drawing.Point(50, 162)
+        Me.xrlPrescriptionNo.Location = New System.Drawing.Point(50, 113)
         Me.xrlPrescriptionNo.Name = "xrlPrescriptionNo"
         Me.xrlPrescriptionNo.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.xrlPrescriptionNo.Size = New System.Drawing.Size(133, 17)
@@ -139,7 +139,7 @@ Partial Public Class xrReceipt
         '
         'xrlCustomAmount
         '
-        Me.xrlCustomAmount.Location = New System.Drawing.Point(592, 335)
+        Me.xrlCustomAmount.Location = New System.Drawing.Point(592, 310)
         Me.xrlCustomAmount.Name = "xrlCustomAmount"
         Me.xrlCustomAmount.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.xrlCustomAmount.Size = New System.Drawing.Size(125, 17)
@@ -148,7 +148,7 @@ Partial Public Class xrReceipt
         '
         'xrltinTin
         '
-        Me.xrltinTin.Location = New System.Drawing.Point(592, 318)
+        Me.xrltinTin.Location = New System.Drawing.Point(592, 293)
         Me.xrltinTin.Name = "xrltinTin"
         Me.xrltinTin.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.xrltinTin.Size = New System.Drawing.Size(125, 17)
@@ -157,7 +157,7 @@ Partial Public Class xrReceipt
         '
         'xrlTesting
         '
-        Me.xrlTesting.Location = New System.Drawing.Point(592, 301)
+        Me.xrlTesting.Location = New System.Drawing.Point(592, 276)
         Me.xrlTesting.Name = "xrlTesting"
         Me.xrlTesting.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.xrlTesting.Size = New System.Drawing.Size(125, 17)
@@ -166,7 +166,7 @@ Partial Public Class xrReceipt
         '
         'xrlFrameChangeAmount
         '
-        Me.xrlFrameChangeAmount.Location = New System.Drawing.Point(592, 284)
+        Me.xrlFrameChangeAmount.Location = New System.Drawing.Point(592, 259)
         Me.xrlFrameChangeAmount.Name = "xrlFrameChangeAmount"
         Me.xrlFrameChangeAmount.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.xrlFrameChangeAmount.Size = New System.Drawing.Size(125, 17)
@@ -175,7 +175,7 @@ Partial Public Class xrReceipt
         '
         'xrlLenseAmount
         '
-        Me.xrlLenseAmount.Location = New System.Drawing.Point(592, 267)
+        Me.xrlLenseAmount.Location = New System.Drawing.Point(592, 242)
         Me.xrlLenseAmount.Name = "xrlLenseAmount"
         Me.xrlLenseAmount.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.xrlLenseAmount.Size = New System.Drawing.Size(125, 17)
@@ -184,7 +184,7 @@ Partial Public Class xrReceipt
         '
         'xrlFrameAmount
         '
-        Me.xrlFrameAmount.Location = New System.Drawing.Point(592, 250)
+        Me.xrlFrameAmount.Location = New System.Drawing.Point(592, 225)
         Me.xrlFrameAmount.Name = "xrlFrameAmount"
         Me.xrlFrameAmount.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.xrlFrameAmount.Size = New System.Drawing.Size(125, 17)
@@ -193,7 +193,7 @@ Partial Public Class xrReceipt
         '
         'xrlCustomText
         '
-        Me.xrlCustomText.Location = New System.Drawing.Point(134, 335)
+        Me.xrlCustomText.Location = New System.Drawing.Point(134, 310)
         Me.xrlCustomText.Name = "xrlCustomText"
         Me.xrlCustomText.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.xrlCustomText.Size = New System.Drawing.Size(425, 17)
@@ -201,7 +201,7 @@ Partial Public Class xrReceipt
         '
         'xrlNoOfFrameChanges
         '
-        Me.xrlNoOfFrameChanges.Location = New System.Drawing.Point(83, 284)
+        Me.xrlNoOfFrameChanges.Location = New System.Drawing.Point(83, 259)
         Me.xrlNoOfFrameChanges.Name = "xrlNoOfFrameChanges"
         Me.xrlNoOfFrameChanges.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.xrlNoOfFrameChanges.Size = New System.Drawing.Size(42, 17)
@@ -210,7 +210,7 @@ Partial Public Class xrReceipt
         '
         'xrlNoofLenses
         '
-        Me.xrlNoofLenses.Location = New System.Drawing.Point(83, 267)
+        Me.xrlNoofLenses.Location = New System.Drawing.Point(83, 242)
         Me.xrlNoofLenses.Name = "xrlNoofLenses"
         Me.xrlNoofLenses.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.xrlNoofLenses.Size = New System.Drawing.Size(42, 17)
@@ -219,7 +219,7 @@ Partial Public Class xrReceipt
         '
         'xrlNoOfFrames
         '
-        Me.xrlNoOfFrames.Location = New System.Drawing.Point(83, 250)
+        Me.xrlNoOfFrames.Location = New System.Drawing.Point(83, 225)
         Me.xrlNoOfFrames.Name = "xrlNoOfFrames"
         Me.xrlNoOfFrames.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.xrlNoOfFrames.Size = New System.Drawing.Size(42, 17)
@@ -228,7 +228,7 @@ Partial Public Class xrReceipt
         '
         'XrLabel6
         '
-        Me.XrLabel6.Location = New System.Drawing.Point(133, 318)
+        Me.XrLabel6.Location = New System.Drawing.Point(133, 293)
         Me.XrLabel6.Name = "XrLabel6"
         Me.XrLabel6.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.XrLabel6.Size = New System.Drawing.Size(425, 17)
@@ -237,7 +237,7 @@ Partial Public Class xrReceipt
         '
         'XrLabel5
         '
-        Me.XrLabel5.Location = New System.Drawing.Point(133, 301)
+        Me.XrLabel5.Location = New System.Drawing.Point(133, 276)
         Me.XrLabel5.Name = "XrLabel5"
         Me.XrLabel5.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.XrLabel5.Size = New System.Drawing.Size(425, 17)
@@ -246,7 +246,7 @@ Partial Public Class xrReceipt
         '
         'XrLabel4
         '
-        Me.XrLabel4.Location = New System.Drawing.Point(133, 284)
+        Me.XrLabel4.Location = New System.Drawing.Point(133, 259)
         Me.XrLabel4.Name = "XrLabel4"
         Me.XrLabel4.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.XrLabel4.Size = New System.Drawing.Size(425, 17)
@@ -255,7 +255,7 @@ Partial Public Class xrReceipt
         '
         'XrLabel3
         '
-        Me.XrLabel3.Location = New System.Drawing.Point(133, 267)
+        Me.XrLabel3.Location = New System.Drawing.Point(133, 242)
         Me.XrLabel3.Name = "XrLabel3"
         Me.XrLabel3.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.XrLabel3.Size = New System.Drawing.Size(425, 17)
@@ -264,7 +264,7 @@ Partial Public Class xrReceipt
         '
         'XrLabel2
         '
-        Me.XrLabel2.Location = New System.Drawing.Point(133, 250)
+        Me.XrLabel2.Location = New System.Drawing.Point(133, 225)
         Me.XrLabel2.Name = "XrLabel2"
         Me.XrLabel2.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.XrLabel2.Size = New System.Drawing.Size(425, 17)
@@ -273,7 +273,7 @@ Partial Public Class xrReceipt
         '
         'XrLabel1
         '
-        Me.XrLabel1.Location = New System.Drawing.Point(575, 25)
+        Me.XrLabel1.Location = New System.Drawing.Point(533, 8)
         Me.XrLabel1.Name = "XrLabel1"
         Me.XrLabel1.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.XrLabel1.Size = New System.Drawing.Size(150, 17)
@@ -281,7 +281,7 @@ Partial Public Class xrReceipt
         '
         'xrlAddress3
         '
-        Me.xrlAddress3.Location = New System.Drawing.Point(50, 145)
+        Me.xrlAddress3.Location = New System.Drawing.Point(50, 95)
         Me.xrlAddress3.Name = "xrlAddress3"
         Me.xrlAddress3.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.xrlAddress3.Size = New System.Drawing.Size(425, 17)
@@ -289,7 +289,7 @@ Partial Public Class xrReceipt
         '
         'xrlAddress2
         '
-        Me.xrlAddress2.Location = New System.Drawing.Point(50, 127)
+        Me.xrlAddress2.Location = New System.Drawing.Point(50, 77)
         Me.xrlAddress2.Name = "xrlAddress2"
         Me.xrlAddress2.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.xrlAddress2.Size = New System.Drawing.Size(425, 17)
@@ -297,7 +297,7 @@ Partial Public Class xrReceipt
         '
         'xrlAddress1
         '
-        Me.xrlAddress1.Location = New System.Drawing.Point(50, 109)
+        Me.xrlAddress1.Location = New System.Drawing.Point(50, 59)
         Me.xrlAddress1.Name = "xrlAddress1"
         Me.xrlAddress1.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.xrlAddress1.Size = New System.Drawing.Size(425, 17)
@@ -305,7 +305,7 @@ Partial Public Class xrReceipt
         '
         'xrlCustomerName
         '
-        Me.xrlCustomerName.Location = New System.Drawing.Point(50, 92)
+        Me.xrlCustomerName.Location = New System.Drawing.Point(50, 42)
         Me.xrlCustomerName.Name = "xrlCustomerName"
         Me.xrlCustomerName.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.xrlCustomerName.Size = New System.Drawing.Size(425, 17)
@@ -320,7 +320,7 @@ Partial Public Class xrReceipt
         'xrReceipt
         '
         Me.Bands.AddRange(New DevExpress.XtraReports.UI.Band() {Me.Detail, Me.PageHeader, Me.PageFooter})
-        Me.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Font = New System.Drawing.Font("Tahoma", 9.75!)
         Me.Margins = New System.Drawing.Printing.Margins(25, 25, 25, 25)
         Me.PageHeight = 550
         Me.PaperKind = System.Drawing.Printing.PaperKind.Custom

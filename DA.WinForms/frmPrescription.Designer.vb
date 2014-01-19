@@ -396,6 +396,9 @@ Partial Class frmPrescription
         Me.dxvpPrescriptionHistory = New DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(Me.components)
         Me.dxvpPrescription = New DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(Me.components)
         Me.dxvpDeliveredDate = New DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(Me.components)
+        Me.ceDoctorPrescription = New DevExpress.XtraEditors.CheckEdit
+        Me.LayoutControlItem138 = New DevExpress.XtraLayout.LayoutControlItem
+        Me.GridColumn30 = New DevExpress.XtraGrid.Columns.GridColumn
         CType(Me.deFromDate.Properties.VistaTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.deFromDate.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControl4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -700,6 +703,8 @@ Partial Class frmPrescription
         CType(Me.dxvpPrescriptionHistory, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dxvpPrescription, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dxvpDeliveredDate, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ceDoctorPrescription.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem138, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'deFromDate
@@ -814,7 +819,7 @@ Partial Class frmPrescription
         Me.gvPrescriptionHistory.Appearance.HeaderPanel.Options.UseTextOptions = True
         Me.gvPrescriptionHistory.Appearance.HeaderPanel.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
         Me.gvPrescriptionHistory.ColumnPanelRowHeight = 40
-        Me.gvPrescriptionHistory.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn1, Me.GridColumn2, Me.GridColumn23, Me.GridColumn24, Me.GridColumn29, Me.GridColumn3, Me.GridColumn4, Me.GridColumn5, Me.GridColumn6, Me.GridColumn13, Me.GridColumn25, Me.GridColumn9, Me.GridColumn28, Me.GridColumn26, Me.GridColumn19, Me.GridColumn27, Me.GridColumn21, Me.GridColumn7, Me.GridColumn8, Me.GridColumn10, Me.GridColumn11, Me.GridColumn12, Me.GridColumn14, Me.GridColumn15, Me.GridColumn16, Me.GridColumn17, Me.GridColumn18, Me.GridColumn20, Me.GridColumn22})
+        Me.gvPrescriptionHistory.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn1, Me.GridColumn2, Me.GridColumn23, Me.GridColumn24, Me.GridColumn29, Me.GridColumn30, Me.GridColumn3, Me.GridColumn4, Me.GridColumn5, Me.GridColumn6, Me.GridColumn13, Me.GridColumn25, Me.GridColumn9, Me.GridColumn28, Me.GridColumn26, Me.GridColumn19, Me.GridColumn27, Me.GridColumn21, Me.GridColumn7, Me.GridColumn8, Me.GridColumn10, Me.GridColumn11, Me.GridColumn12, Me.GridColumn14, Me.GridColumn15, Me.GridColumn16, Me.GridColumn17, Me.GridColumn18, Me.GridColumn20, Me.GridColumn22})
         StyleFormatCondition1.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(227, Byte), Integer))
         StyleFormatCondition1.Appearance.Options.UseBackColor = True
         StyleFormatCondition1.ApplyToRow = True
@@ -907,7 +912,7 @@ Partial Class frmPrescription
         Me.GridColumn4.FieldName = "Address1"
         Me.GridColumn4.Name = "GridColumn4"
         Me.GridColumn4.Visible = True
-        Me.GridColumn4.VisibleIndex = 6
+        Me.GridColumn4.VisibleIndex = 7
         Me.GridColumn4.Width = 161
         '
         'GridColumn5
@@ -916,7 +921,7 @@ Partial Class frmPrescription
         Me.GridColumn5.FieldName = "Address2"
         Me.GridColumn5.Name = "GridColumn5"
         Me.GridColumn5.Visible = True
-        Me.GridColumn5.VisibleIndex = 7
+        Me.GridColumn5.VisibleIndex = 8
         Me.GridColumn5.Width = 147
         '
         'GridColumn6
@@ -925,7 +930,7 @@ Partial Class frmPrescription
         Me.GridColumn6.FieldName = "Address3"
         Me.GridColumn6.Name = "GridColumn6"
         Me.GridColumn6.Visible = True
-        Me.GridColumn6.VisibleIndex = 8
+        Me.GridColumn6.VisibleIndex = 9
         Me.GridColumn6.Width = 152
         '
         'GridColumn13
@@ -934,7 +939,7 @@ Partial Class frmPrescription
         Me.GridColumn13.FieldName = "BillNo"
         Me.GridColumn13.Name = "GridColumn13"
         Me.GridColumn13.Visible = True
-        Me.GridColumn13.VisibleIndex = 9
+        Me.GridColumn13.VisibleIndex = 10
         '
         'GridColumn25
         '
@@ -942,7 +947,7 @@ Partial Class frmPrescription
         Me.GridColumn25.FieldName = "NICNo"
         Me.GridColumn25.Name = "GridColumn25"
         Me.GridColumn25.Visible = True
-        Me.GridColumn25.VisibleIndex = 10
+        Me.GridColumn25.VisibleIndex = 11
         '
         'GridColumn9
         '
@@ -950,7 +955,7 @@ Partial Class frmPrescription
         Me.GridColumn9.FieldName = "TelNo"
         Me.GridColumn9.Name = "GridColumn9"
         Me.GridColumn9.Visible = True
-        Me.GridColumn9.VisibleIndex = 11
+        Me.GridColumn9.VisibleIndex = 12
         Me.GridColumn9.Width = 118
         '
         'GridColumn28
@@ -959,7 +964,7 @@ Partial Class frmPrescription
         Me.GridColumn28.FieldName = "MobileNo"
         Me.GridColumn28.Name = "GridColumn28"
         Me.GridColumn28.Visible = True
-        Me.GridColumn28.VisibleIndex = 12
+        Me.GridColumn28.VisibleIndex = 13
         '
         'GridColumn26
         '
@@ -967,7 +972,7 @@ Partial Class frmPrescription
         Me.GridColumn26.FieldName = "Frame"
         Me.GridColumn26.Name = "GridColumn26"
         Me.GridColumn26.Visible = True
-        Me.GridColumn26.VisibleIndex = 13
+        Me.GridColumn26.VisibleIndex = 14
         '
         'GridColumn19
         '
@@ -977,7 +982,7 @@ Partial Class frmPrescription
         Me.GridColumn19.FieldName = "Fullamount"
         Me.GridColumn19.Name = "GridColumn19"
         Me.GridColumn19.Visible = True
-        Me.GridColumn19.VisibleIndex = 14
+        Me.GridColumn19.VisibleIndex = 15
         Me.GridColumn19.Width = 109
         '
         'GridColumn27
@@ -988,7 +993,7 @@ Partial Class frmPrescription
         Me.GridColumn27.FieldName = "Advance"
         Me.GridColumn27.Name = "GridColumn27"
         Me.GridColumn27.Visible = True
-        Me.GridColumn27.VisibleIndex = 15
+        Me.GridColumn27.VisibleIndex = 16
         '
         'GridColumn21
         '
@@ -998,7 +1003,7 @@ Partial Class frmPrescription
         Me.GridColumn21.FieldName = "Balance"
         Me.GridColumn21.Name = "GridColumn21"
         Me.GridColumn21.Visible = True
-        Me.GridColumn21.VisibleIndex = 16
+        Me.GridColumn21.VisibleIndex = 17
         Me.GridColumn21.Width = 122
         '
         'GridColumn7
@@ -1007,7 +1012,7 @@ Partial Class frmPrescription
         Me.GridColumn7.FieldName = "Office"
         Me.GridColumn7.Name = "GridColumn7"
         Me.GridColumn7.Visible = True
-        Me.GridColumn7.VisibleIndex = 17
+        Me.GridColumn7.VisibleIndex = 18
         Me.GridColumn7.Width = 182
         '
         'GridColumn8
@@ -1016,7 +1021,7 @@ Partial Class frmPrescription
         Me.GridColumn8.FieldName = "Age"
         Me.GridColumn8.Name = "GridColumn8"
         Me.GridColumn8.Visible = True
-        Me.GridColumn8.VisibleIndex = 18
+        Me.GridColumn8.VisibleIndex = 19
         '
         'GridColumn10
         '
@@ -1024,7 +1029,7 @@ Partial Class frmPrescription
         Me.GridColumn10.FieldName = "OfficeNo"
         Me.GridColumn10.Name = "GridColumn10"
         Me.GridColumn10.Visible = True
-        Me.GridColumn10.VisibleIndex = 19
+        Me.GridColumn10.VisibleIndex = 20
         Me.GridColumn10.Width = 129
         '
         'GridColumn11
@@ -1035,7 +1040,7 @@ Partial Class frmPrescription
         Me.GridColumn11.FieldName = "PrescriptionDate"
         Me.GridColumn11.Name = "GridColumn11"
         Me.GridColumn11.Visible = True
-        Me.GridColumn11.VisibleIndex = 20
+        Me.GridColumn11.VisibleIndex = 21
         '
         'GridColumn12
         '
@@ -1045,7 +1050,7 @@ Partial Class frmPrescription
         Me.GridColumn12.FieldName = "DueDate"
         Me.GridColumn12.Name = "GridColumn12"
         Me.GridColumn12.Visible = True
-        Me.GridColumn12.VisibleIndex = 21
+        Me.GridColumn12.VisibleIndex = 22
         '
         'GridColumn14
         '
@@ -1053,7 +1058,7 @@ Partial Class frmPrescription
         Me.GridColumn14.FieldName = "Segment"
         Me.GridColumn14.Name = "GridColumn14"
         Me.GridColumn14.Visible = True
-        Me.GridColumn14.VisibleIndex = 22
+        Me.GridColumn14.VisibleIndex = 23
         '
         'GridColumn15
         '
@@ -1061,7 +1066,7 @@ Partial Class frmPrescription
         Me.GridColumn15.FieldName = "Pd"
         Me.GridColumn15.Name = "GridColumn15"
         Me.GridColumn15.Visible = True
-        Me.GridColumn15.VisibleIndex = 23
+        Me.GridColumn15.VisibleIndex = 24
         '
         'GridColumn16
         '
@@ -1069,7 +1074,7 @@ Partial Class frmPrescription
         Me.GridColumn16.FieldName = "Insert"
         Me.GridColumn16.Name = "GridColumn16"
         Me.GridColumn16.Visible = True
-        Me.GridColumn16.VisibleIndex = 24
+        Me.GridColumn16.VisibleIndex = 25
         '
         'GridColumn17
         '
@@ -1077,7 +1082,7 @@ Partial Class frmPrescription
         Me.GridColumn17.FieldName = "Refracted"
         Me.GridColumn17.Name = "GridColumn17"
         Me.GridColumn17.Visible = True
-        Me.GridColumn17.VisibleIndex = 25
+        Me.GridColumn17.VisibleIndex = 26
         Me.GridColumn17.Width = 138
         '
         'GridColumn18
@@ -1086,7 +1091,7 @@ Partial Class frmPrescription
         Me.GridColumn18.FieldName = "Orderno"
         Me.GridColumn18.Name = "GridColumn18"
         Me.GridColumn18.Visible = True
-        Me.GridColumn18.VisibleIndex = 26
+        Me.GridColumn18.VisibleIndex = 27
         '
         'GridColumn20
         '
@@ -1096,7 +1101,7 @@ Partial Class frmPrescription
         Me.GridColumn20.FieldName = "Specialcharges"
         Me.GridColumn20.Name = "GridColumn20"
         Me.GridColumn20.Visible = True
-        Me.GridColumn20.VisibleIndex = 27
+        Me.GridColumn20.VisibleIndex = 28
         Me.GridColumn20.Width = 127
         '
         'GridColumn22
@@ -1105,7 +1110,7 @@ Partial Class frmPrescription
         Me.GridColumn22.FieldName = "AttendedBy"
         Me.GridColumn22.Name = "GridColumn22"
         Me.GridColumn22.Visible = True
-        Me.GridColumn22.VisibleIndex = 28
+        Me.GridColumn22.VisibleIndex = 29
         Me.GridColumn22.Width = 137
         '
         'LayoutControlGroup7
@@ -1422,6 +1427,8 @@ Partial Class frmPrescription
         Me.lupLenseLeft.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.lupLenseLeft.Properties.Columns.AddRange(New DevExpress.XtraEditors.Controls.LookUpColumnInfo() {New DevExpress.XtraEditors.Controls.LookUpColumnInfo("StockCode", "StockCode", 20, DevExpress.Utils.FormatType.None, "", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("Description", "Description", 20, DevExpress.Utils.FormatType.None, "", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("SalesPrice", "SalesPrice", 20, DevExpress.Utils.FormatType.Numeric, "F2", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("StockBalance", "StockBalance", 20, DevExpress.Utils.FormatType.Numeric, "F2", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None)})
         Me.lupLenseLeft.Properties.NullText = ""
+        Me.lupLenseLeft.Properties.PopupFormMinSize = New System.Drawing.Size(400, 0)
+        Me.lupLenseLeft.Properties.PopupWidth = 400
         Me.lupLenseLeft.Size = New System.Drawing.Size(301, 20)
         Me.lupLenseLeft.StyleController = Me.LayoutControl1
         Me.lupLenseLeft.TabIndex = 161
@@ -1498,6 +1505,8 @@ Partial Class frmPrescription
         Me.LupFrame.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.LupFrame.Properties.Columns.AddRange(New DevExpress.XtraEditors.Controls.LookUpColumnInfo() {New DevExpress.XtraEditors.Controls.LookUpColumnInfo("StockCode", "StockCode", 20, DevExpress.Utils.FormatType.None, "", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("Description", "Description", 20, DevExpress.Utils.FormatType.None, "", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("SalesPrice", "Sales Price", 20, DevExpress.Utils.FormatType.Numeric, "F2", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("StockBalance", "Stock Balance", 20, DevExpress.Utils.FormatType.Numeric, "F2", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None)})
         Me.LupFrame.Properties.NullText = ""
+        Me.LupFrame.Properties.PopupFormMinSize = New System.Drawing.Size(400, 0)
+        Me.LupFrame.Properties.PopupWidth = 400
         Me.LupFrame.Size = New System.Drawing.Size(108, 20)
         Me.LupFrame.StyleController = Me.LayoutControl1
         Me.LupFrame.TabIndex = 80
@@ -1514,6 +1523,8 @@ Partial Class frmPrescription
         Me.lupLenseRight.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.lupLenseRight.Properties.Columns.AddRange(New DevExpress.XtraEditors.Controls.LookUpColumnInfo() {New DevExpress.XtraEditors.Controls.LookUpColumnInfo("StockCode", "StockCode", 20, DevExpress.Utils.FormatType.None, "", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("Description", "Description", 20, DevExpress.Utils.FormatType.None, "", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("SalesPrice", "Sales Price", 20, DevExpress.Utils.FormatType.Numeric, "F2", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("StockBalance", "Stock Balance", 20, DevExpress.Utils.FormatType.Numeric, "F2", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None)})
         Me.lupLenseRight.Properties.NullText = ""
+        Me.lupLenseRight.Properties.PopupFormMinSize = New System.Drawing.Size(400, 0)
+        Me.lupLenseRight.Properties.PopupWidth = 400
         Me.lupLenseRight.Size = New System.Drawing.Size(301, 20)
         Me.lupLenseRight.StyleController = Me.LayoutControl1
         Me.lupLenseRight.TabIndex = 77
@@ -2805,6 +2816,7 @@ Partial Class frmPrescription
         '
         'LayoutControl3
         '
+        Me.LayoutControl3.Controls.Add(Me.ceDoctorPrescription)
         Me.LayoutControl3.Controls.Add(Me.deDelivaryDate)
         Me.LayoutControl3.Controls.Add(Me.leDispensedBy)
         Me.LayoutControl3.Controls.Add(Me.leAttendedBy)
@@ -2832,7 +2844,7 @@ Partial Class frmPrescription
         'deDelivaryDate
         '
         Me.deDelivaryDate.EditValue = Nothing
-        Me.deDelivaryDate.Location = New System.Drawing.Point(833, 143)
+        Me.deDelivaryDate.Location = New System.Drawing.Point(833, 173)
         Me.deDelivaryDate.Name = "deDelivaryDate"
         Me.deDelivaryDate.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
         Me.deDelivaryDate.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
@@ -2872,7 +2884,7 @@ Partial Class frmPrescription
         'leAttendedBy
         '
         Me.leAttendedBy.EnterMoveNextControl = True
-        Me.leAttendedBy.Location = New System.Drawing.Point(90, 243)
+        Me.leAttendedBy.Location = New System.Drawing.Point(90, 273)
         Me.leAttendedBy.Name = "leAttendedBy"
         Me.leAttendedBy.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
         Me.leAttendedBy.Properties.Appearance.Options.UseFont = True
@@ -2904,7 +2916,7 @@ Partial Class frmPrescription
         'seBalance
         '
         Me.seBalance.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.seBalance.Location = New System.Drawing.Point(502, 243)
+        Me.seBalance.Location = New System.Drawing.Point(502, 273)
         Me.seBalance.Name = "seBalance"
         Me.seBalance.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
         Me.seBalance.Properties.Appearance.ForeColor = System.Drawing.Color.Red
@@ -2925,7 +2937,7 @@ Partial Class frmPrescription
         '
         'sbReceipt
         '
-        Me.sbReceipt.Location = New System.Drawing.Point(833, 218)
+        Me.sbReceipt.Location = New System.Drawing.Point(833, 248)
         Me.sbReceipt.Name = "sbReceipt"
         Me.sbReceipt.Size = New System.Drawing.Size(172, 45)
         Me.sbReceipt.StyleController = Me.LayoutControl3
@@ -2934,7 +2946,7 @@ Partial Class frmPrescription
         '
         'sbPirceList
         '
-        Me.sbPirceList.Location = New System.Drawing.Point(833, 168)
+        Me.sbPirceList.Location = New System.Drawing.Point(833, 198)
         Me.sbPirceList.Name = "sbPirceList"
         Me.sbPirceList.Size = New System.Drawing.Size(172, 45)
         Me.sbPirceList.StyleController = Me.LayoutControl3
@@ -2959,7 +2971,7 @@ Partial Class frmPrescription
         Me.gcCollections.MainView = Me.gvCollections
         Me.gcCollections.Name = "gcCollections"
         Me.gcCollections.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.ricbType, Me.rideCollectionDate, Me.RepositoryItemLookUpEdit1, Me.RepositoryItemSpinEdit1, Me.RepositoryItemComboBox2, Me.RepositoryItemMemoExEdit1, Me.RepositoryItemDateEdit2})
-        Me.gcCollections.Size = New System.Drawing.Size(824, 159)
+        Me.gcCollections.Size = New System.Drawing.Size(824, 189)
         Me.gcCollections.TabIndex = 9
         Me.gcCollections.UseEmbeddedNavigator = True
         Me.gcCollections.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.gvCollections})
@@ -3287,10 +3299,10 @@ Partial Class frmPrescription
         'LayoutControlGroup6
         '
         Me.LayoutControlGroup6.CustomizationFormText = "LayoutControlGroup6"
-        Me.LayoutControlGroup6.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem72, Me.LayoutControlItem67, Me.LayoutControlItem68, Me.LayoutControlItem71, Me.LayoutControlItem70, Me.LayoutControlItem73, Me.LayoutControlItem58, Me.LayoutControlItem91, Me.LayoutControlItem92, Me.LayoutControlItem82, Me.LayoutControlItem80, Me.LayoutControlItem81, Me.LayoutControlItem83, Me.LayoutControlItem84, Me.LayoutControlItem74, Me.LayoutControlItem66, Me.lciDelivaryDate})
+        Me.LayoutControlGroup6.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem72, Me.LayoutControlItem67, Me.LayoutControlItem68, Me.LayoutControlItem71, Me.LayoutControlItem70, Me.LayoutControlItem73, Me.LayoutControlItem58, Me.LayoutControlItem91, Me.LayoutControlItem92, Me.LayoutControlItem82, Me.LayoutControlItem80, Me.LayoutControlItem81, Me.LayoutControlItem83, Me.LayoutControlItem84, Me.LayoutControlItem74, Me.LayoutControlItem66, Me.lciDelivaryDate, Me.LayoutControlItem138})
         Me.LayoutControlGroup6.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControlGroup6.Name = "LayoutControlGroup6"
-        Me.LayoutControlGroup6.Size = New System.Drawing.Size(1008, 266)
+        Me.LayoutControlGroup6.Size = New System.Drawing.Size(1008, 296)
         Me.LayoutControlGroup6.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
         Me.LayoutControlGroup6.Text = "LayoutControlGroup6"
         Me.LayoutControlGroup6.TextVisible = False
@@ -3410,7 +3422,7 @@ Partial Class frmPrescription
         Me.LayoutControlItem58.Location = New System.Drawing.Point(0, 75)
         Me.LayoutControlItem58.Name = "LayoutControlItem58"
         Me.LayoutControlItem58.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
-        Me.LayoutControlItem58.Size = New System.Drawing.Size(829, 164)
+        Me.LayoutControlItem58.Size = New System.Drawing.Size(829, 194)
         Me.LayoutControlItem58.Text = "LayoutControlItem58"
         Me.LayoutControlItem58.TextLocation = DevExpress.Utils.Locations.Left
         Me.LayoutControlItem58.TextSize = New System.Drawing.Size(0, 0)
@@ -3465,7 +3477,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem80.Control = Me.sbPirceList
         Me.LayoutControlItem80.CustomizationFormText = "LayoutControlItem80"
-        Me.LayoutControlItem80.Location = New System.Drawing.Point(829, 164)
+        Me.LayoutControlItem80.Location = New System.Drawing.Point(829, 194)
         Me.LayoutControlItem80.MaxSize = New System.Drawing.Size(0, 50)
         Me.LayoutControlItem80.MinSize = New System.Drawing.Size(66, 50)
         Me.LayoutControlItem80.Name = "LayoutControlItem80"
@@ -3483,7 +3495,7 @@ Partial Class frmPrescription
         '
         Me.LayoutControlItem81.Control = Me.sbReceipt
         Me.LayoutControlItem81.CustomizationFormText = "LayoutControlItem81"
-        Me.LayoutControlItem81.Location = New System.Drawing.Point(829, 214)
+        Me.LayoutControlItem81.Location = New System.Drawing.Point(829, 244)
         Me.LayoutControlItem81.MaxSize = New System.Drawing.Size(0, 50)
         Me.LayoutControlItem81.MinSize = New System.Drawing.Size(60, 50)
         Me.LayoutControlItem81.Name = "LayoutControlItem81"
@@ -3506,7 +3518,7 @@ Partial Class frmPrescription
         Me.LayoutControlItem83.AppearanceItemCaption.Options.UseForeColor = True
         Me.LayoutControlItem83.Control = Me.seBalance
         Me.LayoutControlItem83.CustomizationFormText = "Balance"
-        Me.LayoutControlItem83.Location = New System.Drawing.Point(412, 239)
+        Me.LayoutControlItem83.Location = New System.Drawing.Point(412, 269)
         Me.LayoutControlItem83.Name = "LayoutControlItem83"
         Me.LayoutControlItem83.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
         Me.LayoutControlItem83.Size = New System.Drawing.Size(417, 25)
@@ -3542,7 +3554,7 @@ Partial Class frmPrescription
         Me.LayoutControlItem74.AppearanceItemCaption.Options.UseForeColor = True
         Me.LayoutControlItem74.Control = Me.leAttendedBy
         Me.LayoutControlItem74.CustomizationFormText = "Attended By"
-        Me.LayoutControlItem74.Location = New System.Drawing.Point(0, 239)
+        Me.LayoutControlItem74.Location = New System.Drawing.Point(0, 269)
         Me.LayoutControlItem74.Name = "LayoutControlItem74"
         Me.LayoutControlItem74.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
         Me.LayoutControlItem74.Size = New System.Drawing.Size(412, 25)
@@ -3572,7 +3584,7 @@ Partial Class frmPrescription
         '
         Me.lciDelivaryDate.Control = Me.deDelivaryDate
         Me.lciDelivaryDate.CustomizationFormText = "lciDelivaryDate"
-        Me.lciDelivaryDate.Location = New System.Drawing.Point(829, 139)
+        Me.lciDelivaryDate.Location = New System.Drawing.Point(829, 169)
         Me.lciDelivaryDate.Name = "lciDelivaryDate"
         Me.lciDelivaryDate.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2)
         Me.lciDelivaryDate.Size = New System.Drawing.Size(177, 25)
@@ -6202,6 +6214,38 @@ Partial Class frmPrescription
         Me.LayoutControlItem65.TextToControlDistance = 0
         Me.LayoutControlItem65.TextVisible = False
         '
+        'ceDoctorPrescription
+        '
+        Me.ceDoctorPrescription.Location = New System.Drawing.Point(836, 146)
+        Me.ceDoctorPrescription.Name = "ceDoctorPrescription"
+        Me.ceDoctorPrescription.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.ceDoctorPrescription.Properties.Appearance.Options.UseFont = True
+        Me.ceDoctorPrescription.Properties.Caption = "DOCTOR PRESCRIPTION"
+        Me.ceDoctorPrescription.Size = New System.Drawing.Size(166, 19)
+        Me.ceDoctorPrescription.StyleController = Me.LayoutControl3
+        Me.ceDoctorPrescription.TabIndex = 52
+        '
+        'LayoutControlItem138
+        '
+        Me.LayoutControlItem138.Control = Me.ceDoctorPrescription
+        Me.LayoutControlItem138.CustomizationFormText = "LayoutControlItem138"
+        Me.LayoutControlItem138.Location = New System.Drawing.Point(829, 139)
+        Me.LayoutControlItem138.Name = "LayoutControlItem138"
+        Me.LayoutControlItem138.Size = New System.Drawing.Size(177, 30)
+        Me.LayoutControlItem138.Text = "LayoutControlItem138"
+        Me.LayoutControlItem138.TextLocation = DevExpress.Utils.Locations.Left
+        Me.LayoutControlItem138.TextSize = New System.Drawing.Size(0, 0)
+        Me.LayoutControlItem138.TextToControlDistance = 0
+        Me.LayoutControlItem138.TextVisible = False
+        '
+        'GridColumn30
+        '
+        Me.GridColumn30.Caption = "Doctor Precription"
+        Me.GridColumn30.FieldName = "DoctorPrescription"
+        Me.GridColumn30.Name = "GridColumn30"
+        Me.GridColumn30.Visible = True
+        Me.GridColumn30.VisibleIndex = 6
+        '
         'frmPrescription
         '
         Me.Appearance.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -6522,6 +6566,8 @@ Partial Class frmPrescription
         CType(Me.dxvpPrescriptionHistory, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dxvpPrescription, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dxvpDeliveredDate, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ceDoctorPrescription.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem138, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -6891,4 +6937,7 @@ Partial Class frmPrescription
     Friend WithEvents LayoutControlItem137 As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents LayoutControlItem135 As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents LayoutControlItem136 As DevExpress.XtraLayout.LayoutControlItem
+    Friend WithEvents ceDoctorPrescription As DevExpress.XtraEditors.CheckEdit
+    Friend WithEvents LayoutControlItem138 As DevExpress.XtraLayout.LayoutControlItem
+    Friend WithEvents GridColumn30 As DevExpress.XtraGrid.Columns.GridColumn
 End Class

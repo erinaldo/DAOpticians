@@ -396,7 +396,7 @@ Public Class frmPrescription
             Me.LupFrame.EditValue = Nothing
             Me.seFrameQty.EditValue = 0
             Me.seFramePrice.EditValue = 0
-
+            Me.ceDoctorPrescription.Checked = False
 
             dxvpPrescription.RemoveControlError(cbeName)
             dxvpPrescription.RemoveControlError(teCustomerName)
@@ -573,7 +573,7 @@ Public Class frmPrescription
                 .Ready = ceReady.EditValue
                 .Delivered = ceDelivered.EditValue
                 .AttendedBy = leAttendedBy.EditValue
-
+                .DoctorPrescription = ceDoctorPrescription.EditValue
                 .InsertPrescription(_DB, _Transaction)
 
 
@@ -784,7 +784,7 @@ Public Class frmPrescription
                 .Ready = ceReady.EditValue
                 .Delivered = ceDelivered.EditValue
                 .AttendedBy = leAttendedBy.EditValue
-
+                .DoctorPrescription = ceDoctorPrescription.EditValue
                 .InsertPrescription(_DB, _Transaction)
 
 
@@ -1018,6 +1018,7 @@ Public Class frmPrescription
                 LupFrame.EditValue = .FrameStockID
                 seFrameQty.EditValue = .FrameQty
                 seFramePrice.EditValue = .FramePrice
+                ceDoctorPrescription.EditValue = .DoctorPrescription
 
                 Me.PopulateCollectionsGrid(_DB, _Transaction)
                 Me.CalculateBalance()

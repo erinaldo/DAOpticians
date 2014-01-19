@@ -55,6 +55,7 @@ Public Class DAPrescription
     Private _LenseleftPrice As Decimal
 
     Private _FramePrice As Decimal
+    Private _DoctorPrescription As Boolean
 
 
     Private _InLx As String
@@ -414,6 +415,14 @@ Public Class DAPrescription
         End Get
         Set(ByVal value As Date)
             _DelivaryDate = value
+        End Set
+    End Property
+    Public Property DoctorPrescription() As Boolean
+        Get
+            Return _DoctorPrescription
+        End Get
+        Set(ByVal value As Boolean)
+            _DoctorPrescription = value
         End Set
     End Property
 
@@ -1118,6 +1127,8 @@ Public Class DAPrescription
             DB.AddInParameter(DBC, "@FrameStockID", DbType.Int64, Me.FrameStockID)
             DB.AddInParameter(DBC, "@FrameQty", DbType.Decimal, Me.FrameQty)
             DB.AddInParameter(DBC, "@FramePrice", DbType.Decimal, Me.FramePrice)
+            DB.AddInParameter(DBC, "@DoctorPrescription", DbType.Boolean, Me.DoctorPrescription)
+
 
             DB.AddOutParameter(DBC, "@CurrentSysNo", DbType.String, 10)
             DB.AddOutParameter(DBC, "@NewPrescriptionID", DbType.Int64, 10)
@@ -1313,6 +1324,7 @@ Public Class DAPrescription
                         Me.LenseLeftStockID = Convert.ToInt64(IIf(Not IsDBNull(.Item("LenseLeftStockID")), Trim(.Item("LenseLeftStockID").ToString), 0))
                         Me.LenseLeftQty = Convert.ToDecimal(IIf(Not IsDBNull(.Item("LenseLeftQty")), Trim(.Item("LenseLeftQty").ToString), 0))
                         Me.LenseLeftPrice = Convert.ToDecimal(IIf(Not IsDBNull(.Item("LenseLeftPrice")), Trim(.Item("LenseLeftPrice").ToString), 0))
+                        Me.DoctorPrescription = Convert.ToBoolean(IIf(Not IsDBNull(.Item("DoctorPrescription")), Trim(.Item("DoctorPrescription").ToString), 0))
 
                         result = True
 

@@ -854,6 +854,8 @@ Public Class frmReceipts
                 report.xrlAdvance.Text = .AdvancePaid.ToString("F2")
                 report.xrlBalance.Text = .Balance.ToString("F2")
 
+
+
                 report.xrlNoOfFrames.Text = .NoOfPairOfFrames
                 report.xrlNoofLenses.Text = .NoOfLenses
                 report.xrlNoOfFrameChanges.Text = .NoOfFrameChange
