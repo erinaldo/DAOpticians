@@ -1595,4 +1595,20 @@ Public Class frmPrescription
             MessageError(ex.ToString)
         End Try
     End Sub
+
+    Private Sub lupLenseRight_ButtonClick(ByVal sender As System.Object, ByVal e As DevExpress.XtraEditors.Controls.ButtonPressedEventArgs) Handles lupLenseRight.ButtonClick
+        If (e.Button.Caption = "Clear") Then
+            lupLenseRight.EditValue = Nothing
+            seLenseQtyRight.EditValue = 0
+            seLensePriceRight.EditValue = 0
+        End If
+    End Sub
+
+    Private Sub lupLenseLeft_ButtonClick(ByVal sender As System.Object, ByVal e As DevExpress.XtraEditors.Controls.ButtonPressedEventArgs) Handles lupLenseLeft.ButtonClick
+        If (e.Button.Caption = "Clear") Then
+            lupLenseLeft.EditValue = Nothing
+            seLenseQtyLeft.EditValue = 0
+            seLensePriceLeft.EditValue = 0
+        End If
+    End Sub
 End Class

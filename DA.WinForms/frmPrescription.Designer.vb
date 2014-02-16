@@ -44,6 +44,7 @@ Partial Class frmPrescription
         Me.GridColumn23 = New DevExpress.XtraGrid.Columns.GridColumn
         Me.GridColumn24 = New DevExpress.XtraGrid.Columns.GridColumn
         Me.GridColumn29 = New DevExpress.XtraGrid.Columns.GridColumn
+        Me.GridColumn30 = New DevExpress.XtraGrid.Columns.GridColumn
         Me.GridColumn3 = New DevExpress.XtraGrid.Columns.GridColumn
         Me.GridColumn4 = New DevExpress.XtraGrid.Columns.GridColumn
         Me.GridColumn5 = New DevExpress.XtraGrid.Columns.GridColumn
@@ -166,6 +167,7 @@ Partial Class frmPrescription
         Me.teInR4 = New DevExpress.XtraEditors.TextEdit
         Me.teInR3 = New DevExpress.XtraEditors.TextEdit
         Me.LayoutControl3 = New DevExpress.XtraLayout.LayoutControl
+        Me.ceDoctorPrescription = New DevExpress.XtraEditors.CheckEdit
         Me.deDelivaryDate = New DevExpress.XtraEditors.DateEdit
         Me.leDispensedBy = New DevExpress.XtraEditors.ComboBoxEdit
         Me.leAttendedBy = New DevExpress.XtraEditors.ComboBoxEdit
@@ -215,6 +217,7 @@ Partial Class frmPrescription
         Me.LayoutControlItem74 = New DevExpress.XtraLayout.LayoutControlItem
         Me.LayoutControlItem66 = New DevExpress.XtraLayout.LayoutControlItem
         Me.lciDelivaryDate = New DevExpress.XtraLayout.LayoutControlItem
+        Me.LayoutControlItem138 = New DevExpress.XtraLayout.LayoutControlItem
         Me.teCustomerName = New DevExpress.XtraEditors.TextEdit
         Me.cbeCareOf = New DevExpress.XtraEditors.ComboBoxEdit
         Me.teCateOf = New DevExpress.XtraEditors.TextEdit
@@ -396,9 +399,6 @@ Partial Class frmPrescription
         Me.dxvpPrescriptionHistory = New DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(Me.components)
         Me.dxvpPrescription = New DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(Me.components)
         Me.dxvpDeliveredDate = New DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(Me.components)
-        Me.ceDoctorPrescription = New DevExpress.XtraEditors.CheckEdit
-        Me.LayoutControlItem138 = New DevExpress.XtraLayout.LayoutControlItem
-        Me.GridColumn30 = New DevExpress.XtraGrid.Columns.GridColumn
         CType(Me.deFromDate.Properties.VistaTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.deFromDate.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControl4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -487,6 +487,7 @@ Partial Class frmPrescription
         CType(Me.teInR3.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControl3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.LayoutControl3.SuspendLayout()
+        CType(Me.ceDoctorPrescription.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.deDelivaryDate.Properties.VistaTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.deDelivaryDate.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.leDispensedBy.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -531,6 +532,7 @@ Partial Class frmPrescription
         CType(Me.LayoutControlItem74, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem66, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.lciDelivaryDate, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem138, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.teCustomerName.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cbeCareOf.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.teCateOf.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -703,8 +705,6 @@ Partial Class frmPrescription
         CType(Me.dxvpPrescriptionHistory, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dxvpPrescription, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dxvpDeliveredDate, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ceDoctorPrescription.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem138, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'deFromDate
@@ -895,6 +895,14 @@ Partial Class frmPrescription
         Me.GridColumn29.Name = "GridColumn29"
         Me.GridColumn29.Visible = True
         Me.GridColumn29.VisibleIndex = 5
+        '
+        'GridColumn30
+        '
+        Me.GridColumn30.Caption = "Doctor Precription"
+        Me.GridColumn30.FieldName = "DoctorPrescription"
+        Me.GridColumn30.Name = "GridColumn30"
+        Me.GridColumn30.Visible = True
+        Me.GridColumn30.VisibleIndex = 6
         '
         'GridColumn3
         '
@@ -1424,7 +1432,7 @@ Partial Class frmPrescription
         Me.lupLenseLeft.Name = "lupLenseLeft"
         Me.lupLenseLeft.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
         Me.lupLenseLeft.Properties.Appearance.Options.UseFont = True
-        Me.lupLenseLeft.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.lupLenseLeft.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo), New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "Clear", -1, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing)})
         Me.lupLenseLeft.Properties.Columns.AddRange(New DevExpress.XtraEditors.Controls.LookUpColumnInfo() {New DevExpress.XtraEditors.Controls.LookUpColumnInfo("StockCode", "StockCode", 20, DevExpress.Utils.FormatType.None, "", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("Description", "Description", 20, DevExpress.Utils.FormatType.None, "", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("SalesPrice", "SalesPrice", 20, DevExpress.Utils.FormatType.Numeric, "F2", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("StockBalance", "StockBalance", 20, DevExpress.Utils.FormatType.Numeric, "F2", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None)})
         Me.lupLenseLeft.Properties.NullText = ""
         Me.lupLenseLeft.Properties.PopupFormMinSize = New System.Drawing.Size(400, 0)
@@ -1520,7 +1528,7 @@ Partial Class frmPrescription
         Me.lupLenseRight.Properties.Appearance.Options.UseFont = True
         Me.lupLenseRight.Properties.AppearanceFocused.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.lupLenseRight.Properties.AppearanceFocused.Options.UseBackColor = True
-        Me.lupLenseRight.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.lupLenseRight.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo), New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "Clear", -1, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing)})
         Me.lupLenseRight.Properties.Columns.AddRange(New DevExpress.XtraEditors.Controls.LookUpColumnInfo() {New DevExpress.XtraEditors.Controls.LookUpColumnInfo("StockCode", "StockCode", 20, DevExpress.Utils.FormatType.None, "", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("Description", "Description", 20, DevExpress.Utils.FormatType.None, "", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("SalesPrice", "Sales Price", 20, DevExpress.Utils.FormatType.Numeric, "F2", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("StockBalance", "Stock Balance", 20, DevExpress.Utils.FormatType.Numeric, "F2", True, DevExpress.Utils.HorzAlignment.[Default], DevExpress.Data.ColumnSortOrder.None)})
         Me.lupLenseRight.Properties.NullText = ""
         Me.lupLenseRight.Properties.PopupFormMinSize = New System.Drawing.Size(400, 0)
@@ -2841,6 +2849,17 @@ Partial Class frmPrescription
         Me.LayoutControl3.TabIndex = 118
         Me.LayoutControl3.Text = "LayoutControl3"
         '
+        'ceDoctorPrescription
+        '
+        Me.ceDoctorPrescription.Location = New System.Drawing.Point(836, 146)
+        Me.ceDoctorPrescription.Name = "ceDoctorPrescription"
+        Me.ceDoctorPrescription.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.ceDoctorPrescription.Properties.Appearance.Options.UseFont = True
+        Me.ceDoctorPrescription.Properties.Caption = "DOCTOR PRESCRIPTION"
+        Me.ceDoctorPrescription.Size = New System.Drawing.Size(166, 19)
+        Me.ceDoctorPrescription.StyleController = Me.LayoutControl3
+        Me.ceDoctorPrescription.TabIndex = 52
+        '
         'deDelivaryDate
         '
         Me.deDelivaryDate.EditValue = Nothing
@@ -3594,6 +3613,19 @@ Partial Class frmPrescription
         Me.lciDelivaryDate.TextToControlDistance = 0
         Me.lciDelivaryDate.TextVisible = False
         Me.lciDelivaryDate.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never
+        '
+        'LayoutControlItem138
+        '
+        Me.LayoutControlItem138.Control = Me.ceDoctorPrescription
+        Me.LayoutControlItem138.CustomizationFormText = "LayoutControlItem138"
+        Me.LayoutControlItem138.Location = New System.Drawing.Point(829, 139)
+        Me.LayoutControlItem138.Name = "LayoutControlItem138"
+        Me.LayoutControlItem138.Size = New System.Drawing.Size(177, 30)
+        Me.LayoutControlItem138.Text = "LayoutControlItem138"
+        Me.LayoutControlItem138.TextLocation = DevExpress.Utils.Locations.Left
+        Me.LayoutControlItem138.TextSize = New System.Drawing.Size(0, 0)
+        Me.LayoutControlItem138.TextToControlDistance = 0
+        Me.LayoutControlItem138.TextVisible = False
         '
         'teCustomerName
         '
@@ -6214,38 +6246,6 @@ Partial Class frmPrescription
         Me.LayoutControlItem65.TextToControlDistance = 0
         Me.LayoutControlItem65.TextVisible = False
         '
-        'ceDoctorPrescription
-        '
-        Me.ceDoctorPrescription.Location = New System.Drawing.Point(836, 146)
-        Me.ceDoctorPrescription.Name = "ceDoctorPrescription"
-        Me.ceDoctorPrescription.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.ceDoctorPrescription.Properties.Appearance.Options.UseFont = True
-        Me.ceDoctorPrescription.Properties.Caption = "DOCTOR PRESCRIPTION"
-        Me.ceDoctorPrescription.Size = New System.Drawing.Size(166, 19)
-        Me.ceDoctorPrescription.StyleController = Me.LayoutControl3
-        Me.ceDoctorPrescription.TabIndex = 52
-        '
-        'LayoutControlItem138
-        '
-        Me.LayoutControlItem138.Control = Me.ceDoctorPrescription
-        Me.LayoutControlItem138.CustomizationFormText = "LayoutControlItem138"
-        Me.LayoutControlItem138.Location = New System.Drawing.Point(829, 139)
-        Me.LayoutControlItem138.Name = "LayoutControlItem138"
-        Me.LayoutControlItem138.Size = New System.Drawing.Size(177, 30)
-        Me.LayoutControlItem138.Text = "LayoutControlItem138"
-        Me.LayoutControlItem138.TextLocation = DevExpress.Utils.Locations.Left
-        Me.LayoutControlItem138.TextSize = New System.Drawing.Size(0, 0)
-        Me.LayoutControlItem138.TextToControlDistance = 0
-        Me.LayoutControlItem138.TextVisible = False
-        '
-        'GridColumn30
-        '
-        Me.GridColumn30.Caption = "Doctor Precription"
-        Me.GridColumn30.FieldName = "DoctorPrescription"
-        Me.GridColumn30.Name = "GridColumn30"
-        Me.GridColumn30.Visible = True
-        Me.GridColumn30.VisibleIndex = 6
-        '
         'frmPrescription
         '
         Me.Appearance.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -6350,6 +6350,7 @@ Partial Class frmPrescription
         CType(Me.teInR3.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControl3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.LayoutControl3.ResumeLayout(False)
+        CType(Me.ceDoctorPrescription.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.deDelivaryDate.Properties.VistaTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.deDelivaryDate.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.leDispensedBy.Properties, System.ComponentModel.ISupportInitialize).EndInit()
@@ -6394,6 +6395,7 @@ Partial Class frmPrescription
         CType(Me.LayoutControlItem74, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem66, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.lciDelivaryDate, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem138, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.teCustomerName.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.cbeCareOf.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.teCateOf.Properties, System.ComponentModel.ISupportInitialize).EndInit()
@@ -6566,8 +6568,6 @@ Partial Class frmPrescription
         CType(Me.dxvpPrescriptionHistory, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dxvpPrescription, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dxvpDeliveredDate, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ceDoctorPrescription.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem138, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
